@@ -7,7 +7,7 @@ const multi = require("multi-crafter/lib")
 
 const electricFurnace = multi.MultiCrafter("electric-furnace");
 //this create a block named electric-furnace, I am not sure how to make it in one const, so
-electricFurnace.recipe = [
+electricFurnace.recipes = [
     {
         input: {
             items: ["sand/2", "coal/1"], //I don't know if , is needed, but better to put it
@@ -17,7 +17,7 @@ electricFurnace.recipe = [
             items: ["silicon/1"]
         },
         craftTime: 39.6 //That should 0.66 in game, right?
-    },//Ypu can also do }, {
+    },//You can also do }, {
     {
         input: {
             items: ["sand/1", "lead/1"],
@@ -31,7 +31,7 @@ electricFurnace.recipe = [
 ]
 
 const inductionSmelter = multi.MultiCrafter("induction-smelter");
-inductionSmelter.recipe = [
+inductionSmelter.recipes = [
     //speed but the same numbers of items are required
     {
         input: {
@@ -56,7 +56,7 @@ inductionSmelter.recipe = [
 ]
 
 const arcFurnace = multi.MultiCrafter("arc-furnace");
-arcFurnace.recipe = [
+arcFurnace.recipes = [
     //speed but the same numbers of items are required[
     {
         input: {
