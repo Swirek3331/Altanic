@@ -11,24 +11,24 @@ I have planed that mutlicrafters will be in one file sotred by category chronolo
 I hope that possible will be editing this by other mods.
 Actual blocks will be something like this:
 
-- ### Crafting
+### Crafting
 
-      - #### Electric Furnace
+#### Electric Furnace
 
-    Combination of all basic smelters.
-    Level of complex: Silicon/metaglass.
+Combination of all basic smelters.
+Level of complex: Silicon/metaglass.
 
-      - #### Induction Smelter
+#### Induction Smelter
 
-    More complex version of above.
-    Level of complex: thorium/plastanium
+More complex version of above.
+Level of complex: thorium/plastanium
 
-      - #### Arc Furnace
+#### Arc Furnace
 
-    Propably the most complext one.
-    Level of complex: surge-alloy/phase-fabric?
+Propably the most complext one.
+Level of complex: surge-alloy/phase-fabric?
 
-      - #### Blast Furnace
+#### Blast Furnace
 
-    ~~Stell~~ Feco manufacture.
-    Level of complex: metaglass/graphite
+~~Stell~~ Feco manufacture.
+Level of complex: metaglass/graphite
