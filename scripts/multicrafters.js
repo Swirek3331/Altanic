@@ -6,5 +6,11 @@ const multi = require("multi-crafter/lib")
 // Here multi-crafter class is imported
 
 const electricFurnace = multi.MultiCrafter("electric-furnace");
-//this create block named electric-furnace, I am not sure how to make it in one const, so
-electricFurnace.recipe = []
+//this create a block named electric-furnace, I am not sure how to make it in one const, so
+//electricFurnace.recipe = []
+
+const inductionSmelter = multi.MultiCrafter("induction-smelter");
+//inductionSmelter.recipe = []
+
+const arcFurnace = multi.MultiCrafter("arc-furnace");
+//arcFurnace.recipe = []
