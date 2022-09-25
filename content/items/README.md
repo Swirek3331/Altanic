@@ -15,3 +15,7 @@ Has nearly the same explosivity as regular coal, but is more flammable.
 Look at periodic table, at fourth line.
 Iron (Fe) and cobal (Co), get it?
 In my native language it is `zekoba`, first part is from iron `żelazo`, second from cobalt `kobalt`.
+
+### Wall-Alloy
+
+Like steel but is created for walls.
