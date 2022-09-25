@@ -3,3 +3,7 @@
 Here will be .js files
 
 //TO DO write structure and explanation, and something?
+
+## Multicrafters
+
+<https://liplum.github.io/MultiCrafterLib/>
