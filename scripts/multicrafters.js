@@ -9,7 +9,7 @@ const electricFurnace = multi.MultiCrafter("electric-furnace");
 //this create a block named electric-furnace, I am not sure how to make it in one const, so
 electricFurnace.size = 2;
 electricFurnace.health = 200;
-electricFurnace.requirements(Category.crafting, ItemStack.with(Items.copper, 2137));
+electricFurnace.buildCost = ItemStack.with(Items.copper, 2137);
 electricFurnace.recipes = [
     {
         input: {
