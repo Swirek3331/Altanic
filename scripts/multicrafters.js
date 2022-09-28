@@ -8,7 +8,7 @@ const multi = require("multi-crafter/lib")
 const electricFurnace = multi.MultiCrafter("electric-furnace");
 //this create a block named electric-furnace, I am not sure how to make it in one const, so
 electricFurnace.size = 2;
-electricFurnace.health = 200;
+electricFurnace.health = 250;
 //electricFurnace.requirements(Category.crafting, ItemStack.with(Items.copper, 2137)); //this is not working
 electricFurnace.recipes = [
     {
@@ -19,7 +19,7 @@ electricFurnace.recipes = [
         output: {
             items: ["silicon/1"]
         },
-        craftTime: 39.6 //That should 0.66 in game, right?
+        craftTime: 30
     },//You can also do }, {
     {
         input: {
@@ -33,8 +33,10 @@ electricFurnace.recipes = [
     }
 ]
 
-const inductionSmelter = multi.MultiCrafter("induction-smelter");
-inductionSmelter.recipes = [
+const inductionFrunace = multi.MultiCrafter("induction-furnace");
+inductionFrunace.size = 3;
+inductionFrunace.health = 500;
+inductionFrunace.recipes = [
     //speed but the same numbers of items are required
     {
         input: {
@@ -55,10 +57,33 @@ inductionSmelter.recipes = [
             items: ["metaglass/1"]
         },
         craftTime: 15
+    },
+    //more items
+    {
+        input: {
+            items: ["sand/4", "coal/2"],
+            power: 1
+        },
+        output: {
+            items: ["silicon/2"]
+        },
+        craftTime: 15
+    },
+    {
+        input: {
+            items: ["sand/2", "lead/2"],
+            power: 1
+        },
+        output: {
+            items: ["metaglass/2"]
+        },
+        craftTime: 15
     }
 ]
 
 const arcFurnace = multi.MultiCrafter("arc-furnace");
+arcFurnace.size = 4;
+arcFurnace.health = 750;
 arcFurnace.recipes = [
     //speed but the same numbers of items are required[
     {
@@ -78,6 +103,27 @@ arcFurnace.recipes = [
         },
         output: {
             items: ["metaglass/1"]
+        },
+        craftTime: 7.5
+    },
+    //more items
+    {
+        input: {
+            items: ["sand/8", "coal/4"],
+            power: 2
+        },
+        output: {
+            items: ["silicon/4"]
+        },
+        craftTime: 7.5
+    },
+    {
+        input: {
+            items: ["sand/4", "lead/4"],
+            power: 2
+        },
+        output: {
+            items: ["metaglass/4"]
         },
         craftTime: 7.5
     }

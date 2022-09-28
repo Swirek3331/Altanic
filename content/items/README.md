@@ -18,4 +18,4 @@ In my native language it is `zekoba`, first part is from iron `żelazo`, second 
 
 ### Wall-Alloy
 
-Like steel but is created for walls.
+Like steel but it's perpouse is being a material for walls.
