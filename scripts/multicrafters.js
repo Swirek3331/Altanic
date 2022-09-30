@@ -33,10 +33,10 @@ electricFurnace.recipes = [
     }
 ]
 
-const inductionFrunace = multi.MultiCrafter("induction-furnace");
-inductionFrunace.size = 3;
-inductionFrunace.health = 500;
-inductionFrunace.recipes = [
+const inductionSmelter = multi.MultiCrafter("induction-smelter");
+inductionSmelter.size = 3;
+inductionSmelter.health = 500;
+inductionSmelter.recipes = [
     //speed but the same numbers of items are required
     {
         input: {
@@ -126,5 +126,33 @@ arcFurnace.recipes = [
             items: ["metaglass/4"]
         },
         craftTime: 7.5
+    }
+]
+
+const pyrolyseOven = multi.MultiCrafter("pyrolyse-oven");
+pyrolyseOven.size = 2;
+pyrolyseOven.health = 400;
+pyrolyseOven.recipes = [
+    {
+        input: {
+            items: ["altanic-wood/5"],
+            power: 0.75
+        },
+        output: {
+            items: ["coal/1"],
+            liquids: ["creosote/1"]
+        },
+        craftTime: 120
+    },
+    {
+        input: {
+            items: ["coal/5"],
+            power: 1
+        },
+        output: {
+            items: ["altanic-coal-coke/5"],
+            liquids: ["creosote/2"]
+        },
+        craftTime: 180
     }
 ]

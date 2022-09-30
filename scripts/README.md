@@ -32,3 +32,9 @@ Level of complex: surge-alloy/phase-fabric?
 
 ~~Stell~~ Feco manufacture.
 Level of complex: metaglass/graphite
+
+#### Pyrolyse Oven
+
+For making coal from wood and coal coke.
+And also creosote oils is a byproduct.
+Level of complex: metaglass/graphite
