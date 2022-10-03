@@ -85,7 +85,7 @@ const arcFurnace = multi.MultiCrafter("arc-furnace");
 arcFurnace.size = 4;
 arcFurnace.health = 750;
 arcFurnace.recipes = [
-    //speed but the same numbers of items are required[
+    //speed but the same numbers of items are required
     {
         input: {
             items: ["sand/2", "coal/1"],
@@ -152,6 +152,45 @@ pyrolyseOven.recipes = [
         output: {
             items: ["altanic-coal-coke/5"],
             liquids: ["creosote/2"]
+        },
+        craftTime: 180
+    }
+]
+
+const blastFurnace = multi.MultiCrafter("blast-furnace");
+blastFurnace.size = 3;
+blastFurnace.health = 600;
+blastFurnace.recipes = [
+    {
+        input: {
+            items: ["altanic-coal-coke/5", "altanic-feco/5"],
+            power: 1.5
+        },
+        output: {
+            items: ["altanic-wall-alloy/5"],
+            liquids: ["slag/2"]
+        },
+        craftTime: 180
+    },
+    {
+        input: {
+            items: ["altanic-coal-coke/5", "altanic-feco/3", "scrap/3"],
+            power: 1.5
+        },
+        output: {
+            items: ["altanic-wall-alloy/5"],
+            liquids: ["slag/2"]
+        },
+        craftTime: 180
+    },
+    {
+        input: {
+            items: ["altanic-coal-coke/5", "altanic-feco/3", "thorium/2"],
+            power: 1.5
+        },
+        output: {
+            items: ["altanic-wall-alloy/5"],
+            liquids: ["slag/2"]
         },
         craftTime: 180
     }
