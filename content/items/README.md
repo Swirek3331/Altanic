@@ -10,15 +10,17 @@ Just items I can only explain what items will be or are doing.
 Better coal made by usisng pyrolyse on coal.
 Has nearly the same explosivity as regular coal, but is more flammable.
 
-### Feco
+[item-feco](### Feco)
 
 Look at periodic table, at fourth line.
 Iron (Fe) and cobalt (Co), get it?
 In my native language it is `zekoba`, first part is from iron `żelazo`, second from cobalt `kobalt`.
+**Feco is planed to be a mid game item**
 
 ### Wall-Alloy
 
 Like steel but it's perpouse is being a material for walls.
+**Conected to feco**
 
 ### Wood
 
