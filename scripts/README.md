@@ -4,9 +4,8 @@ Here will be .js files
 
 //TO DO write structure and explanation, and something?
 
-## Multicrafters
+## [Multicrafters](https://liplum.github.io/MultiCrafterLib/)
 
-<https://liplum.github.io/MultiCrafterLib/>
 I have planed that mutlicrafters will be in one file sotred by category chronology.
 I hope that possible will be editing this by other mods.
 Actual blocks will be something like this:
