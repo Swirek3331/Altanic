@@ -16,11 +16,13 @@ Look at periodic table, at fourth line.
 Iron (Fe) and cobalt (Co), get it?
 In my native language it is `zekoba`, first part is from iron `żelazo`, second from cobalt `kobalt`.
 **Feco is planed to be a mid game item**
+Original texture used back in fist altanic (extended-wall-pack or dzban's-industry back then) was made by Not_Bot#5078, he also has chosen color pallet for it.
 
 ### Wall-Alloy
 
 Like steel but it's main perpouse is being a material for walls.
 **Conected to [feco](#feco)**
+First texture of this, called stell back then, was also made by person above, but the new one was made by me. Originaly as a `brąz szklany` for [Z.P.G.M._MOD](https://github.com/r-omnom/Z.P.G.M._Mod) and here, I have only changed colors.
 
 ### Wood
 
