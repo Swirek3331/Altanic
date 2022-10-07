@@ -10,7 +10,7 @@ Just items I can only explain what items will be or are doing.
 Better coal made by usisng pyrolyse on coal.
 Has nearly the same explosivity as regular coal, but is more flammable.
 
-### Feco {#item-id}
+### Feco
 
 Look at periodic table, at fourth line.
 Iron (Fe) and cobalt (Co), get it?
@@ -19,8 +19,8 @@ In my native language it is `zekoba`, first part is from iron `żelazo`, second 
 
 ### Wall-Alloy
 
-Like steel but it's perpouse is being a material for walls.
-**Conected to [feco](#feco-item-id)**
+Like steel but it's main perpouse is being a material for walls.
+**Conected to [feco](#feco)**
 
 ### Wood
 
