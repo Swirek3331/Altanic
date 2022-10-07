@@ -78,6 +78,27 @@ inductionSmelter.recipes = [
             items: ["metaglass/2"]
         },
         craftTime: 15
+    },
+    //others
+    {
+        input: {
+            items: ["coal/4", "sand/6", "pyratite/1"],
+            power: 4
+        },
+        output: {
+            items: ["silicon/8"]
+        },
+        craftTime: 90
+    },
+    {
+        input: {
+            item: ["copper/3", "lead/4", "titanium/2", "silicon/3"],
+            power: 4
+        },
+        output: {
+            items: ["surge-alloy/1"]
+        },
+        craftTime: 75
     }
 ]
 
@@ -106,6 +127,26 @@ arcFurnace.recipes = [
         },
         craftTime: 7.5
     },
+    {
+        input: {
+            item: ["copper/3", "lead/4", "titanium/2", "silicon/3"],
+            power: 8
+        },
+        output: {
+            items: ["surge-alloy/1"]
+        },
+        craftTime: 37.5
+    },
+    {
+        input: {
+            items: ["coal/4", "sand/6", "pyratite/1"],
+            power: 8
+        },
+        output: {
+            items: ["silicon/8"]
+        },
+        craftTime: 45
+    },
     //more items
     {
         input: {
@@ -126,6 +167,26 @@ arcFurnace.recipes = [
             items: ["metaglass/4"]
         },
         craftTime: 7.5
+    },
+    {
+        input: {
+            items: ["coal/8", "sand/12", "pyratite/2"],
+            power: 8
+        },
+        output: {
+            items: ["silicon/12"]
+        },
+        craftTime: 45
+    },
+    {
+        input: {
+            item: ["copper/6", "lead/8", "titanium/4", "silicon/6"],
+            power: 8
+        },
+        output: {
+            items: ["surge-alloy/2"]
+        },
+        craftTime: 37.5
     }
 ]
 
@@ -164,7 +225,7 @@ blastFurnace.recipes = [
     {
         input: {
             items: ["altanic-coal-coke/5", "altanic-feco/5"],
-            power: 1.5
+            power: 5
         },
         output: {
             items: ["altanic-wall-alloy/5"],
@@ -174,8 +235,8 @@ blastFurnace.recipes = [
     },
     {
         input: {
-            items: ["altanic-coal-coke/5", "altanic-feco/3", "scrap/3"],
-            power: 1.5
+            items: ["altanic-coal-coke/5", "altanic-feco/3", "scrap/2"],
+            power: 5
         },
         output: {
             items: ["altanic-wall-alloy/5"],
@@ -186,7 +247,7 @@ blastFurnace.recipes = [
     {
         input: {
             items: ["altanic-coal-coke/5", "altanic-feco/3", "thorium/2"],
-            power: 1.5
+            power: 5
         },
         output: {
             items: ["altanic-wall-alloy/5"],
