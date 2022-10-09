@@ -32,6 +32,7 @@ electricFurnace.recipes = [
         craftTime: 30
     }
 ]
+electricFurnace.drawer = multicraft.DrawRecipe(DrawMulti(DrawDefault(), DrawFlame(Color.valueOf("ffef99"))), DrawMulti(DrawDefault(), DrawFlame(Color.valueOf("ffef99"))));
 
 const inductionSmelter = multi.MultiCrafter("induction-smelter");
 inductionSmelter.size = 3;
