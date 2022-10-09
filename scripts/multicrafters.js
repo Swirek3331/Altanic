@@ -201,7 +201,7 @@ pyrolyseOven.recipes = [
         },
         output: {
             items: ["coal/1"],
-            fluids: ["altanic-creosote/1"]
+            fluids: ["altanic-creosote/0.1"]
         },
         craftTime: 120
     },
@@ -212,7 +212,7 @@ pyrolyseOven.recipes = [
         },
         output: {
             items: ["altanic-coal-coke/5"],
-            fluids: ["creosote/2"]
+            fluids: ["altanic-creosote/0.2"]
         },
         craftTime: 180
     }
