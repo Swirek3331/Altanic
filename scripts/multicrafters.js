@@ -92,7 +92,7 @@ inductionSmelter.recipes = [
     },
     {
         input: {
-            item: ["copper/3", "lead/4", "titanium/2", "silicon/3"],
+            items: ["copper/3", "lead/4", "titanium/2", "silicon/3"],
             power: 4
         },
         output: {
@@ -129,7 +129,7 @@ arcFurnace.recipes = [
     },
     {
         input: {
-            item: ["copper/3", "lead/4", "titanium/2", "silicon/3"],
+            items: ["copper/3", "lead/4", "titanium/2", "silicon/3"],
             power: 8
         },
         output: {
@@ -180,7 +180,7 @@ arcFurnace.recipes = [
     },
     {
         input: {
-            item: ["copper/6", "lead/8", "titanium/4", "silicon/6"],
+            items: ["copper/6", "lead/8", "titanium/4", "silicon/6"],
             power: 8
         },
         output: {
