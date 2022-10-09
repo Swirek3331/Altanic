@@ -103,8 +103,8 @@ inductionSmelter.recipes = [
 ]
 
 const arcFurnace = multi.MultiCrafter("arc-furnace");
-arcFurnace.size = 4;
-arcFurnace.health = 750;
+arcFurnace.size = 5;
+arcFurnace.health = 1000;
 arcFurnace.recipes = [
     //speed but the same numbers of items are required
     {
@@ -201,7 +201,7 @@ pyrolyseOven.recipes = [
         },
         output: {
             items: ["coal/1"],
-            liquids: ["altanic-creosote/1"]
+            fluids: ["altanic-creosote/1"]
         },
         craftTime: 120
     },
@@ -212,7 +212,7 @@ pyrolyseOven.recipes = [
         },
         output: {
             items: ["altanic-coal-coke/5"],
-            liquids: ["creosote/2"]
+            fluids: ["creosote/2"]
         },
         craftTime: 180
     }
@@ -229,7 +229,7 @@ blastFurnace.recipes = [
         },
         output: {
             items: ["altanic-wall-alloy/5"],
-            liquids: ["slag/2"]
+            fluids: ["slag/2"]
         },
         craftTime: 180
     },
@@ -240,7 +240,7 @@ blastFurnace.recipes = [
         },
         output: {
             items: ["altanic-wall-alloy/5"],
-            liquids: ["slag/2"]
+            fluids: ["slag/2"]
         },
         craftTime: 180
     },
@@ -251,7 +251,7 @@ blastFurnace.recipes = [
         },
         output: {
             items: ["altanic-wall-alloy/5"],
-            liquids: ["slag/2"]
+            fluids: ["slag/2"]
         },
         craftTime: 180
     }
