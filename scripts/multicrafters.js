@@ -256,4 +256,3 @@ blastFurnace.recipes = [
         craftTime: 180
     }
 ]
-arcFurnace.drawer = multicraft.DrawRecipe(DrawMulti(DrawDefault(), DrawFlame(Color.valueOf("FFC099"))));
