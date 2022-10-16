@@ -5,5 +5,5 @@ requirements: [
     titanium/25
 ]
 research: {
-    parent: metler
+    parent: melter
 }
