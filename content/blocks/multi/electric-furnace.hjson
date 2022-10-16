@@ -6,7 +6,7 @@ requirements: [
     silicon/20
 ]
 research: {
-    parent: klin
+    parent: kiln
 }
 # TO DO: requirements
 drawer: {
