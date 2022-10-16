@@ -1,1 +1,4 @@
 name: Coal Coke
+research: {
+    parent: coal
+}

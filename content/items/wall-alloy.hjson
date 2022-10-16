@@ -1,1 +1,4 @@
 name: Wall Alloy
+research: {
+    parent: feco
+}

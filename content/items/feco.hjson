@@ -1,1 +1,4 @@
 name: Feco
+research: {
+    parent: slag
+}

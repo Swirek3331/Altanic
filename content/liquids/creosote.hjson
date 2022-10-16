@@ -1,1 +1,4 @@
 name: Creosote Oil
+research: {
+    parent: wood
+}

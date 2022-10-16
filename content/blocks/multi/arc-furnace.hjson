@@ -1,7 +1,15 @@
 category: crafting
 requirements: [
-    surge-alloy/250
+    graphite/300
+    thorium/445
+    silicon/375
+    plastanium/225
+    phase-fabric/125
+    surge-alloy/235
 ]
+research: {
+    parent: induction-smelter
+}
 # TO DO: requirements
 drawer: {
     type: multicraft.DrawRecipe

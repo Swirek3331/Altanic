@@ -1,7 +1,14 @@
 category: crafting
 requirements: [
-    plastanium/80
+    graphite/50
+    titanium/115
+    thorium/75
+    silicon/95
+    plastanium/65
 ]
+research: {
+    parent: electric-furnace
+}
 # TO DO: requirements
 drawer: {
     type: multicraft.DrawRecipe

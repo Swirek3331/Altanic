@@ -1,7 +1,7 @@
 name: Altanic
 description: And they don't stop coming and they don't stop coming
 author: Świrek
-version: 0.0.0
+version: 0.0.1 Feco Mettalurgic
 minGameVersion: 137
 dependencies: [
     multi-crafter

@@ -1,7 +1,10 @@
 category: crafting
-requiremnts: [
+requirements: [
     graphite/50
 ]
+research: {
+    parent: pyrolyse-oven
+}
 # Requiremnts are in TO DO
 drawer: {
 # component where functions from DrawBlock family are located
