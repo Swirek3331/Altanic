@@ -4,20 +4,25 @@ requiremnts: [
 ]
 # Requiremnts are in TO DO
 drawer: {
+# component where functions from DrawBlock family are located
     type: multicraft.DrawRecipe
+    # defining the type of drawer as a imported from multicraft
     drawers: [
-        //
+    # defining the drawers
         {
             type: DrawMulti
             drawers: [
                 {
                     type: DrawDefault
+                    #drawing default layer
                 }
                 {
                     type: DrawFlame
                     color: ffef99
+                    #drawing flame
                 }
             ]
+            # normal DrawMulti function, but in multicraft.DrawRecipe
         }
         {
             type: DrawMulti
@@ -43,66 +48,6 @@ drawer: {
                 }
             ]
         }
-        {
-            type: DrawMulti
-            drawers: [
-                {
-                    type: DrawDefault
-                }
-                {
-                    type: DrawFlame
-                    color: ffef99
-                }
-            ]
-        }
-        //more items
-        {
-            type: DrawMulti
-            drawers: [
-                {
-                    type: DrawDefault
-                }
-                {
-                    type: DrawFlame
-                    color: ffef99
-                }
-            ]
-        }
-        {
-            type: DrawMulti
-            drawers: [
-                {
-                    type: DrawDefault
-                }
-                {
-                    type: DrawFlame
-                    color: ffef99
-                }
-            ]
-        }
-        {
-            type: DrawMulti
-            drawers: [
-                {
-                    type: DrawDefault
-                }
-                {
-                    type: DrawFlame
-                    color: ffef99
-                }
-            ]
-        }
-        {
-            type: DrawMulti
-            drawers: [
-                {
-                    type: DrawDefault
-                }
-                {
-                    type: DrawFlame
-                    color: ffef99
-                }
-            ]
-        }
+        # each DrawMulti is for one recipe
     ]
 }

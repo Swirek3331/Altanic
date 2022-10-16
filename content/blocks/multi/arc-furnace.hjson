@@ -6,6 +6,68 @@ requirements: [
 drawer: {
     type: multicraft.DrawRecipe
     drawers: [
+        //
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawDefault
+                }
+                {
+                    type: DrawFlame
+                    color: ffef99
+                }
+            ]
+        }
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawDefault
+                }
+                {
+                    type: DrawFlame
+                    color: ffef99
+                }
+            ]
+        }
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawDefault
+                }
+                {
+                    type: DrawFlame
+                    color: ffef99
+                }
+            ]
+        }
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawDefault
+                }
+                {
+                    type: DrawFlame
+                    color: ffef99
+                }
+            ]
+        }
+        //more items
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawDefault
+                }
+                {
+                    type: DrawFlame
+                    color: ffef99
+                }
+            ]
+        }
         {
             type: DrawMulti
             drawers: [
