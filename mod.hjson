@@ -1,7 +1,12 @@
 name: Altanic
-description: And they don't stop coming and they don't stop coming
 author: Świrek
-version: 0.0.1 Feco Mettalurgic
+version: 0.0.1
+repo: Swirek3331/Altanic
+subtitle: Feco Metallurgy
+description:
+'''
+I have come here and made it, for no apparent reason.
+'''
 minGameVersion: 137
 dependencies: [
     multi-crafter
