@@ -1,4 +1,12 @@
 name: Creosote Oil
+color: 7D4F07
+viscosity: 0.5
+flammability: 0.75
+explosiveness: 0.25
+heatCapacity: 0.5
+boilPoint: 0.65
+gasColor: 7D4F07
+# I do not gain the knowledge that would specifie what any of these do, but I do know that is flammable and explosive
 research: {
     parent: wood
 }

@@ -1,4 +1,5 @@
 name: Wall Alloy
+color: 8CA498
 research: {
     parent: feco
 }

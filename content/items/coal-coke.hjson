@@ -1,4 +1,9 @@
 name: Coal Coke
+color: 706F74
+flammability: 1.5
+explosiveness: 0.4
+buildable: false
+#whatever that ^ means
 research: {
     parent: coal
 }
