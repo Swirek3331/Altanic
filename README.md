@@ -1,7 +1,8 @@
 # ![Altanic](sprites/github/altanic.png)
 
 My never finished "project" that has been archived and never finished since always.
-I was trying to make this as good readable as I can. 
+I was trying to make this as good readable as I can.
+
 ***Requires multicrafter-lib and I do not thing that this can be qualified as js mod***
 
 ## Dla wszystkich polaczków jak ja
@@ -14,8 +15,10 @@ Jak coś to `#polski` na discordzie mindustry albo pisać, byle nie dzownić, do
 
 I have came to conclusion, that beter will be if a new content will be developt in other branch, but some importatn bug fixes.
 
-## ***Other***
+## **Other**
 
 My discord username and tag: `[PL][KT][ZPGM]Swirek3331#0611`
+
 [Multicrafter-lib](https://liplum.github.io/MultiCrafterLib/)
+
 [Multicrafter-lib-repository](https://github.com/liplum/MultiCrafterLib)
