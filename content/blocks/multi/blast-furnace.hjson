@@ -1,5 +1,7 @@
 category: crafting
+# cateogry
 requirements: [
+# requirements
     lead/50
     metaglass/25
     graphite/100
@@ -8,6 +10,8 @@ requirements: [
 ]
 research: {
     parent: pyrolyse-oven
+    # from where node will be going in tech tree
+    # you can also do here research requirements by writing requirements: [], but they are optional, game has multiplier for research cost based on build 
 }
 # Requiremnts are in TO DO
 drawer: {
@@ -16,7 +20,7 @@ drawer: {
     # defining the type of drawer as a imported from multicraft
     drawers: [
     # defining the drawers
-        {
+        {# recipe one
             type: DrawMulti
             drawers: [
                 {
@@ -31,7 +35,7 @@ drawer: {
             ]
             # normal DrawMulti function, but in multicraft.DrawRecipe
         }
-        {
+        {# recipe two
             type: DrawMulti
             drawers: [
                 {
@@ -43,7 +47,7 @@ drawer: {
                 }
             ]
         }
-        {
+        {# recipe trzy
             type: DrawMulti
             drawers: [
                 {
