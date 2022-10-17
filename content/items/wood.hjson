@@ -1,0 +1,4 @@
+name: Wood
+research: {
+    parent: spore-pod
+}
