@@ -3,7 +3,7 @@
 My never finished "project" that has been archived and never finished since always.
 I was trying to make this as good readable as I can.
 
-***Requires multicrafter-lib and I do not thing that this can be qualified as js mod***
+***Requires multicrafter-lib and I do not think that this can be qualified as js mod***
 
 ## Content
 
