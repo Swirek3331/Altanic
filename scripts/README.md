@@ -15,25 +15,21 @@ Actual blocks will be something like this:
 #### Electric Furnace
 
 Combination of all basic smelters.
-Level of complex: Silicon/metaglass.
 
 #### Induction Smelter
 
 More complex version of above.
-Level of complex: thorium/plastanium
 
 #### Arc Furnace
 
 Propably the most complext one.
-Level of complex: surge-alloy/phase-fabric?
 
 #### Blast Furnace
 
 ~~Stell~~ Feco manufacture.
-Level of complex: metaglass/graphite
+Here I am not realy sure about recipes.
 
 #### Pyrolyse Oven
 
 For making coal from wood and coal coke.
 And also creosote oils is a byproduct.
-Level of complex: metaglass/graphite
