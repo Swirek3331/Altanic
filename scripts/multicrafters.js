@@ -221,11 +221,11 @@ pyrolyseOven.recipes = [
 const blastFurnace = multi.MultiCrafter("blast-furnace");
 //Tworzy blok według importowanej klasy, który dla tego pliku ma nazwę blastFurnace, ale dla hjson to co jest w cudzysłowiu
 blastFurnace.size = 3;
-blastFurnace.health = 600;
+blastFurnace.health = 500;
 blastFurnace.recipes = [
     {
         input: {//zawartość wchodząca
-            items: ["altanic-coal-coke/5", "altanic-feco/5", "thorium/5"],//przedmioty
+            items: ["altanic-feco/5", "coal/10", "thorium/5"],//przedmioty
             power: 5//prund
         },
         output: {//zawartość wychodząca
@@ -236,7 +236,7 @@ blastFurnace.recipes = [
     },
     {
         input: {
-            items: ["altanic-coal-coke/5", "altanic-feco/5", "scrap/10"], //przedmioty wchodzące do bloku. Przy zawarości z modyfikacji nazwa-moda-rzecz.
+            items: ["altanic-coal-coke/5", "altanic-feco/5", "thorium/5"], //przedmioty wchodzące do bloku. Przy zawarości z modyfikacji nazwa-moda-rzecz.
             power: 5 //tutaj nie ma przecinka gdyż jest to ostatni element. To to samo co input: {items: ["altanic-coal-coke/5", "altanic-feco/3", "scrap/2"], power: 5}
         },
         output: {
@@ -244,6 +244,6 @@ blastFurnace.recipes = [
             fluids: ["slag/0.2"]
         },
         craftTime: 180
-    },
+    }
 
 ]
