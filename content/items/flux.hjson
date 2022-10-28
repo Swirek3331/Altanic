@@ -1,3 +1,4 @@
 name: Limestone
 description: Calcium carbonate
 buildable: false
+hardness: 2
