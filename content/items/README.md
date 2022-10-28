@@ -30,7 +30,9 @@ Is this hard to understand?
 
 ### Calcium Carbonate
 
-Or limestone. Used as flux in feco metallurgy to save up more electricity.
+Or limestone.
+Used as flux in feco metallurgy to save up more electricity.
+Can be obtained from calcite.
 
 ### Petroleum Coke
 

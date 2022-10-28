@@ -1,14 +1,19 @@
 name: Altanic
 author: Świrek
-version: 0.0.1
+version: 0.0.2
+# Version of the mod.
 repo: Swirek3331/Altanic
-subtitle: Feco Metallurgy
+# What repositroy, I gues.
+subtitle: Carbon And Usage
+# This shit that will be writne under mod's name.
 description:
 '''
 I have come here and made it, for no apparent reason.
 What have you expected by downloading this.
 '''
 minGameVersion: 137
+# Minimum game version, for v7 it will be higher than 136.
 dependencies: [
+    # Other mod that are necessary for this mod to work.
     multi-crafter
 ]
