@@ -27,3 +27,12 @@ First texture of this, called stell back then, was also made by person above, bu
 ### Wood ![wood](/sprites/items/wood.png)
 
 Is this hard to understand?
+
+### Calcium Carbonate
+
+Or limestone. Used as flux in feco metallurgy to save up more electricity.
+
+### Petroleum Coke
+
+Carbon rich fuel that will be obtained from heavy oil.
+Can Be used in feco metallurgy.

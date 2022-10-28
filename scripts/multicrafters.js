@@ -224,20 +224,20 @@ blastFurnace.size = 3;
 blastFurnace.health = 500;
 blastFurnace.recipes = [
     {
-        input: {//zawartość wchodząca
-            items: ["altanic-feco/5", "coal/10", "thorium/5"],//przedmioty
-            power: 5//prund
+        input: {
+            items: ["altanic-coal-coke/5", "altanic-feco/5", "thorium/5"],
+            power: 6
         },
-        output: {//zawartość wychodząca
+        output: {
             items: ["altanic-wall-alloy/5"],
             fluids: ["slag/0.2"]
         },
-        craftTime: 180 //czas produkcji w tickach
+        craftTime: 180
     },
     {
         input: {
-            items: ["altanic-coal-coke/5", "altanic-feco/5", "thorium/5"], //przedmioty wchodzące do bloku. Przy zawarości z modyfikacji nazwa-moda-rzecz.
-            power: 5 //tutaj nie ma przecinka gdyż jest to ostatni element. To to samo co input: {items: ["altanic-coal-coke/5", "altanic-feco/3", "scrap/2"], power: 5}
+            items: ["altanic-coal-coke/5", "altanic-feco/5", "thorium/5", "altanic-flux/5"],
+            power: 4
         },
         output: {
             items: ["altanic-wall-alloy/5"],
@@ -245,5 +245,4 @@ blastFurnace.recipes = [
         },
         craftTime: 180
     }
-
 ]
