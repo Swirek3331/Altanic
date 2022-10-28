@@ -1,0 +1,27 @@
+type: GenericCrafter
+# Defines type as a defualt assembler
+name: Rafinery
+# This name is only for game.
+# To reference this crafter, use the name of the file.
+size: 3
+craftTime: 120
+# Production time in ticks.
+rotate: true
+liquidCapacity: 60
+consumes: {
+    power: 1.5
+    liquids: [
+        oil/0.5
+    ]
+}
+# For above.
+# I do not gain the knowledge of how to use this.
+# This is my first time to use this.
+regionRated1: 4
+outputLiquids: {
+    gasoline/24
+    naphta/18
+    gas/12
+    heavy-oil/6
+}
+
