@@ -18,10 +18,9 @@ consumes: {
 # I do not gain the knowledge of how to use this.
 # This is my first time to use this.
 regionRated1: 4
-outputLiquids: {
+outputLiquids: [
     gasoline/24
     naphta/18
     gas/12
     heavy-oil/6
-}
-
+]
