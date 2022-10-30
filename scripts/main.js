@@ -1,5 +1,6 @@
 require("multicrafters");
+require("blocks")
 
-//Example:
 //require("file-name");
 //require("folder-name/file-name");
+//without extension (.js).
