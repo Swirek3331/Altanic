@@ -15,6 +15,8 @@ I have came to conclusion, that beter will be if a new content will be developt 
 
 [Multicrafter-lib repository](https://github.com/liplum/MultiCrafterLib)
 
+[Letters](https://discord.com/channels/391020510269669376/754011833928515664/1011760437043400714)
+
 ## Dla wszystkich polaczków jak ja
 
 Tłumaczenie contentu wychodzi razem z jego utworzeniem, a bynajmniej taki mam zamiar.
