@@ -223,9 +223,33 @@ const blastFurnace = multi.MultiCrafter("blast-furnace");
 blastFurnace.size = 3;
 blastFurnace.health = 500;
 blastFurnace.recipes = [
+    //normal coal
     {
         input: {
-            items: ["altanic-coal-coke/5", "altanic-feco/5", "thorium/5"],
+            items: ["coal/10", "altanic-feco/5"],
+            power: 6
+        },
+        output: {
+            items: ["altanic-wall-alloy/5"],
+            fluids: ["altanic-slag/0.2"]
+        },
+        craftTime: 180
+    },
+    {
+        input: {
+            items: ["coal/10", "altanic-feco/5", "altanic-flux/5"],
+            power: 4
+        },
+        output: {
+            items: ["altanic-wall-alloy/5"],
+            fluids: ["altanic-slag/0.2"]
+        },
+        craftTime: 180
+    },
+    //coke
+    {
+        input: {
+            items: ["altanic-coal-coke/5", "altanic-feco/5"],
             power: 6
         },
         output: {
@@ -236,12 +260,35 @@ blastFurnace.recipes = [
     },
     {
         input: {
-            items: ["altanic-coal-coke/5", "altanic-feco/5", "thorium/5", "altanic-flux/5"],
+            items: ["altanic-coal-coke/5", "altanic-feco/5", "altanic-flux/5"],
             power: 4
         },
         output: {
             items: ["altanic-wall-alloy/5"],
             fluids: ["slag/0.2"]
+        },
+        craftTime: 180
+    },
+    //petroleum
+    {
+        input: {
+            items: ["altanic-petroleum-coke/5", "altanic-feco/10"],
+            power: 6
+        },
+        output: {
+            items: ["altanic-wall-alloy/10"],
+            fluids: ["altanic-slag/0.4"]
+        },
+        craftTime: 180
+    },
+    {
+        input: {
+            items: ["altanic-petroleum-coke/5", "altanic-feco/10", "altanic-flux/10"],
+            power: 4
+        },
+        output: {
+            items: ["altanic-wall-alloy/10"],
+            fluids: ["altanic-slag/0.4"]
         },
         craftTime: 180
     }
