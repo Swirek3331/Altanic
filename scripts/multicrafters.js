@@ -231,7 +231,7 @@ blastFurnace.recipes = [
         },
         output: {
             items: ["altanic-wall-alloy/5"],
-            fluids: ["altanic-slag/0.2"]
+            fluids: ["slag/0.2"]
         },
         craftTime: 180
     },
@@ -242,7 +242,7 @@ blastFurnace.recipes = [
         },
         output: {
             items: ["altanic-wall-alloy/5"],
-            fluids: ["altanic-slag/0.2"]
+            fluids: ["slag/0.2"]
         },
         craftTime: 180
     },
