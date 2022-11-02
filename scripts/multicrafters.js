@@ -235,7 +235,7 @@ blastFurnace.recipes = [
         },
         craftTime: 180
     },
-    {
+    {//secon one is with flux, reduces energy consumption.
         input: {
             items: ["coal/10", "altanic-feco/5", "altanic-flux/5"],
             power: 4
@@ -277,7 +277,7 @@ blastFurnace.recipes = [
         },
         output: {
             items: ["altanic-wall-alloy/10"],
-            fluids: ["altanic-slag/0.4"]
+            fluids: ["slag/0.4"]
         },
         craftTime: 180
     },
@@ -288,7 +288,7 @@ blastFurnace.recipes = [
         },
         output: {
             items: ["altanic-wall-alloy/10"],
-            fluids: ["altanic-slag/0.4"]
+            fluids: ["slag/0.4"]
         },
         craftTime: 180
     }
