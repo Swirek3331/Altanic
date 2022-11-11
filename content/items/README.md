@@ -16,6 +16,7 @@ Look at periodic table, at fourth line.
 Iron (Fe) and cobalt (Co), get it?
 In my native language it is `zekoba`, first part is from iron `żelazo`, second from cobalt `kobalt`.
 **Feco is planed to be a mid game item**
+Ore texutre will be changed many times.
 Original texture used back in fist altanic (extended-wall-pack or dzban's-industry back then) was made by Not_Bot#5078, he also has chosen color pallet for it.
 
 ### Wall-Alloy ![wall-alloy](/sprites/items/wall-alloy.png)
