@@ -6,6 +6,44 @@ Here will be .js files
 
 ## [Multicrafters](https://liplum.github.io/MultiCrafterLib/)
 
+That one
+
+```hjson
+
+const multi = require("multi-crafter/lib")
+// Multi-crafter is a library that allows you to create multi-crafters
+// Here multi-crafter class is imported
+
+const electricFurnace = multi.MultiCrafter("electric-furnace");
+//this create a block named electric-furnace, I am not sure how to make it in one const, so
+electricFurnace.size = 2;
+electricFurnace.health = 250;
+//electricFurnace.requirements(Category.crafting, ItemStack.with(Items.copper, 2137)); //this is not working
+electricFurnace.recipes = [
+    {
+        input: {
+            items: ["sand/2", "coal/1"], //I don't know if , is needed, but better to put it
+            power: 0.5 //here I didn't put it beacuse it is end of {}, this is the same as input: {items: ["sand/2", "coal/1"], power: 0.5}
+        },
+        output: {
+            items: ["silicon/1"]
+        },
+        craftTime: 30
+    },//You can also do }, {
+    {
+        input: {
+            items: ["sand/1", "lead/1"],
+            power: 0.5
+        },
+        output: {
+            items: ["metaglass/1"]
+        },
+        craftTime: 30
+    }
+]
+
+```
+
 I have planed that mutlicrafters will be in one file sotred by category chronology.
 I hope that possible will be editing this by other mods.
 Actual blocks will be something like this:

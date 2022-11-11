@@ -293,3 +293,55 @@ blastFurnace.recipes = [
         craftTime: 180
     }
 ]
+
+const centrifuge = multi.MultiCrafter("centrifuge");
+centrifuge.size = 2;
+centrifuge.health = 400;
+centrifuge.recipes = [
+    {//In game normal centrifuge has some weird thing with time and consumption, but I haven't got any knowledge hot to do it here.
+        input: {
+            liquids: ["oil/0.2"],
+            power: 0.7
+        },
+        output: {
+            items: ["coal/2"]
+        },
+        craftTime: 30
+    },
+    {
+        input: {
+            liquids: ["oil/0.1"],
+            power: 1.45
+        },
+        output: {
+            items: ["altanic-petroleum-coke/1"]
+        },
+        craftTime: 60
+    }
+]
+
+const thermalCentrifuge = multi.MultiCrafter("thermal-centrifuge");
+thermalCentrifuge.size = 3;
+thermalCentrifuge.health = 500;
+thermalCentrifuge.recipes = [
+    {
+        input: {
+            liquids: ["oil/12"],
+            power: 3,
+        },
+        output: {
+            items: ["coal/6"],
+        },
+        craftTime: 30
+    },
+    {
+        input: {
+            liquids: ["altanic-heavy-oil/0.2"],
+            power: 4,
+        },
+        output: {
+            items: ["altanic-petroleum-coke/6"],
+        },
+        craftTime: 60
+    }
+]

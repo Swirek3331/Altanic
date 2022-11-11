@@ -1,0 +1,26 @@
+drawer: {
+    type: multicraft.DrawRecipe
+    drawers: [
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawDefault
+                }
+            ]
+        }
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawDefault
+                }
+            ]
+        }
+    ]
+}
+category: crafting
+requirements: [
+    metaglass/50
+    # temporary
+]

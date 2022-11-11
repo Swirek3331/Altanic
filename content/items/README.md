@@ -3,6 +3,32 @@
 What do you want?
 Just items I can only explain what items will be or are doing.
 
+That one with comments
+
+```hjson
+
+name: Coal Coke
+# Name of item in game.
+# To reference this item you must use name of the file, without .hjson extension of course.
+color: 706F74
+# Color must be written in hexadecimal format (hex).
+# 000000 (true black) by default.
+flammability: 1.5
+# Flamming ability of an item.
+# Energy from burner type generator is based on it.
+explosiveness: 0.4
+# Item go boom.
+# If to high burner type reactor will go destruct.
+buildable: false
+# Anuke has writen that is for showing up.
+# But tu be honest I have never used, except now and that was working as well.
+research: {
+    parent: coal
+    # You are allowed to add requiremetns as well.
+}
+
+```
+
 ## The Items
 
 ### Coal Coke ![coal-coke](/sprites/items/coal-coke.png)

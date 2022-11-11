@@ -1,0 +1,58 @@
+drawer: {
+    type: multicraft.DrawRecipe
+    drawers: [
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawLiquidTile
+                    drawLiquid: oil
+                }
+                {
+                    type: DrawRegion
+                    suffix: "-spinner"
+                }
+                {
+                    type: DrawDefault
+                }
+                {
+                    type: DrawRegion
+                    suffix: "-top"
+                }
+            ]
+        }
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawLiquidTile
+                    drawLiquid: oil
+                }
+                {
+                    type: DrawRegion
+                    suffix: "-spinner"
+                }
+                {
+                    type: DrawDefault
+                }
+                {
+                    type: DrawRegion
+                    suffix: "-top"
+                }
+            ]
+        }
+    ]
+}
+category: crafting
+requirements: [
+    metaglass/2137
+    # temporary
+]
