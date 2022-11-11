@@ -4,12 +4,14 @@ version: 0.0.2
 # Version of the mod.
 repo: Swirek3331/Altanic
 # What repositroy, I gues.
-subtitle: Carbon And Usage
+subtitle: The addition of carbon.
 # This shit that will be writne under mod's name.
 description:
 '''
 I have come here and made it, for no apparent reason.
 What have you expected by downloading this.
+
+No, seriously, what? I am curious.
 '''
 minGameVersion: 137
 # Minimum game version, for v7 it will be higher than 136.
