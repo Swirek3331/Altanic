@@ -34,7 +34,7 @@ drawer: {
                 }
                 {
                     type: DrawLiquidTile
-                    drawLiquid: oil
+                    drawLiquid: altanic-heavy-oil
                 }
                 {
                     type: DrawRegion

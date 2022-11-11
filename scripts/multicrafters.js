@@ -300,7 +300,7 @@ centrifuge.health = 400;
 centrifuge.recipes = [
     {//In game normal centrifuge has some weird thing with time and consumption, but I haven't got any knowledge hot to do it here.
         input: {
-            liquids: ["oil/0.2"],
+            fluids: ["oil/0.2"],
             power: 0.7
         },
         output: {
@@ -310,7 +310,7 @@ centrifuge.recipes = [
     },
     {
         input: {
-            liquids: ["oil/0.1"],
+            fluids: ["oil/0.1"],
             power: 1.45
         },
         output: {
@@ -326,7 +326,7 @@ thermalCentrifuge.health = 500;
 thermalCentrifuge.recipes = [
     {
         input: {
-            liquids: ["oil/12"],
+            fluids: ["oil/12"],
             power: 3,
         },
         output: {
@@ -336,7 +336,7 @@ thermalCentrifuge.recipes = [
     },
     {
         input: {
-            liquids: ["altanic-heavy-oil/0.2"],
+            fluids: ["altanic-heavy-oil/0.2"],
             power: 4,
         },
         output: {
