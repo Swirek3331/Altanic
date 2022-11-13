@@ -1,0 +1,8 @@
+type: Wall
+name: Feco Wall
+health: 4320
+category: defense
+requirements: [
+    wall-alloy/24
+]
+# With health and requiremetns just get one by one block properties and multiply them by size
