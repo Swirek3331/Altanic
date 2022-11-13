@@ -1,5 +1,6 @@
 type: Wall
 name: Feco Wall
+size: 2
 health: 4320
 category: defense
 requirements: [
