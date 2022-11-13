@@ -1,8 +1,7 @@
 name: Feco
-color: DEB292
+color: BFA58B
 buildable: false
-#whatever that ^ means
-hardness: 3
+hardness: 5
 research: {
     parent: slag
 }

@@ -1,0 +1,70 @@
+drawer: {
+    type: multicraft.DrawRecipe
+    drawers: [
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawLiquidTile
+                    drawLiquid: oil
+                }
+                {
+                    type: DrawRegion
+                    # That should make it spin
+                    spinSprite: true
+                    rotateSpeed: 3
+                    suffix: "-spinner"
+                    # Fun fact: Even if block does not work, the rotaor like will spin.
+                }
+                {
+                    type: DrawDefault
+                }
+                {
+                    type: DrawRegion
+                    suffix: "-top"
+                }
+            ]
+        }
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawLiquidTile
+                    drawLiquid: altanic-heavy-oil
+                }
+                {
+                    type: DrawRegion
+                    spinSprite: true
+                    rotateSpeed: 3
+                    suffix: "-spinner"
+                }
+                {
+                    type: DrawDefault
+                }
+                {
+                    type: DrawRegion
+                    suffix: "-top"
+                }
+            ]
+        }
+    ]
+}
+category: crafting
+requirements: [
+    lead/300
+    silicon/100
+    thorium/125
+    metaglass/90
+    plastanium/165
+]
+research: {
+    parent: centrifuge
+}

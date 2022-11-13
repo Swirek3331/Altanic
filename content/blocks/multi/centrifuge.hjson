@@ -1,0 +1,32 @@
+drawer: {
+    type: multicraft.DrawRecipe
+    drawers: [
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawDefault
+                }
+            ]
+        }
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawDefault
+                }
+            ]
+        }
+    ]
+}
+category: crafting
+requirements: [
+    lead/50
+    graphite/25
+    metaglass/30
+    silicon/10
+    titanium/20
+]
+research: {
+    parent: coal-centrifuge
+}

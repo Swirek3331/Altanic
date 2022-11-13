@@ -1,0 +1,8 @@
+name: Petroleum Coke
+buildable: false
+color: 000000
+flammability: 2
+explosiveness: 0.8
+research: {
+    parent: heavy-oil
+}

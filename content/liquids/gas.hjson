@@ -1,0 +1,6 @@
+name: Gas
+gas: true
+color: 1D1D23
+research: {
+    parent: oil
+}

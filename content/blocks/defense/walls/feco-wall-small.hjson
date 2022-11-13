@@ -1,0 +1,12 @@
+type: Wall
+# defines block type, first letter must be uppercase
+name: Small Feco Wall
+size: 1
+health: 1080
+category: defense
+requirements: [
+    wall-alloy/6
+]
+research: {
+    parent: thorium-wall
+}

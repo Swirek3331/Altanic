@@ -221,23 +221,13 @@ pyrolyseOven.recipes = [
 const blastFurnace = multi.MultiCrafter("blast-furnace");
 //Tworzy blok według importowanej klasy, który dla tego pliku ma nazwę blastFurnace, ale dla hjson to co jest w cudzysłowiu
 blastFurnace.size = 3;
-blastFurnace.health = 600;
+blastFurnace.health = 500;
 blastFurnace.recipes = [
-    {
-        input: {//zawartość wchodząca
-            items: ["altanic-coal-coke/5", "altanic-feco/5", "thorium/5"],//przedmioty
-            power: 5//prund
-        },
-        output: {//zawartość wychodząca
-            items: ["altanic-wall-alloy/5"],
-            fluids: ["slag/0.2"]
-        },
-        craftTime: 180 //czas produkcji w tickach
-    },
+    //normal coal
     {
         input: {
-            items: ["altanic-coal-coke/5", "altanic-feco/5", "scrap/10"], //przedmioty wchodzące do bloku. Przy zawarości z modyfikacji nazwa-moda-rzecz.
-            power: 5 //tutaj nie ma przecinka gdyż jest to ostatni element. To to samo co input: {items: ["altanic-coal-coke/5", "altanic-feco/3", "scrap/2"], power: 5}
+            items: ["coal/10", "altanic-feco/5"],
+            power: 6
         },
         output: {
             items: ["altanic-wall-alloy/5"],
@@ -245,5 +235,113 @@ blastFurnace.recipes = [
         },
         craftTime: 180
     },
+    {//secon one is with flux, reduces energy consumption.
+        input: {
+            items: ["coal/10", "altanic-feco/5", "altanic-flux/5"],
+            power: 2
+        },
+        output: {
+            items: ["altanic-wall-alloy/5"],
+            fluids: ["slag/0.2"]
+        },
+        craftTime: 180
+    },
+    //coke
+    {
+        input: {
+            items: ["altanic-coal-coke/5", "altanic-feco/5"],
+            power: 6
+        },
+        output: {
+            items: ["altanic-wall-alloy/5"],
+            fluids: ["slag/0.2"]
+        },
+        craftTime: 180
+    },
+    {
+        input: {
+            items: ["altanic-coal-coke/5", "altanic-feco/5", "altanic-flux/5"],
+            power: 2
+        },
+        output: {
+            items: ["altanic-wall-alloy/5"],
+            fluids: ["slag/0.2"]
+        },
+        craftTime: 180
+    },
+    //petroleum
+    {
+        input: {
+            items: ["altanic-petroleum-coke/5", "altanic-feco/10"],
+            power: 6
+        },
+        output: {
+            items: ["altanic-wall-alloy/10"],
+            fluids: ["slag/0.4"]
+        },
+        craftTime: 180
+    },
+    {
+        input: {
+            items: ["altanic-petroleum-coke/5", "altanic-feco/10", "altanic-flux/10"],
+            power: 2
+        },
+        output: {
+            items: ["altanic-wall-alloy/10"],
+            fluids: ["slag/0.4"]
+        },
+        craftTime: 180
+    }
+]
 
+const centrifuge = multi.MultiCrafter("centrifuge");
+centrifuge.size = 2;
+centrifuge.health = 400;
+centrifuge.recipes = [
+    {//In game normal centrifuge has some weird thing with time and consumption, but I haven't got any knowledge hot to do it here.
+        input: {
+            fluids: ["oil/0.2"],
+            power: 0.7
+        },
+        output: {
+            items: ["coal/2"]
+        },
+        craftTime: 30
+    },
+    {
+        input: {
+            fluids: ["oil/0.1"],
+            power: 1.45
+        },
+        output: {
+            items: ["altanic-petroleum-coke/1"]
+        },
+        craftTime: 60
+    }
+]
+
+const thermalCentrifuge = multi.MultiCrafter("thermal-centrifuge");
+thermalCentrifuge.size = 3;
+thermalCentrifuge.health = 500;
+thermalCentrifuge.recipes = [
+    {
+        input: {
+            fluids: ["oil/12"],
+            power: 3,
+        },
+        output: {
+            items: ["coal/6"],
+        },
+        craftTime: 30
+    },
+    {
+        input: {
+            fluids: ["altanic-heavy-oil/0.2"],
+            power: 4,
+        },
+        output: {
+            items: ["altanic-petroleum-coke/6"],
+        },
+        craftTime: 60
+    }
 ]

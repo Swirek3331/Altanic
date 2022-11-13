@@ -2,7 +2,7 @@ name: Wood
 color: E9CFA3
 buildable: false
 #whatever that ^ means
-flameability: 0.4
+flammability: 1
 research: {
     parent: spore-pod
 }
