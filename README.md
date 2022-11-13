@@ -5,6 +5,8 @@ I was trying to make this as good readable as I can.
 
 ***Requires multicrafter-lib and I do not think that this can be qualified as js mod***
 
+I don't have good knowladge about correct english writing.
+
 ## Content
 
 I have came to conclusion, that beter will be if a new content will be developt in other branch, but some importatn bug fixes.
