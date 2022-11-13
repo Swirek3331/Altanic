@@ -14,6 +14,7 @@ drawer: {
                 }
                 {
                     type: DrawRegion
+                    spinSprite: true
                     suffix: "-spinner"
                 }
                 {
@@ -38,6 +39,8 @@ drawer: {
                 }
                 {
                     type: DrawRegion
+                    spinSprite: true
+                    # That will make it spin
                     suffix: "-spinner"
                 }
                 {
