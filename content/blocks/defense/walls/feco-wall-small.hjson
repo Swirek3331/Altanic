@@ -7,3 +7,6 @@ category: defense
 requirements: [
     wall-alloy/6
 ]
+research: {
+    parent: thorium-wall
+}

@@ -1,2 +1,5 @@
 name: Heavy Oil
 color: A80000
+research: {
+    parent: oil
+}

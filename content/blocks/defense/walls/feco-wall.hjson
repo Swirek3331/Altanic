@@ -7,3 +7,6 @@ requirements: [
     wall-alloy/24
 ]
 # With health and requiremetns just get one by one block properties and multiply them by size
+research: {
+    parent: feco-wall-small
+}

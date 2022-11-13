@@ -59,6 +59,12 @@ drawer: {
 }
 category: crafting
 requirements: [
-    metaglass/2137
-    # temporary
+    lead/300
+    silicon/100
+    thorium/125
+    metaglass/90
+    plastanium/165
 ]
+research: {
+    parent: centrifuge
+}

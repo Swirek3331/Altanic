@@ -21,6 +21,12 @@ drawer: {
 }
 category: crafting
 requirements: [
-    metaglass/50
-    # temporary
+    lead/50
+    graphite/25
+    metaglass/30
+    silicon/10
+    titanium/20
 ]
+research: {
+    parent: coal-centrifuge
+}
