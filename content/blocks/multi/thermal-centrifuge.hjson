@@ -18,6 +18,7 @@ drawer: {
                     spinSprite: true
                     rotateSpeed: 3
                     suffix: "-spinner"
+                    # Fun fact: Even if block does not work, the rotaor like will spin.
                 }
                 {
                     type: DrawDefault
@@ -42,6 +43,7 @@ drawer: {
                 {
                     type: DrawRegion
                     spinSprite: true
+                    rotateSpeed: 3
                     suffix: "-spinner"
                 }
                 {
