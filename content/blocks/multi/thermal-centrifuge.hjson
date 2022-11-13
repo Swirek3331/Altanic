@@ -14,7 +14,9 @@ drawer: {
                 }
                 {
                     type: DrawRegion
+                    # That should make it spin
                     spinSprite: true
+                    rotateSpeed: 3
                     suffix: "-spinner"
                 }
                 {
@@ -40,7 +42,6 @@ drawer: {
                 {
                     type: DrawRegion
                     spinSprite: true
-                    # That will make it spin
                     suffix: "-spinner"
                 }
                 {
