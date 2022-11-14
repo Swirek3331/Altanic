@@ -326,7 +326,7 @@ thermalCentrifuge.health = 500;
 thermalCentrifuge.recipes = [
     {
         input: {
-            fluids: ["oil/12"],
+            fluids: ["oil/0.4"],
             power: 3,
         },
         output: {
