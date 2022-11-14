@@ -73,6 +73,4 @@ Can Be used in feco metallurgy.
 
 ### Biomass
 
-After first Altanic I have came to a conlusion that better will be to make biomass as one item and diffrent recepises to obtain it.
-Recepises represents plant.
-Previously what I did was four or five items.
+After first altani I have came to a conclusion that better will be when I make one item.
