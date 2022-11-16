@@ -3,6 +3,8 @@
 
 Here are name and description writen here.
 
+I have tried to use chronology the same as game display content (by name).
+
 `<content type>.<mod name>-<content name>.name`
 
 `<content type>.<mod name>-<content name>.description`
