@@ -15,6 +15,7 @@ No, seriously, what? I am curious.
 '''
 minGameVersion: 140
 # Minimum game version, for v7 it will be higher than 136.
+# Even though Erekir is chujowy I am doing it at v7.
 dependencies: [
     # Other mod that are necessary for this mod to work.
     multi-crafter
