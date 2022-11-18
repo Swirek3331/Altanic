@@ -345,3 +345,19 @@ thermalCentrifuge.recipes = [
         craftTime: 60
     }
 ]
+
+const solidMixer = multi.MultiCrafter("solid-mixer");
+mixer.size = 2;
+mixer.health = 400;
+mixer.recipes = [
+    //TO DO: normal pyratite
+    {
+        input: {
+            items: ["altanic-coal-coke/2", "sand/2"],
+            power: 1
+        },
+        output: {
+            items: ["pyratite/2"]
+        }
+    }
+]
