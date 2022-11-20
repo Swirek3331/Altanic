@@ -10,3 +10,10 @@ requirements: [
 research: {
     parent: differential-generator
 }
+type: ConsumeGenerator
+consumes: {
+    liquid: creosote/0.2
+}
+hasItems: false
+hasLiquids: true
+powerProduction: 9

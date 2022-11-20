@@ -1,4 +1,4 @@
-//Ahh gówno idzemy tu znowusz
+//archivied
 
 const oilBurner = extend(ConsumeGenerator, "oil-burner", {
     size: 2,
