@@ -2,10 +2,8 @@ type: ConsumeGenerator
 name: Creosote Oil Burner
 powerProduction: 4
 size: 3
-consumes: {
-    liquid: [
-        creosote/2
-    ]
+consumeLiquids: {
+    creosote/2
 }
 liquidCapacity: 60
 category: power
