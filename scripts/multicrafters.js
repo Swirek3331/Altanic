@@ -325,7 +325,7 @@ thermalCentrifuge.health = 500;
 thermalCentrifuge.recipes = [
     {
         input: {
-            fluids: ["oil/0.4"],
+            fluids: ["oil/0.2"],
             power: 3,
         },
         output: {
@@ -361,7 +361,7 @@ solidMixer.recipes = [
     },
     {
         input: {
-            items: ["altanic-coal-coke/2", "sand/2"],
+            items: ["altanic-coal-coke/2", "sand/4"],
             power: 0.5
         },
         output: {

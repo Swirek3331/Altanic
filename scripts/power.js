@@ -1,6 +1,6 @@
 //Ahh gówno idzemy tu znowusz
 
-const oilBurner = ConsumeGenerator("oil-burner", {
+const oilBurner = extend(ConsumeGenerator, "oil-burner", {
     size: 2,
     helht: 400,
     powerProduction: 15,
