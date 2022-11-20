@@ -219,7 +219,6 @@ pyrolyseOven.recipes = [
 ]
 
 const blastFurnace = multi.MultiCrafter("blast-furnace");
-//Tworzy blok według importowanej klasy, który dla tego pliku ma nazwę blastFurnace, ale dla hjson to co jest w cudzysłowiu
 blastFurnace.size = 3;
 blastFurnace.health = 500;
 blastFurnace.recipes = [
@@ -235,7 +234,7 @@ blastFurnace.recipes = [
         },
         craftTime: 180
     },
-    {//secon one is with flux, reduces energy consumption.
+    {//second one is with flux, reduces energy consumption.
         input: {
             items: ["coal/10", "altanic-feco/5", "altanic-flux/5"],
             power: 2
