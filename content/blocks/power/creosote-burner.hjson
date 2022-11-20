@@ -4,7 +4,7 @@ powerProduction: 4
 size: 2
 consumeLiquids: {
     liquids: {
-        liquid: [
+        liquids: [
             creosote/2
         ]
     }
