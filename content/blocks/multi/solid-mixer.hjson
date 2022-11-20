@@ -1,0 +1,10 @@
+category: crafting
+requirements: [
+    lead/50
+    graphite25
+    titanium/45
+    silicon/15
+]
+research: {
+    parent: blast-mixer
+}
