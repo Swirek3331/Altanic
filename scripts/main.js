@@ -1,5 +1,5 @@
 require("multicrafters");
-require("power")
+require("power");
 
 //require("file-name");
 //require("folder-name/file-name");
