@@ -355,7 +355,7 @@ solidMixer.recipes = [
             power: 0.2
         },
         output: {
-            items: ["pyratie/1"],
+            items: ["pyratie/1"]
         },
         craftTime: 90
     },
