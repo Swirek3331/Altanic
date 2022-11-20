@@ -1,0 +1,21 @@
+type: ConsumeGenerator
+name: Creosote Oil Burner
+powerProduction: 4
+size: 3
+consumes: {
+    liquid: [
+        creosote/2
+    ]
+}
+liquidCapacity: 60
+category: power
+requirements: [
+    copper/50
+    lead/75
+    titanium/40
+    metaglass/35
+    silicon/45
+]
+research: {
+    parent: differential-generator
+}
