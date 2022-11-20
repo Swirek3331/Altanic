@@ -3,11 +3,7 @@ name: Creosote Oil Burner
 powerProduction: 4
 size: 2
 consumeLiquids: {
-    liquids: {
-        liquids: [
-            creosote/2
-        ]
-    }
+    creosote/2
 }
 liquidCapacity: 60
 category: power
