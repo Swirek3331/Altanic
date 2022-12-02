@@ -1,3 +1,4 @@
+type: ConsumeGenerator
 liquidCapacity: 60
 category: power
 requirements: [
@@ -10,7 +11,6 @@ requirements: [
 research: {
     parent: differential-generator
 }
-type: ConsumeGenerator
 consumes: {
     liquid: creosote/0.2
 }
@@ -47,7 +47,7 @@ drawer: {
             rotateSpeed: 1
             suffix: "-spinner"
         }
-        //second one is tu made the same effect as in steam generator
+        //second one is to made the same effect as in steam generator
         {
             type: DrawWarmupRegion
         }
