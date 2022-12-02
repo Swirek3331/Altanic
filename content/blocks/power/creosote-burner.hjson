@@ -39,13 +39,13 @@ drawer: {
             type: DrawRegion
             spinSprite: true
             rotateSpeed: 2
-            suffix: "-turibne" //It is just about name and drawer function. You are allowed to namet however you want.
+            suffix: "-spinner" //It is just about name and drawer function. You are allowed to namet however you want.
         }
         {
             type: DrawRegion
             spinSprite: true
             rotateSpeed: 1
-            suffix: "-turibne"
+            suffix: "-spinner"
         }
         //second one is tu made the same effect as in steam generator
         {
