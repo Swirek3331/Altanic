@@ -27,11 +27,11 @@ drawer: {
         }
         {
             type: DrawPistons
-            //Now hapens magic
+            //Now happens magic
             sinMag: 2
             sinScl: 5
             sides: 4
-            sideOffset: 2 * 3.1415
+            sideOffset: 1.570796 //That should be pi / 2, but because this is (h)json it can not do math
         }
         {
             type: DrawLiquidTile
