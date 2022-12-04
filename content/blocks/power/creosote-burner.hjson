@@ -31,10 +31,6 @@ drawer: {
         }
         {
             type: DrawPistons
-            //Now happens magic
-            sinMag: 3
-            sinScl: 5
-            sideOffset: 1.570796 //That should be pi / 2, but because this is (h)json it can not do math
         }
         {
             type: DrawGlowRegion

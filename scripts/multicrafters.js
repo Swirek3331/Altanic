@@ -378,7 +378,7 @@ farmer.recipes = [
     //"normal"
     {
         input: {
-            fluid: ["water/0.1"],
+            fluids: ["water/0.1"],
             power: 1.5
         },
         output: {
@@ -389,7 +389,7 @@ farmer.recipes = [
     //speedy
     {
         input: {
-            fluid: ["water/0.1"],
+            fluids: ["water/0.1"],
             power: 1.5
         },
         output: {
@@ -400,7 +400,7 @@ farmer.recipes = [
     //much
     {
         input: {
-            fluid: ["water/0.3"],
+            fluids: ["water/0.3"],
             power: 3,
         },
         output: {
