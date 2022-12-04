@@ -345,32 +345,31 @@ thermalCentrifuge.recipes = [
     }
 ]
 
-const solidMixer = multi.MultiCrafter("solid-mixer", {
-    size: 2,
-    health: 400,
-    recipes: [
-        {
-            input: {
-                items: ["coal/1", "lead/2", "sand/2"],
-                power: 0.2
-            },
-            output: {
-                items: ["pyratite/1"]
-            },
-            craftTime: 90
+const solidMixer = multi.MultiCrafter("solid-mixer");
+solidMixer.size = 2;
+solidMixer.health = 400;
+solidMixer.recipes = [
+    {
+        input: {
+            items: ["coal/1", "lead/2", "sand/2"],
+            power: 0.2
         },
-        {
-            input: {
-                items: ["altanic-coal-coke/2", "sand/4"],
-                power: 0.5
-            },
-            output: {
-                items: ["pyratite/2"]
-            },
-            craftTime: 120
-        }
-    ]
-});
+        output: {
+            items: ["pyratite/1"]
+        },
+        craftTime: 90
+    },
+    {
+        input: {
+            items: ["altanic-coal-coke/2", "sand/4"],
+            power: 0.5
+        },
+        output: {
+            items: ["pyratite/2"]
+        },
+        craftTime: 120
+    }
+]
 
 const farmer = multi.MultiCrafter("farmer");
 farmer.size = 3;
