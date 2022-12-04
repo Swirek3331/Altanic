@@ -26,6 +26,14 @@ drawer: {
             suffix: "-bottom"
         }
         {
+            type: DrawPistons
+            //Now hapens magic
+            sinMag: 2
+            sinScl: 5
+            sides: 4
+            sideOffset: 2 * 3.1415
+        }
+        {
             type: DrawLiquidTile
             drawLiquid: creosote
         }
@@ -34,22 +42,6 @@ drawer: {
         }
         {
             type: DrawDefault
-        }
-        {
-            type: DrawRegion
-            spinSprite: true
-            rotateSpeed: 2
-            suffix: "-spinner" //It is just about name and drawer function. You are allowed to namet however you want.
-        }
-        {
-            type: DrawRegion
-            spinSprite: true
-            rotateSpeed: 1
-            suffix: "-spinner"
-        }
-        //second one is to made the same effect as in steam generator
-        {
-            type: DrawWarmupRegion
         }
     ]
 }
