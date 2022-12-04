@@ -26,19 +26,18 @@ drawer: {
             suffix: "-bottom"
         }
         {
+            type: DrawLiquidTile
+            drawLiquid: creosote
+        }
+        {
             type: DrawPistons
             //Now happens magic
-            sinMag: 1
-            sinScl: 2
-            sides: 4
+            sinMag: 3
+            sinScl: 5
             sideOffset: 1.570796 //That should be pi / 2, but because this is (h)json it can not do math
         }
         {
             type: DrawGlowRegion
-        }
-        {
-            type: DrawLiquidTile
-            drawLiquid: creosote
         }
         {
             type: DrawDefault

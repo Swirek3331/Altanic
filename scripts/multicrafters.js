@@ -370,3 +370,43 @@ solidMixer.recipes = [
         craftTime: 120
     }
 ]
+
+const farmer = multi.MultiCrafter("farmer");
+farmer.size = 3;
+farmer.health = 500;
+farmer.recipes = [
+    //"normal"
+    {
+        input: {
+            fluid: ["water/0.1"],
+            power: 1.5
+        },
+        output: {
+            items: ["altanic-biomass/100"]
+        },
+        craftTime: 600
+    },
+    //speedy
+    {
+        input: {
+            fluid: ["water/0.1"],
+            power: 1.5
+        },
+        output: {
+            items: ["altanic-biomass/25"]
+        },
+        craftTime: 200
+    },
+    //much
+    {
+        input: {
+            fluid: ["water/0.3"],
+            power: 3,
+        },
+        output: {
+            items: ["altanic-biomass/500"]
+        },
+        craftTime: 900
+    }
+    //Will be changed probably.
+]
