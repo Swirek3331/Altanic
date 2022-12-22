@@ -26,12 +26,16 @@ drawer: {
             suffix: "-bottom"
         }
         {
-            type: DrawLiquidTile
-            drawLiquid: creosote
-        }
-        {
             type: DrawPistons
             sinMag: 1
+        }
+        {//For preventiv pistons to show in liquid part
+            type: DrawRegion
+            suffix: "-bt"
+        }
+        {
+            type: DrawLiquidTile
+            drawLiquid: creosote
         }
         {
             type: DrawDefault

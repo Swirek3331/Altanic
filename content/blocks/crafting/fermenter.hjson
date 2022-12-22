@@ -1,0 +1,23 @@
+type: GenericCrafter
+name: Fermenter
+size: 2
+health: 400
+consumes: [
+    power: 0.6
+    items: {
+        items: [
+            biomass/10
+        ]
+    }
+]
+outputLiquid: ehtanol/0.2
+category: crafting
+requirements: [
+    copper/50
+    lead/45
+    graphite/25
+    metaglass/15
+]
+research: {
+    parent: biomass-press
+}

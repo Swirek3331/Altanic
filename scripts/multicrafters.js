@@ -408,6 +408,7 @@ farmer.recipes = [
         },
         craftTime: 900
     },
+    //for wood
     {
         input: {
             fluids: ["water/0.4"],
