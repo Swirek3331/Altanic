@@ -2,14 +2,14 @@ type: GenericCrafter
 name: Biomass Press
 size: 2
 health: 400
-consumes: [
+consumes: {
     power: 0.6
     items: {
         items: [
             biomass/6
         ]
     }
-]
+}
 outputLiquid: plant-oil/0.3
 category: crafting
 requirements: [
