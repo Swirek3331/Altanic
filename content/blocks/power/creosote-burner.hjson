@@ -31,9 +31,7 @@ drawer: {
         }
         {
             type: DrawPistons
-        }
-        {
-            type: DrawGlowRegion
+            sinMag: 1
         }
         {
             type: DrawDefault
