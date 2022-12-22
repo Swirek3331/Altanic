@@ -31,7 +31,7 @@ drawer: {
         }
         {//For preventiv pistons to show in liquid part
             type: DrawRegion
-            suffix: "-bt"
+            suffix: "-lb"
         }
         {
             type: DrawLiquidTile

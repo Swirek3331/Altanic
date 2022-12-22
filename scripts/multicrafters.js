@@ -417,6 +417,7 @@ farmer.recipes = [
         output: {
             items: ["altanic-wood/250"]
         },
+        craftTime: 1200
     }
     //Will be changed probably.
 ]

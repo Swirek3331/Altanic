@@ -10,7 +10,7 @@ consumes: {
         ]
     }
 }
-outputLiquid: ehtanol/0.2
+outputLiquid: ethanol/0.2
 category: crafting
 requirements: [
     copper/50
