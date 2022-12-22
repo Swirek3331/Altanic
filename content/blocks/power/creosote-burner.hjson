@@ -37,10 +37,8 @@ drawer: {
             type: DrawGlowRegion
         }
         {
-            type: DrawLiquidTile
+            type: DrawLiquidRegion
             drawLiquid: creosote
-            padding: 0.925 //Same as in the chemical combustion chamber
-            //Good question
         }
         {
             type: DrawDefault
