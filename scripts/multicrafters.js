@@ -415,9 +415,29 @@ farmer.recipes = [
             power: 3
         },
         output: {
-            items: ["altanic-wood/250"]
+            items: ["altanic-wood/250", "altanic-biomass/25"]
         },
         craftTime: 1200
+    },
+    {
+        input: {
+            fluids: ["water/0.4"],
+            power: 3
+        },
+        output: {
+            items: ["altanic-wood/50", "altanic-biomass/5"]
+        },
+        craftTime: 600
+    },
+    {
+        input: {
+            fluids: ["water/0.6"],
+            power: 6
+        },
+        output: {
+            items: ["altanic-wood/1000", "altanic-biomass/100"]
+        },
+        craftTime: 1500
     }
     //Will be changed probably.
 ]
