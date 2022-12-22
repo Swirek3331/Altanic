@@ -31,7 +31,7 @@ drawer: {
         }
         {//For preventing pistons to show in liquid part
             type: DrawRegion
-            suffix: "-lb"
+            suffix: "-mid"
         }
         {
             type: DrawGlowRegion
@@ -39,6 +39,8 @@ drawer: {
         {
             type: DrawLiquidTile
             drawLiquid: creosote
+            padding: 0.925 //Same as in the chemical combustion chamber
+            //Good question
         }
         {
             type: DrawDefault
