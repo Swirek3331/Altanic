@@ -2,6 +2,7 @@ type: GenericCrafter
 name: Biomass Press
 size: 2
 health: 400
+craftTime: 20
 consumes: {
     power: 0.6
     items: {

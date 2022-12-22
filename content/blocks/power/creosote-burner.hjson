@@ -29,9 +29,12 @@ drawer: {
             type: DrawPistons
             sinMag: 1
         }
-        {//For preventiv pistons to show in liquid part
+        {//For preventing pistons to show in liquid part
             type: DrawRegion
             suffix: "-lb"
+        }
+        {
+            type: DrawGlowRegion
         }
         {
             type: DrawLiquidTile

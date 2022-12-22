@@ -2,6 +2,7 @@ type: GenericCrafter
 name: Fermenter
 size: 2
 health: 400
+craftTime: 60
 consumes: {
     power: 0.6
     items: {
