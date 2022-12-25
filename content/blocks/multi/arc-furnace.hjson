@@ -19,7 +19,7 @@ drawer: {
             type: DrawMulti
             drawers: [
                 {
-                    type: DrawGlow
+                    type: DrawGlowRegion
                     color: ffef99
                 }
                 {
@@ -35,7 +35,7 @@ drawer: {
             type: DrawMulti
             drawers: [
                 {
-                    type: DrawGlow
+                    type: DrawGlowRegion
                     color: ffef99
                 }
                 {
@@ -51,7 +51,7 @@ drawer: {
             type: DrawMulti
             drawers: [
                 {
-                    type: DrawGlow
+                    type: DrawGlowRegion
                     color: ffef99
                 }
                 {
@@ -67,7 +67,7 @@ drawer: {
             type: DrawMulti
             drawers: [
                 {
-                    type: DrawGlow
+                    type: DrawGlowRegion
                     color: ffef99
                 }
                 {
@@ -84,7 +84,7 @@ drawer: {
             type: DrawMulti
             drawers: [
                 {
-                    type: DrawGlow
+                    type: DrawGlowRegion
                     color: ffef99
                 }
                 {
@@ -100,7 +100,7 @@ drawer: {
             type: DrawMulti
             drawers: [
                 {
-                    type: DrawGlow
+                    type: DrawGlowRegion
                     color: ffef99
                 }
                 {
@@ -116,7 +116,7 @@ drawer: {
             type: DrawMulti
             drawers: [
                 {
-                    type: DrawGlow
+                    type: DrawGlowRegion
                     color: ffef99
                 }
                 {
@@ -132,7 +132,7 @@ drawer: {
             type: DrawMulti
             drawers: [
                 {
-                    type: DrawGlow
+                    type: DrawGlowRegion
                     color: ffef99
                 }
                 {

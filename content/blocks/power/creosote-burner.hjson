@@ -38,7 +38,7 @@ drawer: {
             drawLiquid: creosote
         }
         {
-            type: DrawGlow
+            type: DrawGlowRegion
             alpha: 1
             glowScale: 5
         }
