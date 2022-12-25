@@ -38,6 +38,10 @@ drawer: {
             drawLiquid: creosote
         }
         {
+            type: DrawGlow
+            
+        }
+        {
             type: DrawDefault
         }
         {
