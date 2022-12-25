@@ -29,16 +29,16 @@ drawer: {
             suffix: "-bottom"
         }
         {
-            type: DrawPistons
-            sinMag: 1
-        }
-        {
             type: DrawRegion
             suffix: "-mid"
         }
         {
             type: DrawLiquidTile
             drawLiquid: altanic-plant-oil
+        }
+        {
+            type: DrawPistons
+            sinMag: 1
         }
         {
             type: DrawDefault
