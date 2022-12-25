@@ -30,6 +30,7 @@ drawer: {
         }
         {
             type: DrawPistons
+            sinMag: 1
         }
         {
             type: DrawRegion
