@@ -34,14 +34,15 @@ drawer: {
             suffix: "-mid"
         }
         {
-            type: DrawGlowRegion
-        }
-        {
             type: DrawLiquidRegion
             drawLiquid: creosote
         }
         {
             type: DrawDefault
+        }
+        {
+            type: DrawRegion
+            suffix: "-top"
         }
     ]
 }
