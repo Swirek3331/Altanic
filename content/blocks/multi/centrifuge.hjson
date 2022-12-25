@@ -30,5 +30,5 @@ requirements: [
 research: {
     parent: coal-centrifuge
 }
-ambientSound: electricHum
+ambientSound: extractLoop
 ambientSoundVolume: 0.05

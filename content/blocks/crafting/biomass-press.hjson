@@ -37,7 +37,7 @@ drawer: {
         }
         {
             type: DrawLiquidTile
-            liquid: altanic-plant-oil
+            drawLiquid: altanic-plant-oil
         }
         {
             type: DrawDefault
