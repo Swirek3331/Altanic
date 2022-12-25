@@ -21,3 +21,30 @@ requirements: [
 research: {
     parent: spore-press
 }
+drawer: {
+    type: DrawMulti
+    drawers: [
+        {
+            type: DrawRegion
+            suffix: "-bottom"
+        }
+        {
+            type: DrawPistons
+        }
+        {
+            type: DrawRegion
+            suffix: "-mid"
+        }
+        {
+            type: DrawLiquidTile
+            liquid: altanic-plant-oil
+        }
+        {
+            type: DrawDefault
+        }
+        {
+            type: DrawRegion
+            suffix: "-top"
+        }
+    ]
+}

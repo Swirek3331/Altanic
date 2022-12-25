@@ -8,3 +8,5 @@ requirements: [
 research: {
     parent: blast-mixer
 }
+ambientSound: grinding
+ambientSoundVolume: 0.03

@@ -20,7 +20,7 @@ drawer: {
             drawers: [
                 {
                     type: DrawGlowRegion
-                    color: ffef99
+                    color: feb380
                 }
                 {
                     type: DrawDefault
@@ -36,7 +36,7 @@ drawer: {
             drawers: [
                 {
                     type: DrawGlowRegion
-                    color: ffef99
+                    color: feb380
                 }
                 {
                     type: DrawDefault
@@ -52,7 +52,7 @@ drawer: {
             drawers: [
                 {
                     type: DrawGlowRegion
-                    color: ffef99
+                    color: feb380
                 }
                 {
                     type: DrawDefault
@@ -68,7 +68,7 @@ drawer: {
             drawers: [
                 {
                     type: DrawGlowRegion
-                    color: ffef99
+                    color: feb380
                 }
                 {
                     type: DrawDefault
@@ -85,7 +85,7 @@ drawer: {
             drawers: [
                 {
                     type: DrawGlowRegion
-                    color: ffef99
+                    color: feb380
                 }
                 {
                     type: DrawDefault
@@ -101,7 +101,7 @@ drawer: {
             drawers: [
                 {
                     type: DrawGlowRegion
-                    color: ffef99
+                    color: feb380
                 }
                 {
                     type: DrawDefault
@@ -117,7 +117,7 @@ drawer: {
             drawers: [
                 {
                     type: DrawGlowRegion
-                    color: ffef99
+                    color: feb380
                 }
                 {
                     type: DrawDefault
@@ -133,7 +133,7 @@ drawer: {
             drawers: [
                 {
                     type: DrawGlowRegion
-                    color: ffef99
+                    color: feb380
                 }
                 {
                     type: DrawDefault
