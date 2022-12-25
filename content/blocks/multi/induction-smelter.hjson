@@ -90,3 +90,5 @@ drawer: {
         }
     ]
 }
+ambientSound: smelter
+ambientSoundVolume: 0.04

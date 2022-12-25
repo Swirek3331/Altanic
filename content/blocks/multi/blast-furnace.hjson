@@ -98,3 +98,5 @@ drawer: {
         # each DrawMulti is for one recipe
     ]
 }
+ambientSound: smelter
+ambientSoundVolume: 0.04

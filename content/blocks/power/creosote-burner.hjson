@@ -39,7 +39,8 @@ drawer: {
         }
         {
             type: DrawGlow
-            
+            alpha: 1
+            glowScale: 5
         }
         {
             type: DrawDefault
@@ -50,3 +51,5 @@ drawer: {
         }
     ]
 }
+ambientSound: smelter
+ambientSoundVolume: 0.03
