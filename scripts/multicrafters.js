@@ -438,6 +438,37 @@ farmer.recipes = [
             items: ["altanic-wood/1000", "altanic-biomass/100"]
         },
         craftTime: 1500
+    },
+    {
+        input: {
+            fluids: ["water/0.2"],
+            //If someone abmits that cultivator uses more for less, remember, cultivator extract spores from atmosphere, farmer grow them.
+            power: 1.5
+        },
+        output: {
+            items: ["spore-pod/80"]
+        },
+        craftTime: 300
+    },
+    {
+        input: {
+            fluids: ["water/0.2"],
+            power: 1.5
+        },
+        output: {
+            items: ["spore-pod/20"]
+        },
+        craftTime: 120
+    },
+    {
+        input: {
+            fluids: ["water/0.4"],
+            power: 3
+        },
+        output: {
+            items: ["spore-pod/400"]
+        },
+        craftTime: 600
     }
     //Will be changed probably.
 ]
