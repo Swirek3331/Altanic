@@ -9,84 +9,16 @@ requirements: [
 research: {
     parent: electric-furnace
 }
-# TO DO: requirements
+# I think that If we not want a difrent from one recipe, we just need to add DrawMulti instead of multicrafter drawer
 drawer: {
-    type: multicraft.DrawRecipe
+    type: DrawMulti
     drawers: [
-        //
         {
-            type: DrawMulti
-            drawers: [
-                {
-                    type: DrawDefault
-                }
-                {
-                    type: DrawFlame
-                    color: ffef99
-                }
-            ]
+            type: DrawDefault
         }
         {
-            type: DrawMulti
-            drawers: [
-                {
-                    type: DrawDefault
-                }
-                {
-                    type: DrawFlame
-                    color: ffef99
-                }
-            ]
-        }
-        //more items
-        {
-            type: DrawMulti
-            drawers: [
-                {
-                    type: DrawDefault
-                }
-                {
-                    type: DrawFlame
-                    color: ffef99
-                }
-            ]
-        }
-        {
-            type: DrawMulti
-            drawers: [
-                {
-                    type: DrawDefault
-                }
-                {
-                    type: DrawFlame
-                    color: ffef99
-                }
-            ]
-        }
-        //others
-        {
-            type: DrawMulti
-            drawers: [
-                {
-                    type: DrawDefault
-                }
-                {
-                    type: DrawFlame
-                    color: ffef99
-                }
-            ]
-        }
-        {
-            type: DrawMulti
-            drawers: [
-                {
-                    type: DrawDefault
-                }
-                {
-                    type: DrawFlame
-                    color: ffef99
-                }
-            ]
+            type: DrawFlame
+            color: ffef99
         }
     ]
 }
