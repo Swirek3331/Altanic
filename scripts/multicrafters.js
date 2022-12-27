@@ -349,6 +349,7 @@ const solidMixer = multi.MultiCrafter("solid-mixer");
 solidMixer.size = 2;
 solidMixer.health = 400;
 solidMixer.recipes = [
+    //pyratite
     {
         input: {
             items: ["coal/1", "lead/2", "sand/2"],
@@ -362,13 +363,33 @@ solidMixer.recipes = [
     {
         input: {
             items: ["altanic-coal-coke/2", "sand/4"],
-            power: 0.5
+            power: 0.3
         },
         output: {
             items: ["pyratite/2"]
         },
         craftTime: 120
-    }
+    },
+    //blast compound
+    {
+        input: {
+            items: ["pyratite/1", "spore-pod/1"],
+            power: 0.4
+        },
+        output: {
+            items: ["blast-compound/1"]
+        },
+        craftTime: 80
+    },
+    {
+        input: {
+            items: ["altanic-sulpur/1", "sand/2"],
+            power: 0.6
+        },
+        output: {
+            items: ["blast-compound/1"]
+        },
+    },
 ]
 
 const farmer = multi.MultiCrafter("farmer");
