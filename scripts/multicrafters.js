@@ -472,3 +472,27 @@ farmer.recipes = [
     }
     //Will be changed probably.
 ]
+
+const fermenter = multi.MultiCrafter("fermenter");
+fermenter.recipes = [
+    {
+        input: {
+           items: ["altanic-biomass/10"],
+            power: 1.2
+        },
+        output: {
+            fluids: ["altanic-ethanol/0.2"]
+        },
+        craftTime: 60
+    },
+    {
+        input: {
+            items: ["spore-pod/6"],
+            power: 1.5
+        },
+        output: {
+            fluids: ["altanic-gas/0.2"]//will be changed if oil distillation will be added.
+        },
+        craftTime: 60
+    }
+]

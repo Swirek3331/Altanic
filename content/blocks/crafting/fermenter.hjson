@@ -1,17 +1,6 @@
-type: GenericCrafter
 name: Fermenter
 size: 2
 health: 400
-craftTime: 60
-consumes: {
-    power: 1.2
-    items: {
-        items: [
-            biomass/10
-        ]
-    }
-}
-outputLiquid: ethanol/0.2
 category: crafting
 requirements: [
     copper/50
