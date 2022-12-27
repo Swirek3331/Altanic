@@ -13,9 +13,10 @@ I have tried to use chronology the same as game display content (by name).
 
 ## [bundle.properties](https://mindustrygame.github.io/wiki/modding/1-modding/#bundles)
 
-Do not touch this unles you are correcting or making new content.
+Touch this only if you are correcting my mistakes or adding new contetn with an idea and description.
+
 Here are names and description of content by default.
 
 ## bundle_pl.properties
 
-POLSKA GUROM
+POLSKA GUROM KURWA
