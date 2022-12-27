@@ -3,6 +3,7 @@ requirements: [
     lead/50
     graphite/25
     titanium/45
+    metaglass/10
     silicon/15
 ]
 research: {

@@ -1,0 +1,13 @@
+size: 3
+health: 500
+category: crafting
+requirements: [
+    lead/75
+    graphite/65
+    titanium/135
+    silicon/100
+    metaglass/125
+]
+research: {
+    parent: cryofluid-mixer
+}

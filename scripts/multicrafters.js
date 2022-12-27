@@ -585,7 +585,7 @@ chemicalComposer.recipes = [
         output: {
             items: ["altanic-sulfur/2"]
         },
-        craftTime: 60
+        craftTime: 120
     },
     {
         input: {
@@ -593,9 +593,9 @@ chemicalComposer.recipes = [
             power: 0.7
         },
         output: {
-            items: ["altanic-sulfur/6"]
+            items: ["altanic-sulfur/12"]
         },
-        craftTime: 60
+        craftTime: 120
     },
     {
         input: {
