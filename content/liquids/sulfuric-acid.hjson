@@ -1,5 +1,5 @@
 name: Sulfuric Acid
-color: EAE018
+color: F8E646
 research: {
     parent: sulfur
 }
