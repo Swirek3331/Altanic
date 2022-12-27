@@ -22,12 +22,12 @@ drawer: {
                     suffix: "-bottom"
                 }
                 {
-                    type: DrawdrawLiquidTile
+                    type: DrawLiquidTile
                     drawLiquid: water
                 }
                 //If I good understand that should make a drawLiquid proces efect
                 {
-                    type: DrawdrawLiquidTile
+                    type: DrawLiquidTile
                     drawLiquid: cryofluid
                 }
                 {
@@ -47,7 +47,7 @@ drawer: {
                     suffix: "-bottom"
                 }
                 {
-                    type: DrawdrawLiquidTile
+                    type: DrawLiquidTile
                     drawLiquid: oil
                 }
                 {
@@ -67,7 +67,7 @@ drawer: {
                     suffix: "-bottom"
                 }
                 {
-                    type: DrawdrawLiquidTile
+                    type: DrawLiquidTile
                     drawLiquid: altanic-gas
                 }
                 {
@@ -87,11 +87,11 @@ drawer: {
                     suffix: "-bottom"
                 }
                 {
-                    type: DrawdrawLiquidTile
+                    type: DrawLiquidTile
                     drawLiquid: altanic-plant-oil
                 }
                 {
-                    type: DrawdrawLiquidTile
+                    type: DrawLiquidTile
                     drawLiquid: altanic-biofuel
                 }
                 {
@@ -111,11 +111,11 @@ drawer: {
                     suffix: "-bottom"
                 }
                 {
-                    type: DrawdrawLiquidTile
+                    type: DrawLiquidTile
                     drawLiquid: altanic-creosote
                 }
                 {
-                    type: DrawdrawLiquidTile
+                    type: DrawLiquidTile
                     drawLiquid: oil
                 }
                 {
@@ -135,11 +135,11 @@ drawer: {
                     suffix: "-bottom"
                 }
                 {
-                    type: DrawdrawLiquidTile
+                    type: DrawLiquidTile
                     drawLiquid: altanic-nitric-acid
                 }
                 {
-                    type: DrawdrawLiquidTile
+                    type: DrawLiquidTile
                     drawLiquid: altanic-nitroglycerin
                 }
                 {
