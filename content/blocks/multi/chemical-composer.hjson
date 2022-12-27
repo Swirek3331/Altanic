@@ -22,33 +22,13 @@ drawer: {
                     suffix: "-bottom"
                 }
                 {
-                    type: DrawLiquidTile
-                    liquid: water
+                    type: DrawdrawLiquidTile
+                    drawLiquid: water
                 }
-                //If I good understand that should make a liquid proces efect
+                //If I good understand that should make a drawLiquid proces efect
                 {
-                    type: DrawLiquidTile
-                    liquid: cryofluid
-                }
-                {
-                    type: DrawDefault
-                }
-                {
-                    type: DrawRegion
-                    suffix: "-top"
-                }
-            ]
-        }
-        {
-            type: DrawMulti
-            drawers: [
-                {
-                    type: DrawRegion
-                    suffix: "-bottom"
-                }
-                {
-                    type: DrawLiquidTile
-                    liquid: oil
+                    type: DrawdrawLiquidTile
+                    drawLiquid: cryofluid
                 }
                 {
                     type: DrawDefault
@@ -67,8 +47,8 @@ drawer: {
                     suffix: "-bottom"
                 }
                 {
-                    type: DrawLiquidTile
-                    liquid: altanic-gas
+                    type: DrawdrawLiquidTile
+                    drawLiquid: oil
                 }
                 {
                     type: DrawDefault
@@ -87,12 +67,8 @@ drawer: {
                     suffix: "-bottom"
                 }
                 {
-                    type: DrawLiquidTile
-                    liquid: altanic-plant-oil
-                }
-                {
-                    type: DrawLiquidTile
-                    liquid: altanic-biofuel
+                    type: DrawdrawLiquidTile
+                    drawLiquid: altanic-gas
                 }
                 {
                     type: DrawDefault
@@ -111,12 +87,12 @@ drawer: {
                     suffix: "-bottom"
                 }
                 {
-                    type: DrawLiquidTile
-                    liquid: altanic-creosote
+                    type: DrawdrawLiquidTile
+                    drawLiquid: altanic-plant-oil
                 }
                 {
-                    type: DrawLiquidTile
-                    liquid: oil
+                    type: DrawdrawLiquidTile
+                    drawLiquid: altanic-biofuel
                 }
                 {
                     type: DrawDefault
@@ -135,12 +111,36 @@ drawer: {
                     suffix: "-bottom"
                 }
                 {
-                    type: DrawLiquidTile
-                    liquid: altanic-nitric-acid
+                    type: DrawdrawLiquidTile
+                    drawLiquid: altanic-creosote
                 }
                 {
-                    type: DrawLiquidTile
-                    liquid: altanic-nitroglycerin
+                    type: DrawdrawLiquidTile
+                    drawLiquid: oil
+                }
+                {
+                    type: DrawDefault
+                }
+                {
+                    type: DrawRegion
+                    suffix: "-top"
+                }
+            ]
+        }
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawdrawLiquidTile
+                    drawLiquid: altanic-nitric-acid
+                }
+                {
+                    type: DrawdrawLiquidTile
+                    drawLiquid: altanic-nitroglycerin
                 }
                 {
                     type: DrawDefault
