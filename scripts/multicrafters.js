@@ -498,7 +498,7 @@ farmer.recipes = [
     //spore pods
     {
         input: {
-            fluids: ["water/0.2"],
+            fluids: ["water/0.3"],
             //If someone abmits that cultivator uses more for less, remember, cultivator extract spores from atmosphere, farmer grow them.
             power: 1.5
         },
@@ -509,7 +509,7 @@ farmer.recipes = [
     },
     {
         input: {
-            fluids: ["water/0.2"],
+            fluids: ["water/0.3"],
             power: 1.5
         },
         output: {
@@ -519,11 +519,11 @@ farmer.recipes = [
     },
     {
         input: {
-            fluids: ["water/0.4"],
+            fluids: ["water/0.6"],
             power: 3
         },
         output: {
-            items: ["spore-pod/400"]
+            items: ["spore-pod/200"]
         },
         craftTime: 600
     }
