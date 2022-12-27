@@ -358,7 +358,7 @@ solidMixer.recipes = [
         output: {
             items: ["pyratite/1"]
         },
-        craftTime: 90
+        craftTime: 80
     },
     {
         input: {
@@ -368,7 +368,18 @@ solidMixer.recipes = [
         output: {
             items: ["pyratite/2"]
         },
-        craftTime: 120
+        craftTime: 80
+    },
+    {
+        input: {
+            fluids: ["altanic-light-oil/0.1"],
+            items: ["sand/20"],
+            power: 1.2
+        },
+        output: {
+            items: ["pyratite/10"]
+        },
+        craftTime: 90
     },
     //blast compound
     {
@@ -399,6 +410,18 @@ solidMixer.recipes = [
         },
         output: {
             items: ["blast-compound/10"]
+        },
+        craftTime: 120
+    },
+    //other
+    {
+        input: {
+            items: ["sand/14"],
+            fluids: ["creosote/0.1"],
+            power: 0.8
+        },
+        output: {
+            items: ["pyratite/5", "blast-compound/2"]
         },
         craftTime: 120
     }
@@ -528,6 +551,16 @@ fermenter.recipes = [
             fluids: ["altanic-gas/0.2"]//will be changed if oil distillation will be added.
         },
         craftTime: 60
+    },
+    {
+        input: {
+            items: ["altanic-wood/12"],
+            power: 1.4
+        },
+        output: {
+            fluids: ["altanic-methanol/0.2"]
+        },
+        craftTime: 60
     }
 ]
 
@@ -576,11 +609,23 @@ chemicalComposer.recipes = [
     },
     {
         input: {
+            items: ["spore-pod/3"],
+            fluids: ["altanic-creosote/0.2"],
+            power: 0.8
+        },
+        output: {
+            fluids: ["oil/0.2"]
+        },
+        craftTime: 90
+    },
+    {
+        input: {
             fluids: ["altanic-glycerol/0.1", "altanic-nitric-acid/0.2"],
             power: 1
         },
         output: {
             fluids: ["altanic-nitroglycerin/0.2"]
         },
-    }
+        craftTime: 60
+    },
 ]
