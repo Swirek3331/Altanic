@@ -1,2 +1,5 @@
 name: Plant Oil
 color: CEFA32
+research: {
+    parent: biomass
+}

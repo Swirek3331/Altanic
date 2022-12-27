@@ -383,13 +383,25 @@ solidMixer.recipes = [
     },
     {
         input: {
-            items: ["altanic-sulpur/1", "sand/2"],
+            items: ["altanic-sulfur/2", "sand/4"],
             power: 0.6
         },
         output: {
-            items: ["blast-compound/1"]
+            items: ["blast-compound/2"]
         },
+        craftTime: 80
     },
+    {
+        input: {
+            items: ["sand/20"],
+            fluids: ["altanic-nitroglycerin/0.1"],
+            power: 1.8
+        },
+        output: {
+            items: ["blast-compound/10"]
+        },
+        craftTime: 120
+    }
 ]
 
 const farmer = multi.MultiCrafter("farmer");
@@ -460,6 +472,7 @@ farmer.recipes = [
         },
         craftTime: 1500
     },
+    //spore pods
     {
         input: {
             fluids: ["water/0.2"],
@@ -515,5 +528,59 @@ fermenter.recipes = [
             fluids: ["altanic-gas/0.2"]//will be changed if oil distillation will be added.
         },
         craftTime: 60
+    }
+]
+
+const chemicalComposer = multi.MultiCrafter("chemical-composer")
+chemicalComposer.recipes = [
+    {
+        input: {
+            items: ["titanium/2"],
+            fluids: ["water/0.3"],
+            power: 1.5
+        },
+        output: {
+            fluids: ["cryofluid/0.3"]
+        },
+        craftTime: 120
+    },
+    {
+        input: {
+            fluids: ["oil/0.1"],
+            power: 0.8
+        },
+        output: {
+            items: ["altanic-sulfur/2"]
+        },
+        craftTime: 60
+    },
+    {
+        input: {
+            fluids: ["altanic-gas/0.2"],
+            power: 0.7
+        },
+        output: {
+            items: ["altanic-sulfur/6"]
+        },
+        craftTime: 60
+    },
+    {
+        input: {
+            fluids: ["altanic-ethanol/0.1", "altanic-plant-oil/0.1"],
+            power: 0.6
+        },
+        output: {
+            fluids: ["altanic-biofuel/0.2"]
+        },
+        craftTime: 60
+    },
+    {
+        input: {
+            fluids: ["altanic-glycerol/0.1", "altanic-nitric-acid/0.2"],
+            power: 1
+        },
+        output: {
+            fluids: ["altanic-nitroglycerin/0.2"]
+        },
     }
 ]

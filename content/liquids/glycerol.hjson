@@ -1,2 +1,5 @@
 name: Glycerol
 color: D4FFFF
+research: {
+    parent: plant-oil
+}

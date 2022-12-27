@@ -1,2 +1,5 @@
 name: Nitroglycerin
 color: FFFF94
+research: {
+    parent: glycerol
+}

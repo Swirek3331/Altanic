@@ -3,5 +3,5 @@ color: E9CFA3
 buildable: false
 flammability: 1
 research: {
-    parent: spore-pod
+    parent: water
 }
