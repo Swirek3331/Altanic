@@ -76,7 +76,7 @@ drawer: {
                     particleColorFrom: 313131
                     particleColorTo: E9D925
                     particles: 50
-                    range: 3
+                    range: 5
                 }
                 {
                     type: DrawDefault
