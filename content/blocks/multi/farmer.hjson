@@ -8,3 +8,36 @@ category: crafting
 research: {
     parent: cultivator
 }
+drawer: {
+    type: multicraft.DrawRecipe
+    drawers: [
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawLiquidTile
+                    drawLiquid: water
+                }
+                {
+                    type: DrawCells
+                    color: 69BE2E
+                    particleColorFrom: 4B692D
+                    particleColorTo: 99E550
+                    particles: 50
+                    range: 3
+                }
+                {
+                    type: DrawDefault
+                }
+                {
+                    type: DrawRegion
+                    suffix: "-top"
+                }
+            ]
+        }
+    ]
+}
