@@ -71,7 +71,7 @@ drawer: {
                     drawLiquid: altanic-gas
                 }
                 {
-                    type: DrawParticles
+                    type: DrawCells
                     color: 656023
                     particleColorFrom: 313131
                     particleColorTo: E9D925

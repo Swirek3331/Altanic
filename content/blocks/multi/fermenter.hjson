@@ -30,9 +30,7 @@ drawer: {
                     particles: 25
                     range: 2
                 }
-                {
-                    type: DrawDefault
-                }
+
                 {
                     type: DrawRegion
                     suffix: "-top"
