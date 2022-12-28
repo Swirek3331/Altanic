@@ -27,6 +27,7 @@ drawer: {
                 }
                 {
                     type: DrawCells
+                    color: 69BE2E
                     particleColorFrom: 4B692D
                     particleColorTo: 99E550
                     particles: 100
