@@ -24,11 +24,14 @@ drawer: {
                 }
                 {
                     type: DrawCells
-                    color: 69BE2E
                     particleColorFrom: 4B692D
                     particleColorTo: 99E550
                     particles: 50
                     range: 3
+                }
+                {
+                    type: DrawCultivator
+                    #???
                 }
                 {
                     type: DrawDefault

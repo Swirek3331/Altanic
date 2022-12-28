@@ -29,6 +29,7 @@ drawer: {
                 {
                     type: DrawLiquidTile
                     drawLiquid: cryofluid
+                    drawLiquidLight: true
                 }
                 {
                     type: DrawDefault
@@ -72,10 +73,9 @@ drawer: {
                 }
                 {
                     type: DrawCells
-                    color: 8e8519
                     particleColorFrom: 313131
                     particleColorTo: E9D925
-                    particles: 50
+                    particles: 75
                     range: 7
                 }
                 {
@@ -149,6 +149,7 @@ drawer: {
                 {
                     type: DrawLiquidTile
                     drawLiquid: altanic-nitroglycerin
+                    drawLiquidLight: true
                 }
                 {
                     type: DrawDefault
