@@ -1,4 +1,0 @@
-type: Floor
-drownTime: 30
-liquidDrop: sulfuric-acid
-isLiquid: true
