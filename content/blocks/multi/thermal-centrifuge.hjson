@@ -68,3 +68,5 @@ requirements: [
 research: {
     parent: centrifuge
 }
+ambientSound: hum
+ambientSoundVolume: 0.1

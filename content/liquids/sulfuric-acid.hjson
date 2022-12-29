@@ -1,0 +1,5 @@
+name: Sulfuric Acid
+color: F8E646
+research: {
+    parent: sulfur
+}

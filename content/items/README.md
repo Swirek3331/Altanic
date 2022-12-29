@@ -29,6 +29,11 @@ research: {
 
 ```
 
+## Not Items
+
+Coal and spore pod have their files located here.
+But this is only to change their flammability.
+
 ## The Items
 
 ### Coal Coke ![coal-coke](/sprites/items/coal-coke.png)
@@ -65,3 +70,7 @@ Can be obtained from calcite.
 
 Carbon rich fuel that will be obtained from heavy oil.
 Can Be used in feco metallurgy.
+
+### Biomass
+
+After first altani I have came to a conclusion that better will be when I make one item.

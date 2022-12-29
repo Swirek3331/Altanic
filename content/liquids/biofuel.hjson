@@ -1,0 +1,5 @@
+name: Biofuel
+color: A2A00F
+research: {
+    parent: ethanol
+}

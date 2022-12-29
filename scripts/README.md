@@ -8,7 +8,7 @@ Here will be .js files
 
 That one
 
-```hjson
+```js
 
 const multi = require("multi-crafter/lib")
 // Multi-crafter is a library that allows you to create multi-crafters
@@ -71,3 +71,18 @@ Here I am not realy sure about recipes.
 
 For making coal from wood and coal coke.
 And also creosote oils is a byproduct.
+
+#### Centrifue
+
+For oil seperation, mostly.
+Will be also allowed to refine slag, but I do not remeber how exacly seperator works.
+Like is this 6 slag for one item or for all?
+
+#### Thermal Centrifuege
+
+Add some fancy word to object and now it is special object.
+
+#### Solid Mixer
+
+Compound mixer.
+Liquid one will come later.

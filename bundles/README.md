@@ -3,6 +3,8 @@
 
 Here are name and description writen here.
 
+I have tried to use chronology the same as game display content (by name).
+
 `<content type>.<mod name>-<content name>.name`
 
 `<content type>.<mod name>-<content name>.description`
@@ -11,9 +13,10 @@ Here are name and description writen here.
 
 ## [bundle.properties](https://mindustrygame.github.io/wiki/modding/1-modding/#bundles)
 
-Do not touch this unles you are correcting or making new content.
+Touch this only if you are correcting my mistakes or adding new contetn with an idea and description.
+
 Here are names and description of content by default.
 
 ## bundle_pl.properties
 
-POLSKA GUROM
+POLSKA GUROM KURWA

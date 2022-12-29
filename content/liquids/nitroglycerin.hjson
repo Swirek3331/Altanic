@@ -1,0 +1,6 @@
+name: Nitroglycerin
+color: 77FFFF
+lightColor: 77FFFF
+research: {
+    parent: glycerol
+}
