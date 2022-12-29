@@ -393,6 +393,7 @@ drawer: {
                 {
                     type: DrawLiquidTile
                     drawLiquid: altanic-nitroglycerin
+                    drawLiquidLight: true
                 }
                 {
                     type: DrawCultivator
@@ -416,4 +417,4 @@ drawer: {
     ]
 }
 ambientSound: extractLoop
-ambientSoundVolume: 0.1
+ambientSoundVolume: 0.5

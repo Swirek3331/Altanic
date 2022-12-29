@@ -292,3 +292,5 @@ drawer: {
         }
     ]
 }
+ambientSound: bioLoop
+ambientSoundVolume: 0.02
