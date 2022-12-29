@@ -89,3 +89,5 @@ drawer: {
         }
     ]
 }
+ambientSound: steam
+ambientSoundVolume: 0.02

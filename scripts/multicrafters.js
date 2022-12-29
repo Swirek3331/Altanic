@@ -671,7 +671,7 @@ chemicalComposer.recipes = [
     {
         input: {
             items: ["sand/14"],
-            fluids: ["altnaic-creosote/0.1"],
+            fluids: ["altanic-creosote/0.1"],
             power: 1
         },
         output: {
@@ -710,7 +710,6 @@ chemicalComposer.recipes = [
         },
         craftTime: 80
     },
-    //blast compound
     {
         input: {
             items: ["pyratite/1", "spore-pod/1"],
