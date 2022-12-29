@@ -417,4 +417,4 @@ drawer: {
     ]
 }
 ambientSound: extractLoop
-ambientSoundVolume: 0.5
+ambientSoundVolume: 0.3
