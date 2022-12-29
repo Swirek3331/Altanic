@@ -14,6 +14,7 @@ research: {
 drawer: {
     type: multicraft.DrawRecipe
     drawers: [
+        //cryofluid
         {
             type: DrawMulti
             drawers: [
@@ -32,6 +33,9 @@ drawer: {
                     drawLiquidLight: true
                 }
                 {
+                    type: DrawCultivator
+                }
+                {
                     type: DrawDefault
                 }
                 {
@@ -40,6 +44,7 @@ drawer: {
                 }
             ]
         }
+        //sulfur from oil
         {
             type: DrawMulti
             drawers: [
@@ -52,6 +57,13 @@ drawer: {
                     drawLiquid: oil
                 }
                 {
+                    type: DrawCells
+                    particleColorFrom: 313131
+                    particleColorTo: E9D925
+                    particles: 50
+                    range: 7
+                }
+                {
                     type: DrawDefault
                 }
                 {
@@ -60,6 +72,7 @@ drawer: {
                 }
             ]
         }
+        //sulphur from gas
         {
             type: DrawMulti
             drawers: [
@@ -87,6 +100,7 @@ drawer: {
                 }
             ]
         }
+        //biofuel
         {
             type: DrawMulti
             drawers: [
@@ -103,6 +117,9 @@ drawer: {
                     drawLiquid: altanic-biofuel
                 }
                 {
+                    type: DrawCultivator
+                }
+                {
                     type: DrawDefault
                 }
                 {
@@ -111,6 +128,7 @@ drawer: {
                 }
             ]
         }
+        //oil from creosote
         {
             type: DrawMulti
             drawers: [
@@ -127,6 +145,9 @@ drawer: {
                     drawLiquid: oil
                 }
                 {
+                    type: DrawCultivator
+                }
+                {
                     type: DrawDefault
                 }
                 {
@@ -135,6 +156,7 @@ drawer: {
                 }
             ]
         }
+        //nitroglycerin
         {
             type: DrawMulti
             drawers: [
@@ -152,6 +174,9 @@ drawer: {
                     drawLiquidLight: true
                 }
                 {
+                    type: DrawCultivator
+                }
+                {
                     type: DrawDefault
                 }
                 {
@@ -160,6 +185,7 @@ drawer: {
                 }
             ]
         }
+        //coal
         {
             type: DrawMulti
             drawers: [
@@ -180,6 +206,7 @@ drawer: {
                 }
             ]
         }
+        //petroleum coke
         {
             type: DrawMulti
             drawers: [
@@ -200,6 +227,7 @@ drawer: {
                 }
             ]
         }
+        //creosote to pyratite and blast
         {
             type: DrawMulti
             drawers: [
@@ -227,6 +255,7 @@ drawer: {
                 }
             ]
         }
+        //pyratite
         {
             type: DrawMulti
             drawers: [
@@ -250,6 +279,7 @@ drawer: {
                 }
             ]
         }
+        //pyratite from coke
         {
             type: DrawMulti
             drawers: [
@@ -273,6 +303,7 @@ drawer: {
                 }
             ]
         }
+        //pyratite from naphta
         {
             type: DrawMulti
             drawers: [
@@ -285,6 +316,9 @@ drawer: {
                     drawLiquid: altanic-light-oil
                 }
                 {
+                    type: DrawCultivator
+                }
+                {
                     type: DrawCells
                     particleColorFrom: F7CBA4
                     particleColorTo: FFAA5F
@@ -300,6 +334,7 @@ drawer: {
                 }
             ]
         }
+        //blast compound
         {
             type: DrawMulti
             drawers: [
@@ -323,6 +358,7 @@ drawer: {
                 }
             ]
         }
+        //blast compund from sulfur
         {
             type: DrawMulti
             drawers: [
@@ -346,6 +382,7 @@ drawer: {
                 }
             ]
         }
+        //blast compund from nitroglycerin
         {
             type: DrawMulti
             drawers: [
@@ -356,6 +393,9 @@ drawer: {
                 {
                     type: DrawLiquidTile
                     drawLiquid: altanic-nitroglycerin
+                }
+                {
+                    type: DrawCultivator
                 }
                 {
                     type: DrawCells

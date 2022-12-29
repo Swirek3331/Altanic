@@ -320,7 +320,7 @@ centrifuge.recipes = [
     {
         input: {
             items: ["sand/14"],
-            fluids: ["creosote/0.1"],
+            fluids: ["altanic-creosote/0.1"],
             power: 0.8
         },
         output: {
@@ -671,7 +671,7 @@ chemicalComposer.recipes = [
     {
         input: {
             items: ["sand/14"],
-            fluids: ["creosote/0.1"],
+            fluids: ["altnaic-creosote/0.1"],
             power: 1
         },
         output: {
