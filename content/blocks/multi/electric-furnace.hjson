@@ -9,7 +9,7 @@ requirements: [
     silicon/20
 ]
 research: {
-    # bania
+    # badania
     parent: kiln
     # od bloku nazwanego powyżej będzie się w drzewku nic ciągnąć
     # można też dać wymagania badania, ale gra robi to samemu z jakimś tam mnożnikiem
