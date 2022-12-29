@@ -1,4 +1,4 @@
-# ![Altanic](sprites/github/icon.png)
+# ![Altanic](sprites/github/altanic.png) ![icon](/icon.png)
 
 My never finished "project" that has been archived and never finished since always.
 
