@@ -1,0 +1,420 @@
+size: 3
+health: 500
+category: crafting
+requirements: [
+    lead/75
+    graphite/65
+    titanium/135
+    silicon/100
+    metaglass/125
+]
+research: {
+    parent: cryofluid-mixer
+}
+drawer: {
+    type: multicraft.DrawRecipe
+    drawers: [
+        //cryofluid
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawLiquidTile
+                    drawLiquid: water
+                }
+                //If I good understand that should make a drawLiquid proces efect
+                {
+                    type: DrawLiquidTile
+                    drawLiquid: cryofluid
+                    drawLiquidLight: true
+                }
+                {
+                    type: DrawCultivator
+                }
+                {
+                    type: DrawDefault
+                }
+                {
+                    type: DrawRegion
+                    suffix: "-top"
+                }
+            ]
+        }
+        //sulfur from oil
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawLiquidTile
+                    drawLiquid: oil
+                }
+                {
+                    type: DrawCells
+                    particleColorFrom: 313131
+                    particleColorTo: E9D925
+                    particles: 50
+                    range: 7
+                }
+                {
+                    type: DrawDefault
+                }
+                {
+                    type: DrawRegion
+                    suffix: "-top"
+                }
+            ]
+        }
+        //sulphur from gas
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawLiquidTile
+                    drawLiquid: altanic-gas
+                }
+                {
+                    type: DrawCells
+                    particleColorFrom: 313131
+                    particleColorTo: E9D925
+                    particles: 75
+                    range: 7
+                }
+                {
+                    type: DrawDefault
+                }
+                {
+                    type: DrawRegion
+                    suffix: "-top"
+                }
+            ]
+        }
+        //biofuel
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawLiquidTile
+                    drawLiquid: altanic-plant-oil
+                }
+                {
+                    type: DrawLiquidTile
+                    drawLiquid: altanic-biofuel
+                }
+                {
+                    type: DrawCultivator
+                }
+                {
+                    type: DrawDefault
+                }
+                {
+                    type: DrawRegion
+                    suffix: "-top"
+                }
+            ]
+        }
+        //oil from creosote
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawLiquidTile
+                    drawLiquid: altanic-creosote
+                }
+                {
+                    type: DrawLiquidTile
+                    drawLiquid: oil
+                }
+                {
+                    type: DrawCultivator
+                }
+                {
+                    type: DrawDefault
+                }
+                {
+                    type: DrawRegion
+                    suffix: "-top"
+                }
+            ]
+        }
+        //nitroglycerin
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawLiquidTile
+                    drawLiquid: altanic-nitric-acid
+                }
+                {
+                    type: DrawLiquidTile
+                    drawLiquid: altanic-nitroglycerin
+                    drawLiquidLight: true
+                }
+                {
+                    type: DrawCultivator
+                }
+                {
+                    type: DrawDefault
+                }
+                {
+                    type: DrawRegion
+                    suffix: "-top"
+                }
+            ]
+        }
+        //coal
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawLiquidTile
+                    drawLiquid: oil
+                }
+                {
+                    type: DrawDefault
+                }
+                {
+                    type: DrawRegion
+                    suffix: "-top"
+                }
+            ]
+        }
+        //petroleum coke
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawLiquidTile
+                    drawLiquid: oil
+                }
+                {
+                    type: DrawDefault
+                }
+                {
+                    type: DrawRegion
+                    suffix: "-top"
+                }
+            ]
+        }
+        //creosote to pyratite and blast
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawLiquidTile
+                    drawLiquid: altanic-creosote
+                }
+                {
+                    type: DrawCells
+                    particleColorFrom: F7CBA4
+                    particleColorTo: FF795E
+                    particles: 75
+                    range: 7
+                }
+                {
+                    type: DrawDefault
+                }
+                {
+                    type: DrawRegion
+                    suffix: "-top"
+                }
+            ]
+        }
+        //pyratite
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawCells
+                    particleColorFrom: F7CBA4
+                    particleColorTo: FFAA5F
+                    particles: 75
+                    range: 7
+                }
+                {
+                    type: DrawDefault
+                }
+                {
+                    type: DrawRegion
+                    suffix: "-top"
+                }
+            ]
+        }
+        //pyratite from coke
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawCells
+                    particleColorFrom: F7CBA4
+                    particleColorTo: FFAA5F
+                    particles: 75
+                    range: 7
+                }
+                {
+                    type: DrawDefault
+                }
+                {
+                    type: DrawRegion
+                    suffix: "-top"
+                }
+            ]
+        }
+        //pyratite from naphta
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawLiquidTile
+                    drawLiquid: altanic-light-oil
+                }
+                {
+                    type: DrawCultivator
+                }
+                {
+                    type: DrawCells
+                    particleColorFrom: F7CBA4
+                    particleColorTo: FFAA5F
+                    particles: 75
+                    range: 7
+                }
+                {
+                    type: DrawDefault
+                }
+                {
+                    type: DrawRegion
+                    suffix: "-top"
+                }
+            ]
+        }
+        //blast compound
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawCells
+                    particleColorFrom: F7CBA4
+                    particleColorTo: FF795E
+                    particles: 75
+                    range: 7
+                }
+                {
+                    type: DrawDefault
+                }
+                {
+                    type: DrawRegion
+                    suffix: "-top"
+                }
+            ]
+        }
+        //blast compund from sulfur
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawCells
+                    particleColorFrom: F7CBA4
+                    particleColorTo: FF795E
+                    particles: 75
+                    range: 7
+                }
+                {
+                    type: DrawDefault
+                }
+                {
+                    type: DrawRegion
+                    suffix: "-top"
+                }
+            ]
+        }
+        //blast compund from nitroglycerin
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawLiquidTile
+                    drawLiquid: altanic-nitroglycerin
+                    drawLiquidLight: true
+                }
+                {
+                    type: DrawCultivator
+                }
+                {
+                    type: DrawCells
+                    particleColorFrom: F7CBA4
+                    particleColorTo: FF795E
+                    particles: 75
+                    range: 7
+                }
+                {
+                    type: DrawDefault
+                }
+                {
+                    type: DrawRegion
+                    suffix: "-top"
+                }
+            ]
+        }
+    ]
+}
+ambientSound: extractLoop
+ambientSoundVolume: 0.25

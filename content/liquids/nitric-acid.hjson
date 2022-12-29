@@ -1,0 +1,5 @@
+name: Nitric Acid
+color: FFFF94
+research: {
+    parent: sulfuric-acid
+}

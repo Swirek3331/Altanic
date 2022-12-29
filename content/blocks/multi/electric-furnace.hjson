@@ -51,3 +51,5 @@ drawer: {
         # każdy drawer dla osobnej receptury
     ]
 }
+ambientSound: smelter
+ambientSoundVolume: 0.02
