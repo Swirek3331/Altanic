@@ -160,5 +160,220 @@ drawer: {
                 }
             ]
         }
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawLiquidTile
+                    drawLiquid: oil
+                }
+                {
+                    type: DrawDefault
+                }
+                {
+                    type: DrawRegion
+                    suffix: "-top"
+                }
+            ]
+        }
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawLiquidTile
+                    drawLiquid: oil
+                }
+                {
+                    type: DrawDefault
+                }
+                {
+                    type: DrawRegion
+                    suffix: "-top"
+                }
+            ]
+        }
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawLiquidTile
+                    drawLiquid: altanic-creosote
+                }
+                {
+                    type: DrawCells
+                    particleColorFrom: F7CBA4
+                    particleColorTo: FF795E
+                    particles: 75
+                    range: 7
+                }
+                {
+                    type: DrawDefault
+                }
+                {
+                    type: DrawRegion
+                    suffix: "-top"
+                }
+            ]
+        }
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawCells
+                    particleColorFrom: F7CBA4
+                    particleColorTo: FFAA5F
+                    particles: 75
+                    range: 7
+                }
+                {
+                    type: DrawDefault
+                }
+                {
+                    type: DrawRegion
+                    suffix: "-top"
+                }
+            ]
+        }
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawCells
+                    particleColorFrom: F7CBA4
+                    particleColorTo: FFAA5F
+                    particles: 75
+                    range: 7
+                }
+                {
+                    type: DrawDefault
+                }
+                {
+                    type: DrawRegion
+                    suffix: "-top"
+                }
+            ]
+        }
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawLiquidTile
+                    drawLiquid: altanic-light-oil
+                }
+                {
+                    type: DrawCells
+                    particleColorFrom: F7CBA4
+                    particleColorTo: FFAA5F
+                    particles: 75
+                    range: 7
+                }
+                {
+                    type: DrawDefault
+                }
+                {
+                    type: DrawRegion
+                    suffix: "-top"
+                }
+            ]
+        }
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawCells
+                    particleColorFrom: F7CBA4
+                    particleColorTo: FF795E
+                    particles: 75
+                    range: 7
+                }
+                {
+                    type: DrawDefault
+                }
+                {
+                    type: DrawRegion
+                    suffix: "-top"
+                }
+            ]
+        }
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawCells
+                    particleColorFrom: F7CBA4
+                    particleColorTo: FF795E
+                    particles: 75
+                    range: 7
+                }
+                {
+                    type: DrawDefault
+                }
+                {
+                    type: DrawRegion
+                    suffix: "-top"
+                }
+            ]
+        }
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawLiquidTile
+                    drawLiquid: altanic-nitroglycerin
+                }
+                {
+                    type: DrawCells
+                    particleColorFrom: F7CBA4
+                    particleColorTo: FF795E
+                    particles: 75
+                    range: 7
+                }
+                {
+                    type: DrawDefault
+                }
+                {
+                    type: DrawRegion
+                    suffix: "-top"
+                }
+            ]
+        }
     ]
 }
+ambientSound: extraLoop
+ambientSoundVolume: 0.1

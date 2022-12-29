@@ -297,7 +297,7 @@ const centrifuge = multi.MultiCrafter("centrifuge");
 centrifuge.size = 2;
 centrifuge.health = 400;
 centrifuge.recipes = [
-    {//In game normal centrifuge has some weird thing with time and consumption, but I haven't got any knowledge hot to do it here.
+    {
         input: {
             fluids: ["oil/0.2"],
             power: 0.7
@@ -316,6 +316,17 @@ centrifuge.recipes = [
             items: ["altanic-petroleum-coke/1"]
         },
         craftTime: 60
+    },
+    {
+        input: {
+            items: ["sand/14"],
+            fluids: ["creosote/0.1"],
+            power: 0.8
+        },
+        output: {
+            items: ["pyratite/5", "blast-compound/2"]
+        },
+        craftTime: 120
     }
 ]
 
@@ -326,10 +337,20 @@ thermalCentrifuge.recipes = [
     {
         input: {
             fluids: ["oil/0.1"],
-            power: 3,
+            power: 2,
         },
         output: {
             items: ["coal/6"],
+        },
+        craftTime: 30
+    },
+    {
+        input: {
+            fluids: ["oil/0.2"],
+            power: 1.6
+        },
+        output: {
+            items: ["altanic-petroleum-coke/4"]
         },
         craftTime: 30
     },
@@ -342,6 +363,17 @@ thermalCentrifuge.recipes = [
             items: ["altanic-petroleum-coke/6"],
         },
         craftTime: 60
+    },
+    {
+        input: {
+            items: ["sand/20"],
+            fluids: ["creosote/0.1"],
+            power: 1.5
+        },
+        output: {
+            items: ["pyratite/5", "blast-compound/4"]
+        },
+        craftTime: 90
     }
 ]
 
@@ -410,18 +442,6 @@ solidMixer.recipes = [
         },
         output: {
             items: ["blast-compound/10"]
-        },
-        craftTime: 120
-    },
-    //other
-    {
-        input: {
-            items: ["sand/14"],
-            fluids: ["creosote/0.1"],
-            power: 0.8
-        },
-        output: {
-            items: ["pyratite/5", "blast-compound/2"]
         },
         craftTime: 120
     }
@@ -627,5 +647,99 @@ chemicalComposer.recipes = [
             fluids: ["altanic-nitroglycerin/0.2"]
         },
         craftTime: 60
+    },
+    {
+        input: {
+            fluids: ["oil/0.2"],
+            power: 1
+        },
+        output: {
+            items: ["coal/3"]
+        },
+        craftTime: 30
+    },
+    {
+        input: {
+            fluids: ["oil/0.1"],
+            power: 1.5
+        },
+        output: {
+            items: ["altanic-petroleum-coke/2"]
+        },
+        craftTime: 60
+    },
+    {
+        input: {
+            items: ["sand/14"],
+            fluids: ["creosote/0.1"],
+            power: 1
+        },
+        output: {
+            items: ["pyratite/4", "blast-compound/3"]
+        },
+        craftTime: 120
+    },
+    {
+        input: {
+            items: ["coal/1", "lead/2", "sand/2"],
+            power: 0.2
+        },
+        output: {
+            items: ["pyratite/1"]
+        },
+        craftTime: 60
+    },
+    {
+        input: {
+            items: ["altanic-coal-coke/2", "sand/4"],
+            power: 0.3
+        },
+        output: {
+            items: ["pyratite/2"]
+        },
+        craftTime: 60
+    },
+    {
+        input: {
+            fluids: ["altanic-light-oil/0.1"],
+            items: ["sand/20"],
+            power: 1.2
+        },
+        output: {
+            items: ["pyratite/10"]
+        },
+        craftTime: 80
+    },
+    //blast compound
+    {
+        input: {
+            items: ["pyratite/1", "spore-pod/1"],
+            power: 0.4
+        },
+        output: {
+            items: ["blast-compound/1"]
+        },
+        craftTime: 60
+    },
+    {
+        input: {
+            items: ["altanic-sulfur/2", "sand/4"],
+            power: 0.6
+        },
+        output: {
+            items: ["blast-compound/2"]
+        },
+        craftTime: 60
+    },
+    {
+        input: {
+            items: ["sand/20"],
+            fluids: ["altanic-nitroglycerin/0.1"],
+            power: 1.8
+        },
+        output: {
+            items: ["blast-compound/10"]
+        },
+        craftTime: 90
     },
 ]
