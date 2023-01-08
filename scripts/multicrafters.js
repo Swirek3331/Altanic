@@ -454,7 +454,7 @@ farmer.recipes = [
     //"normal"
     {
         input: {
-            fluids: ["water/0.1"],
+            fluids: ["water/0.3"],
             power: 1.5
         },
         output: {
@@ -465,7 +465,7 @@ farmer.recipes = [
     //speedy
     {
         input: {
-            fluids: ["water/0.1"],
+            fluids: ["water/0.3"],
             power: 1.5
         },
         output: {
@@ -476,7 +476,7 @@ farmer.recipes = [
     //much
     {
         input: {
-            fluids: ["water/0.3"],
+            fluids: ["water/0.6"],
             power: 3,
         },
         output: {
@@ -487,7 +487,7 @@ farmer.recipes = [
     //for wood
     {
         input: {
-            fluids: ["water/0.4"],
+            fluids: ["water/0.8"],
             power: 3
         },
         output: {
@@ -497,7 +497,7 @@ farmer.recipes = [
     },
     {
         input: {
-            fluids: ["water/0.4"],
+            fluids: ["water/0.8"],
             power: 3
         },
         output: {
@@ -507,7 +507,7 @@ farmer.recipes = [
     },
     {
         input: {
-            fluids: ["water/0.6"],
+            fluids: ["water/1.2"],
             power: 6
         },
         output: {
@@ -518,7 +518,7 @@ farmer.recipes = [
     //spore pods
     {
         input: {
-            fluids: ["water/0.3"],
+            fluids: ["water/0.6"],
             //If someone abmits that cultivator uses more for less, remember, cultivator extract spores from atmosphere, farmer grow them.
             power: 1.5
         },
@@ -529,7 +529,7 @@ farmer.recipes = [
     },
     {
         input: {
-            fluids: ["water/0.3"],
+            fluids: ["water/0.6"],
             power: 1.5
         },
         output: {
@@ -539,7 +539,7 @@ farmer.recipes = [
     },
     {
         input: {
-            fluids: ["water/0.6"],
+            fluids: ["water/1"],
             power: 3
         },
         output: {
