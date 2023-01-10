@@ -455,7 +455,7 @@ farmer.recipes = [
        {
         input: {
             fluids: ["water/0.1"],
-            power: 1.5
+            power: 1
         },
         output: {
             items: ["altanic-biomass/50"]
@@ -466,7 +466,7 @@ farmer.recipes = [
     {
         input: {
             fluids: ["water/0.1"],
-            power: 1.5
+            power: 1
         },
         output: {
             items: ["altanic-biomass/25"]
@@ -477,7 +477,7 @@ farmer.recipes = [
     {
         input: {
             fluids: ["water/0.3"],
-            power: 3
+            power: 2
         },
         output: {
             items: ["altanic-biomass/200"]
@@ -488,7 +488,7 @@ farmer.recipes = [
     {
         input: {
             fluids: ["water/0.4"],
-            power: 3
+            power: 2
         },
         output: {
             items: ["altanic-wood/150", "altanic-biomass/15"]
@@ -498,7 +498,7 @@ farmer.recipes = [
     {
         input: {
             fluids: ["water/0.4"],
-            power: 3
+            power: 2
         },
         output: {
             items: ["altanic-wood/50", "altanic-biomass/5"]
@@ -508,7 +508,7 @@ farmer.recipes = [
     {
         input: {
             fluids: ["water/0.6"],
-            power: 6
+            power: 4
         },
         output: {
             items: ["altanic-wood/300", "altanic-biomass/30"]
@@ -520,7 +520,7 @@ farmer.recipes = [
         input: {
             fluids: ["water/0.3"],
             //If someone abmits that cultivator uses more for less, remember, cultivator extract spores from atmosphere, farmer grow them.
-            power: 1.5
+            power: 1
         },
         output: {
             items: ["spore-pod/30"]
@@ -530,7 +530,7 @@ farmer.recipes = [
     {
         input: {
             fluids: ["water/0.3"],
-            power: 1.5
+            power: 1
         },
         output: {
             items: ["spore-pod/10"]
@@ -540,7 +540,7 @@ farmer.recipes = [
     {
         input: {
             fluids: ["water/0.6"],
-            power: 3
+            power: 2
         },
         output: {
             items: ["spore-pod/60"]

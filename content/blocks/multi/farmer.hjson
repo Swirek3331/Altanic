@@ -9,7 +9,7 @@ itemCapacity: 1500
 liquidCapacity: 100
 category: crafting
 research: {
-    parent: cultivator
+    parent: farm
     objectives: [
     {
       type: SectorComplete
