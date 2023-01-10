@@ -7,6 +7,12 @@ requirements: [
 category: crafting
 research: {
     parent: cultivator
+    objectives: [
+    {
+      type: SectorComplete
+      preset: overgrowth
+    }
+  ]
 }
 drawer: {
     type: multicraft.DrawRecipe
