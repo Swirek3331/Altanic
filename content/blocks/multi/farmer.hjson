@@ -1,9 +1,12 @@
 requirements: [
     lead/350
+    graphite/185
     silicon/115
     metaglass/245
     wall-alloy/500
 ]
+itemCapacity: 1500
+liquidCapacity: 100
 category: crafting
 research: {
     parent: cultivator
