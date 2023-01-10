@@ -14,7 +14,6 @@ drawer: {
                 }
                 {
                     type: DrawRegion
-                    # That should make it spin
                     spinSprite: true
                     rotateSpeed: 3
                     suffix: "-spinner"
@@ -38,7 +37,59 @@ drawer: {
                 }
                 {
                     type: DrawLiquidTile
+                    drawLiquid: oil
+                }
+                {
+                    type: DrawRegion
+                    spinSprite: true
+                    rotateSpeed: 3
+                    suffix: "-spinner"
+                }
+                {
+                    type: DrawDefault
+                }
+                {
+                    type: DrawRegion
+                    suffix: "-top"
+                }
+            ]
+        }
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawLiquidTile
                     drawLiquid: altanic-heavy-oil
+                }
+                {
+                    type: DrawRegion
+                    spinSprite: true
+                    rotateSpeed: 3
+                    suffix: "-spinner"
+                }
+                {
+                    type: DrawDefault
+                }
+                {
+                    type: DrawRegion
+                    suffix: "-top"
+                }
+            ]
+        }
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawLiquidTile
+                    drawLiquid: altanic-creosote
                 }
                 {
                     type: DrawRegion
