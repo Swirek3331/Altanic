@@ -1,8 +1,8 @@
 requirements: [
-    copper/150
-    lead/150
-    silicon/60
-    metaglass/40
+    lead/350
+    silicon/115
+    metaglass/245
+    wall-alloy/500
 ]
 category: crafting
 research: {

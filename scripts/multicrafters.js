@@ -460,7 +460,7 @@ farmer.recipes = [
         output: {
             items: ["altanic-biomass/100"]
         },
-        craftTime: 600
+        craftTime: 900
     },
     //speedy
     {
@@ -471,7 +471,7 @@ farmer.recipes = [
         output: {
             items: ["altanic-biomass/25"]
         },
-        craftTime: 200
+        craftTime: 600
     },
     //much
     {
@@ -482,7 +482,7 @@ farmer.recipes = [
         output: {
             items: ["altanic-biomass/500"]
         },
-        craftTime: 900
+        craftTime: 1200
     },
     //for wood
     {
@@ -493,7 +493,7 @@ farmer.recipes = [
         output: {
             items: ["altanic-wood/250", "altanic-biomass/25"]
         },
-        craftTime: 1200
+        craftTime: 1500
     },
     {
         input: {
@@ -503,7 +503,7 @@ farmer.recipes = [
         output: {
             items: ["altanic-wood/50", "altanic-biomass/5"]
         },
-        craftTime: 600
+        craftTime: 1200
     },
     {
         input: {
@@ -513,7 +513,7 @@ farmer.recipes = [
         output: {
             items: ["altanic-wood/1000", "altanic-biomass/100"]
         },
-        craftTime: 1500
+        craftTime: 1800
     },
     //spore pods
     {
@@ -525,7 +525,7 @@ farmer.recipes = [
         output: {
             items: ["spore-pod/80"]
         },
-        craftTime: 300
+        craftTime: 600
     },
     {
         input: {
@@ -535,7 +535,7 @@ farmer.recipes = [
         output: {
             items: ["spore-pod/20"]
         },
-        craftTime: 120
+        craftTime: 300
     },
     {
         input: {
@@ -545,7 +545,7 @@ farmer.recipes = [
         output: {
             items: ["spore-pod/200"]
         },
-        craftTime: 600
+        craftTime: 900
     }
     //Will be changed probably.
 ]
