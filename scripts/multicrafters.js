@@ -352,11 +352,11 @@ thermalCentrifuge.recipes = [
         output: {
             items: ["altanic-petroleum-coke/4"]
         },
-        craftTime: 30
+        craftTime: 60
     },
     {
         input: {
-            fluids: ["altanic-heavy-oil/0.2"],
+            fluids: ["altanic-heavy-oil/0.15"],
             power: 4,
         },
         output: {

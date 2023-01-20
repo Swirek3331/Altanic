@@ -14,3 +14,253 @@ research: {
     }
   ]
 }
+drawer: {
+    type: multicraft.DrawRecipe
+    drawers: [
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawLiquidTile
+                    drawLiquid: water
+                }
+                {
+                    type: DrawCultivator
+                }
+                {
+                    type: DrawCells
+                    color: 69BE2E
+                    particleColorFrom: 4B692D
+                    particleColorTo: 99E550
+                    particles: 75
+                    range: 5
+                }
+                {
+                    type: DrawDefault
+                }
+            ]
+        }
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawLiquidTile
+                    drawLiquid: water
+                }
+                {
+                    type: DrawCultivator
+                }
+                {
+                    type: DrawCells
+                    color: 69BE2E
+                    particleColorFrom: 4B692D
+                    particleColorTo: 99E550
+                    particles: 75
+                    range: 5
+                }
+                {
+                    type: DrawDefault
+                }
+            ]
+        }
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawLiquidTile
+                    drawLiquid: water
+                }
+                {
+                    type: DrawCultivator
+                }
+                {
+                    type: DrawCells
+                    color: 69BE2E
+                    particleColorFrom: 4B692D
+                    particleColorTo: 99E550
+                    particles: 75
+                    range: 5
+                }
+                {
+                    type: DrawDefault
+                }
+            ]
+        }
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawLiquidTile
+                    drawLiquid: water
+                }
+                {
+                    type: DrawCultivator
+                }
+                {
+                    type: DrawCells
+                    color: 8F974A
+                    particleColorFrom: 7D4F07
+                    particleColorTo: 99E550
+                    particles: 75
+                    range: 5
+                }
+                {
+                    type: DrawDefault
+                }
+            ]
+        }
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawLiquidTile
+                    drawLiquid: water
+                }
+                {
+                    type: DrawCultivator
+                }
+                {
+                    type: DrawCells
+                    color: 8F974A
+                    particleColorFrom: 7D4F07
+                    particleColorTo: 99E550
+                    particles: 75
+                    range: 5
+                }
+                {
+                    type: DrawDefault
+                }
+            ]
+        }
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawLiquidTile
+                    drawLiquid: water
+                }
+                {
+                    type: DrawCultivator
+                }
+                {
+                    type: DrawCells
+                    color: 8F974A
+                    particleColorFrom: 7D4F07
+                    particleColorTo: 99E550
+                    particles: 75
+                    range: 5
+                }
+                {
+                    type: DrawDefault
+                }
+            ]
+        }
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawLiquidTile
+                    drawLiquid: water
+                }
+                {
+                    type: DrawCultivator
+                }
+                {
+                    type: DrawCells
+                    color: 7457CE
+                    particleColorFrom: 9E78DC
+                    particleColorTo: 5541B1
+                    particles: 75
+                    range: 5
+                }
+                {
+                    type: DrawDefault
+                }
+            ]
+        }
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawLiquidTile
+                    drawLiquid: water
+                }
+                {
+                    type: DrawCultivator
+                }
+                {
+                    type: DrawCells
+                    color: 7457CE
+                    particleColorFrom: 9E78DC
+                    particleColorTo: 5541B1
+                    particles: 75
+                    range: 5
+                }
+                {
+                    type: DrawDefault
+                }
+            ]
+        }
+        {
+            type: DrawMulti
+            drawers: [
+                {
+                    type: DrawRegion
+                    suffix: "-bottom"
+                }
+                {
+                    type: DrawLiquidTile
+                    drawLiquid: water
+                }
+                {
+                    type: DrawCultivator
+                }
+                {
+                    type: DrawCells
+                    color: 7457CE
+                    particleColorFrom: 9E78DC
+                    particleColorTo: 5541B1
+                    particles: 75
+                    range: 5
+                }
+                {
+                    type: DrawDefault
+                }
+            ]
+        }
+    ]
+}
+ambientSound: bioLoop
+ambientSoundVolume: 0.02
