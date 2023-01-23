@@ -550,109 +550,6 @@ farmer.recipes = [
     //Will be changed probably.
 ]
 
-const farmingFacility = multi.MultiCrafter("farmer");
-farmingFacility.size = 3;
-farmingFacility.health = 500;
-farmingFacility.recipes = [
-    //"normal"
-    {
-        input: {
-            fluids: ["water/0.3"],
-            power: 1.5
-        },
-        output: {
-            items: ["altanic-biomass/100"]
-        },
-        craftTime: 900
-    },
-    //speedy
-    {
-        input: {
-            fluids: ["water/0.3"],
-            power: 1.5
-        },
-        output: {
-            items: ["altanic-biomass/50"]
-        },
-        craftTime: 600
-    },
-    //much
-    {
-        input: {
-            fluids: ["water/0.6"],
-            power: 3,
-        },
-        output: {
-            items: ["altanic-biomass/500"]
-        },
-        craftTime: 1200
-    },
-    //for wood
-    {
-        input: {
-            fluids: ["water/0.8"],
-            power: 3
-        },
-        output: {
-            items: ["altanic-wood/250", "altanic-biomass/50"]
-        },
-        craftTime: 1500
-    },
-    {
-        input: {
-            fluids: ["water/0.8"],
-            power: 3
-        },
-        output: {
-            items: ["altanic-wood/50", "altanic-biomass/10"]
-        },
-        craftTime: 1200
-    },
-    {
-        input: {
-            fluids: ["water/1.2"],
-            power: 6
-        },
-        output: {
-            items: ["altanic-wood/1000", "altanic-biomass/200"]
-        },
-        craftTime: 1800
-    },
-    //spore pods
-    {
-        input: {
-            fluids: ["water/0.6"],
-            //If someone abmits that cultivator uses more for less, remember, cultivator extract spores from atmosphere, farmer grow them.
-            power: 1.5
-        },
-        output: {
-            items: ["spore-pod/80"]
-        },
-        craftTime: 600
-    },
-    {
-        input: {
-            fluids: ["water/0.6"],
-            power: 1.5
-        },
-        output: {
-            items: ["spore-pod/40"]
-        },
-        craftTime: 300
-    },
-    {
-        input: {
-            fluids: ["water/1"],
-            power: 3
-        },
-        output: {
-            items: ["spore-pod/200"]
-        },
-        craftTime: 900
-    }
-    //Will be changed probably.
-]
-
 const fermenter = multi.MultiCrafter("fermenter");
 fermenter.recipes = [
     {
@@ -844,4 +741,109 @@ chemicalComposer.recipes = [
         },
         craftTime: 90
     },
+]
+
+//facilities
+
+const farmingFacility = multi.MultiCrafter("farmer");
+farmingFacility.size = 3;
+farmingFacility.health = 500;
+farmingFacility.recipes = [
+    //"normal"
+    {
+        input: {
+            fluids: ["water/0.3"],
+            power: 1.5
+        },
+        output: {
+            items: ["altanic-biomass/100"]
+        },
+        craftTime: 900
+    },
+    //speedy
+    {
+        input: {
+            fluids: ["water/0.3"],
+            power: 1.5
+        },
+        output: {
+            items: ["altanic-biomass/50"]
+        },
+        craftTime: 600
+    },
+    //much
+    {
+        input: {
+            fluids: ["water/0.6"],
+            power: 3,
+        },
+        output: {
+            items: ["altanic-biomass/500"]
+        },
+        craftTime: 1200
+    },
+    //for wood
+    {
+        input: {
+            fluids: ["water/0.8"],
+            power: 3
+        },
+        output: {
+            items: ["altanic-wood/250", "altanic-biomass/50"]
+        },
+        craftTime: 1500
+    },
+    {
+        input: {
+            fluids: ["water/0.8"],
+            power: 3
+        },
+        output: {
+            items: ["altanic-wood/50", "altanic-biomass/10"]
+        },
+        craftTime: 1200
+    },
+    {
+        input: {
+            fluids: ["water/1.2"],
+            power: 6
+        },
+        output: {
+            items: ["altanic-wood/1000", "altanic-biomass/200"]
+        },
+        craftTime: 1800
+    },
+    //spore pods
+    {
+        input: {
+            fluids: ["water/0.6"],
+            //If someone abmits that cultivator uses more for less, remember, cultivator extract spores from atmosphere, farmer grow them.
+            power: 1.5
+        },
+        output: {
+            items: ["spore-pod/80"]
+        },
+        craftTime: 600
+    },
+    {
+        input: {
+            fluids: ["water/0.6"],
+            power: 1.5
+        },
+        output: {
+            items: ["spore-pod/40"]
+        },
+        craftTime: 300
+    },
+    {
+        input: {
+            fluids: ["water/1"],
+            power: 3
+        },
+        output: {
+            items: ["spore-pod/200"]
+        },
+        craftTime: 900
+    }
+    //Will be changed probably.
 ]
