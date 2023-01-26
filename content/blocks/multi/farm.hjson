@@ -1,19 +1,16 @@
 requirements: [
-    lead/350
-    graphite/185
-    silicon/115
-    metaglass/245
-    wall-alloy/500
+    copper/150
+    lead/150
+    silicon/60
+    metaglass/40
 ]
-itemCapacity: 1500
-liquidCapacity: 100
 category: crafting
 research: {
-    parent: farm
+    parent: cultivator
     objectives: [
     {
       type: SectorComplete
-      preset: overgrowth
+      preset: biomassFacility
     }
   ]
 }
@@ -39,8 +36,8 @@ drawer: {
                     color: 69BE2E
                     particleColorFrom: 4B692D
                     particleColorTo: 99E550
-                    particles: 100
-                    range: 7
+                    particles: 75
+                    range: 5
                 }
                 {
                     type: DrawDefault
@@ -66,8 +63,8 @@ drawer: {
                     color: 69BE2E
                     particleColorFrom: 4B692D
                     particleColorTo: 99E550
-                    particles: 100
-                    range: 7
+                    particles: 75
+                    range: 5
                 }
                 {
                     type: DrawDefault
@@ -93,8 +90,8 @@ drawer: {
                     color: 69BE2E
                     particleColorFrom: 4B692D
                     particleColorTo: 99E550
-                    particles: 100
-                    range: 7
+                    particles: 75
+                    range: 5
                 }
                 {
                     type: DrawDefault
@@ -120,8 +117,8 @@ drawer: {
                     color: 8F974A
                     particleColorFrom: 7D4F07
                     particleColorTo: 99E550
-                    particles: 100
-                    range: 7
+                    particles: 75
+                    range: 5
                 }
                 {
                     type: DrawDefault
@@ -147,8 +144,8 @@ drawer: {
                     color: 8F974A
                     particleColorFrom: 7D4F07
                     particleColorTo: 99E550
-                    particles: 100
-                    range: 7
+                    particles: 75
+                    range: 5
                 }
                 {
                     type: DrawDefault
@@ -174,8 +171,8 @@ drawer: {
                     color: 8F974A
                     particleColorFrom: 7D4F07
                     particleColorTo: 99E550
-                    particles: 100
-                    range: 7
+                    particles: 75
+                    range: 5
                 }
                 {
                     type: DrawDefault
@@ -201,8 +198,8 @@ drawer: {
                     color: 7457CE
                     particleColorFrom: 9E78DC
                     particleColorTo: 5541B1
-                    particles: 100
-                    range: 7
+                    particles: 75
+                    range: 5
                 }
                 {
                     type: DrawDefault
@@ -228,8 +225,8 @@ drawer: {
                     color: 7457CE
                     particleColorFrom: 9E78DC
                     particleColorTo: 5541B1
-                    particles: 100
-                    range: 7
+                    particles: 75
+                    range: 5
                 }
                 {
                     type: DrawDefault
@@ -255,8 +252,8 @@ drawer: {
                     color: 7457CE
                     particleColorFrom: 9E78DC
                     particleColorTo: 5541B1
-                    particles: 100
-                    range: 7
+                    particles: 75
+                    range: 5
                 }
                 {
                     type: DrawDefault

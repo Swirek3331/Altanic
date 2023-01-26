@@ -230,7 +230,7 @@ blastFurnace.recipes = [
         },
         output: {
             items: ["altanic-wall-alloy/5"],
-            fluids: ["slag/0.2"]
+            fluids: ["slag/0.1"]
         },
         craftTime: 180
     },
@@ -241,7 +241,7 @@ blastFurnace.recipes = [
         },
         output: {
             items: ["altanic-wall-alloy/5"],
-            fluids: ["slag/0.2"]
+            fluids: ["slag/0.1"]
         },
         craftTime: 180
     },
@@ -253,7 +253,7 @@ blastFurnace.recipes = [
         },
         output: {
             items: ["altanic-wall-alloy/5"],
-            fluids: ["slag/0.2"]
+            fluids: ["slag/0.1"]
         },
         craftTime: 180
     },
@@ -264,7 +264,7 @@ blastFurnace.recipes = [
         },
         output: {
             items: ["altanic-wall-alloy/5"],
-            fluids: ["slag/0.2"]
+            fluids: ["slag/0.1"]
         },
         craftTime: 180
     },
@@ -276,7 +276,7 @@ blastFurnace.recipes = [
         },
         output: {
             items: ["altanic-wall-alloy/10"],
-            fluids: ["slag/0.4"]
+            fluids: ["slag/0.2"]
         },
         craftTime: 180
     },
@@ -287,7 +287,7 @@ blastFurnace.recipes = [
         },
         output: {
             items: ["altanic-wall-alloy/10"],
-            fluids: ["slag/0.4"]
+            fluids: ["slag/0.2"]
         },
         craftTime: 180
     }
@@ -352,11 +352,11 @@ thermalCentrifuge.recipes = [
         output: {
             items: ["altanic-petroleum-coke/4"]
         },
-        craftTime: 30
+        craftTime: 60
     },
     {
         input: {
-            fluids: ["altanic-heavy-oil/0.2"],
+            fluids: ["altanic-heavy-oil/0.15"],
             power: 4,
         },
         output: {
@@ -447,18 +447,18 @@ solidMixer.recipes = [
     }
 ]
 
-const farmer = multi.MultiCrafter("farmer");
-farmer.size = 3;
-farmer.health = 500;
+const farmer = multi.MultiCrafter("farm");
+farmer.size = 2;
+farmer.health = 400;
 farmer.recipes = [
-    //"normal"
-    {
+       //"normal"
+       {
         input: {
             fluids: ["water/0.1"],
-            power: 1.5
+            power: 1
         },
         output: {
-            items: ["altanic-biomass/100"]
+            items: ["altanic-biomass/50"]
         },
         craftTime: 600
     },
@@ -466,21 +466,21 @@ farmer.recipes = [
     {
         input: {
             fluids: ["water/0.1"],
-            power: 1.5
+            power: 1
         },
         output: {
             items: ["altanic-biomass/25"]
         },
-        craftTime: 200
+        craftTime: 300
     },
     //much
     {
         input: {
             fluids: ["water/0.3"],
-            power: 3,
+            power: 2
         },
         output: {
-            items: ["altanic-biomass/500"]
+            items: ["altanic-biomass/200"]
         },
         craftTime: 900
     },
@@ -488,30 +488,30 @@ farmer.recipes = [
     {
         input: {
             fluids: ["water/0.4"],
-            power: 3
+            power: 2
         },
         output: {
-            items: ["altanic-wood/250", "altanic-biomass/25"]
+            items: ["altanic-wood/150", "altanic-biomass/15"]
         },
         craftTime: 1200
     },
     {
         input: {
             fluids: ["water/0.4"],
-            power: 3
+            power: 2
         },
         output: {
             items: ["altanic-wood/50", "altanic-biomass/5"]
         },
-        craftTime: 600
+        craftTime: 900
     },
     {
         input: {
             fluids: ["water/0.6"],
-            power: 6
+            power: 4
         },
         output: {
-            items: ["altanic-wood/1000", "altanic-biomass/100"]
+            items: ["altanic-wood/300", "altanic-biomass/30"]
         },
         craftTime: 1500
     },
@@ -520,32 +520,32 @@ farmer.recipes = [
         input: {
             fluids: ["water/0.3"],
             //If someone abmits that cultivator uses more for less, remember, cultivator extract spores from atmosphere, farmer grow them.
-            power: 1.5
+            power: 1
         },
         output: {
-            items: ["spore-pod/80"]
+            items: ["spore-pod/30"]
         },
         craftTime: 300
     },
     {
         input: {
             fluids: ["water/0.3"],
-            power: 1.5
+            power: 1
         },
         output: {
-            items: ["spore-pod/20"]
+            items: ["spore-pod/10"]
         },
-        craftTime: 120
+        craftTime: 180
     },
     {
         input: {
             fluids: ["water/0.6"],
-            power: 3
+            power: 2
         },
         output: {
-            items: ["spore-pod/200"]
+            items: ["spore-pod/60"]
         },
-        craftTime: 600
+        craftTime: 420
     }
     //Will be changed probably.
 ]
@@ -741,4 +741,109 @@ chemicalComposer.recipes = [
         },
         craftTime: 90
     },
+]
+
+//facilities
+
+const farmingFacility = multi.MultiCrafter("farmer");
+farmingFacility.size = 3;
+farmingFacility.health = 500;
+farmingFacility.recipes = [
+    //"normal"
+    {
+        input: {
+            fluids: ["water/0.3"],
+            power: 1.5
+        },
+        output: {
+            items: ["altanic-biomass/100"]
+        },
+        craftTime: 900
+    },
+    //speedy
+    {
+        input: {
+            fluids: ["water/0.3"],
+            power: 1.5
+        },
+        output: {
+            items: ["altanic-biomass/50"]
+        },
+        craftTime: 600
+    },
+    //much
+    {
+        input: {
+            fluids: ["water/0.6"],
+            power: 3,
+        },
+        output: {
+            items: ["altanic-biomass/500"]
+        },
+        craftTime: 1200
+    },
+    //for wood
+    {
+        input: {
+            fluids: ["water/0.8"],
+            power: 3
+        },
+        output: {
+            items: ["altanic-wood/250", "altanic-biomass/50"]
+        },
+        craftTime: 1500
+    },
+    {
+        input: {
+            fluids: ["water/0.8"],
+            power: 3
+        },
+        output: {
+            items: ["altanic-wood/50", "altanic-biomass/10"]
+        },
+        craftTime: 1200
+    },
+    {
+        input: {
+            fluids: ["water/1.2"],
+            power: 6
+        },
+        output: {
+            items: ["altanic-wood/1000", "altanic-biomass/200"]
+        },
+        craftTime: 1800
+    },
+    //spore pods
+    {
+        input: {
+            fluids: ["water/0.6"],
+            //If someone abmits that cultivator uses more for less, remember, cultivator extract spores from atmosphere, farmer grow them.
+            power: 1.5
+        },
+        output: {
+            items: ["spore-pod/80"]
+        },
+        craftTime: 600
+    },
+    {
+        input: {
+            fluids: ["water/0.6"],
+            power: 1.5
+        },
+        output: {
+            items: ["spore-pod/40"]
+        },
+        craftTime: 300
+    },
+    {
+        input: {
+            fluids: ["water/1"],
+            power: 3
+        },
+        output: {
+            items: ["spore-pod/200"]
+        },
+        craftTime: 900
+    }
+    //Will be changed probably.
 ]
