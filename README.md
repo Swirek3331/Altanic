@@ -2,7 +2,7 @@
 
 My never finished "project" that has been archived and never finished since always.
 
-***Requires multicrafter-lib and I do not think that this can be qualified as js mod***
+__Requires multicrafter-lib__ and I do not think that this can be qualified as js mod.
 
 I don't have good knowladge about correct english writing.
 
@@ -18,9 +18,9 @@ I have came to conclusion, that better will be if a new content will be developt
 
 [Letters](https://discord.com/channels/391020510269669376/754011833928515664/1011760437043400714)
 
-[**Clan**](https://discord.gg/E3T9JxDuTP)
+[Clan](https://discord.gg/E3T9JxDuTP)
 
-[**Z.P.G.M._mod**](https://github.com/r-omnom/Z.P.G.M._Mod)
+[Z.P.G.M._mod](https://github.com/r-omnom/Z.P.G.M._Mod)
 
 ## Dla wszystkich polaczków jak ja
 
