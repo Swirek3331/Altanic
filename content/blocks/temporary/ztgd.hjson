@@ -1,0 +1,41 @@
+type: ItemTurret
+size: 2
+health: 100
+inaccuracy: 7
+reloadTime: 10
+shootCone: 2
+rotateSpeed: 5
+shots: 2
+range: 360
+burstSpacing: 3
+ammoTypes: {
+    graphite: {
+        speed: 6
+        lifetime: 60
+        damage: 5
+        width: 10
+        height: 15
+        frontColor: 828f8f
+        backColor: 828f8f
+        shootEffect: "shootSmall"
+        
+        smokeEffect: "shootSmallSmoke"
+        
+        ammoMultiplier: 4
+        collidesTiles: false
+        homingPower: 1
+        homingRange: 25
+        explodeRange: 45
+        splashDamageRadius: 50
+        splashDamage: 27
+        hitEffect: flakExplosionBig
+    }
+}
+category: turret
+requirements: [
+    copper/73
+]
+
+shoot: {
+    type: ShootAlternate
+}
