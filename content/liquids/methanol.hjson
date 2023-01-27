@@ -3,3 +3,6 @@ color: EDFFFF
 research: {
     parent: wood
 }
+viscosity: 0
+heatCapacity: 0
+temperature: 0

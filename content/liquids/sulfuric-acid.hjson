@@ -3,3 +3,6 @@ color: F8E646
 research: {
     parent: sulfur
 }
+viscosity: 0
+heatCapacity: 0
+temperature: 0

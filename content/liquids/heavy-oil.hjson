@@ -3,3 +3,6 @@ color: 3D0000
 research: {
     parent: oil
 }
+viscosity: 0
+heatCapacity: 0
+temperature: 0

@@ -3,3 +3,6 @@ color: A2A00F
 research: {
     parent: ethanol
 }
+viscosity: 0
+heatCapacity: 0
+temperature: 0

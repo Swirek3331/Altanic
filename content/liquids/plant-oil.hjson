@@ -3,3 +3,6 @@ color: CEFA32
 research: {
     parent: biomass
 }
+viscosity: 0
+heatCapacity: 0
+temperature: 0

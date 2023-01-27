@@ -12,137 +12,19 @@ research: {
 }
 # TO DO: requirements
 drawer: {
-    type: multicraft.DrawRecipe
+    type: DrawMulti
+    # For not changing drawer just do it as normal DrawMulti
     drawers: [
-        //
         {
-            type: DrawMulti
-            drawers: [
-                {
-                    type: DrawGlowRegion
-                    color: feb380
-                }
-                {
-                    type: DrawDefault
-                }
-                {
-                    type: DrawFlame
-                    color: ffef99
-                }
-            ]
+            type: DrawGlowRegion
+            color: ffef99
         }
         {
-            type: DrawMulti
-            drawers: [
-                {
-                    type: DrawGlowRegion
-                    color: feb380
-                }
-                {
-                    type: DrawDefault
-                }
-                {
-                    type: DrawFlame
-                    color: ffef99
-                }
-            ]
+            type: DrawDefault
         }
         {
-            type: DrawMulti
-            drawers: [
-                {
-                    type: DrawGlowRegion
-                    color: feb380
-                }
-                {
-                    type: DrawDefault
-                }
-                {
-                    type: DrawFlame
-                    color: ffef99
-                }
-            ]
-        }
-        {
-            type: DrawMulti
-            drawers: [
-                {
-                    type: DrawGlowRegion
-                    color: feb380
-                }
-                {
-                    type: DrawDefault
-                }
-                {
-                    type: DrawFlame
-                    color: ffef99
-                }
-            ]
-        }
-        //more items
-        {
-            type: DrawMulti
-            drawers: [
-                {
-                    type: DrawGlowRegion
-                    color: feb380
-                }
-                {
-                    type: DrawDefault
-                }
-                {
-                    type: DrawFlame
-                    color: ffef99
-                }
-            ]
-        }
-        {
-            type: DrawMulti
-            drawers: [
-                {
-                    type: DrawGlowRegion
-                    color: feb380
-                }
-                {
-                    type: DrawDefault
-                }
-                {
-                    type: DrawFlame
-                    color: ffef99
-                }
-            ]
-        }
-        {
-            type: DrawMulti
-            drawers: [
-                {
-                    type: DrawGlowRegion
-                    color: feb380
-                }
-                {
-                    type: DrawDefault
-                }
-                {
-                    type: DrawFlame
-                    color: ffef99
-                }
-            ]
-        }
-        {
-            type: DrawMulti
-            drawers: [
-                {
-                    type: DrawGlowRegion
-                    color: feb380
-                }
-                {
-                    type: DrawDefault
-                }
-                {
-                    type: DrawFlame
-                    color: ffef99
-                }
-            ]
+            type: DrawFlame
+            color: ffef99
         }
     ]
 }

@@ -4,3 +4,6 @@ lightColor: 77FFFF
 research: {
     parent: glycerol
 }
+viscosity: 0
+heatCapacity: 0
+temperature: 0
