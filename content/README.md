@@ -124,7 +124,7 @@ Example:
 ```
 
 ```json
-# From Z.P.G.M._mod.
+//From Z.P.G.M._mod.
 
 "requirements": [
     { "item": "copper", "amount": 1500 },
