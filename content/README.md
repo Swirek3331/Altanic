@@ -76,7 +76,7 @@ Power production and distribution, and storage.
 
 #### Temporary
 
-Temp.
+Temporary things.
 
 ### Items
 
