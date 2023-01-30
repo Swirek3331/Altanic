@@ -48,45 +48,45 @@ content
 └──README.md
 ```
 
-### Blocks
+### [Blokcs](/content/blocks/README.md)
 
-#### Crafting
+#### [Crafting](/content/blocks/crafting/README.md)
 
 Crafting category files.
 
-#### Defense
+#### [Defense](/content/blocks/defense/README.md)
 
 Defense category including turrets.
 
-#### Environment
+#### [Environment](/content/blocks/environment/README.md)
 
 Floors, walls, ores, that kind of content.
 
-#### Liquid
+#### [Liquid](/content/blocks/liquid/README.md)
 
 Block that have to deal with liquids
 
-#### Multi
+#### [Multi](/content/blocks/multi/README.md)
 
 Multicrafters directory.
 
-#### Power
+#### [Power](/content/blocks/power/README.md)
 
 Power production and distribution, and storage.
 
-#### Temporary
+#### [Temporary](/content/blocks/temporary/README.md)
 
 Temporary things.
 
-### Items
+### [Items](/content/items/README.md)
 
 Everything else that could be transported or storaged.
 
-### Liquids
+### [Liquids](/content/liquids/README.md)
 
 Liquids.
 
-### README.md
+### [README.md](/content/README.md)
 
 You are here.
 
