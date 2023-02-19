@@ -9,37 +9,55 @@
 #        parent: kiln
 #    }
 # Ten bloka ma sens?
-drawer: {
-    type: multicraft.DrawRecipe
-    drawers: [
-        {
-            type: DrawMulti
-            # funkcja DrawMulti pozwala na wsadzeniu wiele rysowników na raz
-            drawers: [
-                {
-                    type: DrawDefault
-                    # rysuję domyślną nazwę
-                }
-                {
-                    type: DrawFlame
-                    color: ffef99
-                    # rysuję łogień
-                }
+
+recipes: [
+    {
+        input: {
+            items: [
+                sand/2
+                coal/1
+            ]
+            power: 0.5
+        }
+        output: {
+            items: [
+                silicon/1
             ]
         }
-        {# receptura duo
-            type: DrawMulti
-            drawers: [
-                {
-                    type: DrawDefault
-                }
-                {
-                    type: DrawFlame
-                    color: ffef99
-                }
+        craftTime: 30
+    }
+    {
+        input: {
+            items: [
+                sand/1
+                lead/1
             ]
+            power: 0.5
+        }
+        output: {
+            items: [
+                metaglass/1
+            ]
+        }
+        craftTime: 30
+    }
+]
+
+drawer: {
+    type: DrawMulti
+    drawers: [
+        {
+            type: DrawDefault
+        }
+        {
+            type: DrawFlame
+            color: ffef99
         }
     ]
 }
+
 ambientSound: smelter
 ambientSoundVolume: 0.02
+
+size: 2
+health: 250
