@@ -7,8 +7,6 @@ const inductionSmelter = multi.MultiCrafter("induction-smelter");
 const arcFurnace = multi.MultiCrafter("arc-furnace");
 
 const pyrolyseOven = multi.MultiCrafter("pyrolyse-oven");
-pyrolyseOven.size = 2;
-pyrolyseOven.health = 400;
 pyrolyseOven.recipes = [
     {
         input: {

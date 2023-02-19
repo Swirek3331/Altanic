@@ -62,7 +62,11 @@ recpies: [
     }
     {
         input: {
-            items: [coal/4, sand/6 pyratite/1],
+            items: [
+                coal/4
+                sand/6
+                pyratite/1
+            ]
             power: 8
         }
         output: {
