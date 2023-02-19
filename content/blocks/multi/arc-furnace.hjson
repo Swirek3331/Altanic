@@ -12,7 +12,7 @@
 #    }
 # Is dis blok having ani sense _kłestrzyn-mark_
 
-recpies: [
+recipes: [
     {
         input: {
             items: [
