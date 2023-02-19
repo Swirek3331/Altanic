@@ -11,6 +11,187 @@ requirements: [
 research: {
     parent: cryofluid-mixer
 }
+
+recipes: [
+    {
+        input: {
+            items: titanium/2
+            fluids: water/0.3
+            power: 1.5
+        }
+        output: {
+            fluids: cryofluid/0.3
+        }
+        craftTime: 120
+    }
+    {
+        input: {
+            fluids: oil/0.1
+            power: 0.8
+        }
+        output: {
+            items: altanic-sulfur/2
+        },
+        craftTime: 120
+    }
+    {
+        input: {
+            fluids: altanic-gas/0.2
+            power: 0.7
+        }
+        output: {
+            items: altanic-sulfur/12
+        }
+        craftTime: 120
+    }
+    {
+        input: {
+            fluids: [
+                altanic-ethanol/0.1
+                altanic-plant-oil/0.1
+            ]
+            power: 0.6
+        }
+        output: {
+            fluids: altanic-biofuel/0.2
+        }
+        craftTime: 60
+    }
+    {
+        input: {
+            items: spore-pod/3"
+            fluids: altanic-creosote/0.2
+            power: 0.8
+        }
+        output: {
+            fluids: oil/0.2
+        }
+        craftTime: 90
+    }
+    {
+        input: {
+            fluids: [
+                altanic-glycerol/0.1
+                altanic-nitric-acid/0.2
+            ]
+            power: 1
+        }
+        output: {
+            fluids: altanic-nitroglycerin/0.2
+        }
+        craftTime: 60
+    }
+    {
+        input: {
+            fluids: oil/0.2
+            power: 1
+        }
+        output: {
+            items: coal/3
+        }
+        craftTime: 30
+    }
+    {
+        input: {
+            fluids: oil/0.1
+            power: 1.5
+        }
+        output: {
+            items: altanic-petroleum-coke/2
+        }
+        craftTime: 60
+    }
+    {
+        input: {
+            items: sand/14
+            fluids: altanic-creosote/0.1
+            power: 1
+        }
+        output: {
+            items: [
+                pyratite/4
+                blast-compound/3
+            ]
+        }
+        craftTime: 120
+    }
+    {
+        input: {
+            items: [
+                coal/1
+                lead/2
+                sand/2
+            ]
+            power: 0.2
+        }
+        output: {
+            items: pyratite/1
+        }
+        craftTime: 60
+    }
+    {
+        input: {
+            items: [
+                altanic-coal-coke/2
+                sand/4
+            ]
+            power: 0.3
+        }
+        output: {
+            items: pyratite/2
+        }
+        craftTime: 60
+    }
+    {
+        input: {
+            fluids: altanic-light-oil/0.1
+            items: sand/20
+            power: 1.2
+        }
+        output: {
+            items: pyratite/10
+        }
+        craftTime: 80
+    }
+    {
+        input: {
+            items: [
+                pyratite/1
+                spore-pod/1
+            ]
+            power: 0.4
+        }
+        output: {
+            items: blast-compound/1
+        }
+        craftTime: 60
+    }
+    {
+        input: {
+            items: [
+                altanic-sulfur/2
+                sand/4
+            ]
+            power: 0.6
+        }
+        output: {
+            items: blast-compound/2
+        }
+        craftTime: 60
+    }
+    {
+        input: {
+            items: sand/20"
+            fluids: altanic-nitroglycerin/0.1"
+            power: 1.8
+        }
+        output: {
+            items: blast-compound/10
+        }
+        craftTime: 90
+    }
+]
+
 drawer: {
     type: multicraft.DrawRecipe
     drawers: [
@@ -416,5 +597,6 @@ drawer: {
         }
     ]
 }
+
 ambientSound: extractLoop
 ambientSoundVolume: 0.25
