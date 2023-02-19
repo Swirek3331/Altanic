@@ -11,76 +11,7 @@ const blastFurnace = multi.MultiCrafter("blast-furnace");
 
 const centrifuge = multi.MultiCrafter("centrifuge");
 const thermalCentrifuge = multi.MultiCrafter("thermal-centrifuge");
-
 const solidMixer = multi.MultiCrafter("solid-mixer");
-solidMixer.size = 2;
-solidMixer.health = 400;
-solidMixer.recipes = [
-    //pyratite
-    {
-        input: {
-            items: ["coal/1", "lead/2", "sand/2"],
-            power: 0.2
-        },
-        output: {
-            items: ["pyratite/1"]
-        },
-        craftTime: 80
-    },
-    {
-        input: {
-            items: ["altanic-coal-coke/2", "sand/4"],
-            power: 0.3
-        },
-        output: {
-            items: ["pyratite/2"]
-        },
-        craftTime: 80
-    },
-    {
-        input: {
-            fluids: ["altanic-light-oil/0.1"],
-            items: ["sand/20"],
-            power: 1.2
-        },
-        output: {
-            items: ["pyratite/10"]
-        },
-        craftTime: 90
-    },
-    //blast compound
-    {
-        input: {
-            items: ["pyratite/1", "spore-pod/1"],
-            power: 0.4
-        },
-        output: {
-            items: ["blast-compound/1"]
-        },
-        craftTime: 80
-    },
-    {
-        input: {
-            items: ["altanic-sulfur/2", "sand/4"],
-            power: 0.6
-        },
-        output: {
-            items: ["blast-compound/2"]
-        },
-        craftTime: 80
-    },
-    {
-        input: {
-            items: ["sand/20"],
-            fluids: ["altanic-nitroglycerin/0.1"],
-            power: 1.8
-        },
-        output: {
-            items: ["blast-compound/10"]
-        },
-        craftTime: 120
-    }
-]
 
 const farmer = multi.MultiCrafter("farm");
 farmer.size = 2;
