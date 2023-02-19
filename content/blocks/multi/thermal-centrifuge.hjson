@@ -1,42 +1,31 @@
 recipes: [
     {
         input: {
-            fluids: [
-                oil/0.1
-            ]
+            fluids: oil/0.1
             power: 2
-        },
+        }
         output: {
-            items: ["coal/6"
-            ]
+            items: coal/6"
         }
         craftTime: 30
     }
     {
         input: {
-            fluids: [
-                oil/0.2
-            ]
+            fluids: oil/0.2
             power: 1.6
         }
         output: {
-            items: 
-                altanic-petroleum-coke/4
-            ]
+            items: altanic-petroleum-coke/4
         }
         craftTime: 60
     }
     {
         input: {
-            fluids: [
-                altanic-heavy-oil/0.15
-            ]
+            fluids: altanic-heavy-oil/0.15
             power: 4
         }
         output: {
-            items: [
-                altanic-petroleum-coke/6
-            ]
+            items: altanic-petroleum-coke/6
         }
         craftTime: 60
     }

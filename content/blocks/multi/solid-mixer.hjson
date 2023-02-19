@@ -16,7 +16,7 @@ ambientSoundVolume: 0.03
 size: 2
 health: 400
 
-recipe: [
+recipes: [
     {
         input: {
             items: [
