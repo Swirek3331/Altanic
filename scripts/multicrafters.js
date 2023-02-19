@@ -1,80 +1,9 @@
-//https://liplum.github.io/MultiCrafterLib/usage/
-//for more info
+const multi = require("multi-crafter/lib");
 
-const multi = require("multi-crafter/lib")
-// Multi-crafter is a library that allows you to create multi-crafters
-// Here multi-crafter class is imported
+//This is for display chronology.
 
 const electricFurnace = multi.MultiCrafter("electric-furnace");
-
 const inductionSmelter = multi.MultiCrafter("induction-smelter");
-inductionSmelter.size = 3;
-inductionSmelter.health = 500;
-inductionSmelter.recipes = [
-    //speed but the same numbers of items are required
-    {
-        input: {
-            items: ["sand/2", "coal/1"],
-            power: 1
-        },
-        output: {
-            items: ["silicon/1"]
-        },
-        craftTime: 15
-    },
-    {
-        input: {
-            items: ["sand/1", "lead/1"],
-            power: 1
-        },
-        output: {
-            items: ["metaglass/1"]
-        },
-        craftTime: 15
-    },
-    //more items
-    {
-        input: {
-            items: ["sand/4", "coal/2"],
-            power: 1
-        },
-        output: {
-            items: ["silicon/2"]
-        },
-        craftTime: 15
-    },
-    {
-        input: {
-            items: ["sand/2", "lead/2"],
-            power: 1
-        },
-        output: {
-            items: ["metaglass/2"]
-        },
-        craftTime: 15
-    },
-    //others
-    {
-        input: {
-            items: ["coal/4", "sand/6", "pyratite/1"],
-            power: 4
-        },
-        output: {
-            items: ["silicon/8"]
-        },
-        craftTime: 90
-    },
-    {
-        input: {
-            items: ["copper/3", "lead/4", "titanium/2", "silicon/3"],
-            power: 4
-        },
-        output: {
-            items: ["surge-alloy/1"]
-        },
-        craftTime: 75
-    }
-]
 
 const arcFurnace = multi.MultiCrafter("arc-furnace");
 arcFurnace.size = 5;
