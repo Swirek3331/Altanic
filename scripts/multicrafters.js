@@ -10,42 +10,6 @@ const pyrolyseOven = multi.MultiCrafter("pyrolyse-oven");
 const blastFurnace = multi.MultiCrafter("blast-furnace");
 
 const centrifuge = multi.MultiCrafter("centrifuge");
-centrifuge.size = 2;
-centrifuge.health = 400;
-centrifuge.recipes = [
-    {
-        input: {
-            fluids: ["oil/0.2"],
-            power: 0.7
-        },
-        output: {
-            items: ["coal/2"]
-        },
-        craftTime: 30
-    },
-    {
-        input: {
-            fluids: ["oil/0.1"],
-            power: 1.45
-        },
-        output: {
-            items: ["altanic-petroleum-coke/1"]
-        },
-        craftTime: 60
-    },
-    {
-        input: {
-            items: ["sand/14"],
-            fluids: ["altanic-creosote/0.1"],
-            power: 0.8
-        },
-        output: {
-            items: ["pyratite/5", "blast-compound/2"]
-        },
-        craftTime: 120
-    }
-]
-
 const thermalCentrifuge = multi.MultiCrafter("thermal-centrifuge");
 thermalCentrifuge.size = 3;
 thermalCentrifuge.health = 500;
