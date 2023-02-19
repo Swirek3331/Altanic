@@ -39,6 +39,7 @@ recipes: [
             items: [
                 pyratite/5
                 blast-compound/4
+            ]
         }
         craftTime: 90
     }

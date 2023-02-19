@@ -19,7 +19,7 @@ recipes: [
     {
         input: {
             fluids: water/0.1
-            power: 1
+            power: 6
         }
         output: {
             items: altanic-biomass/50
@@ -29,7 +29,7 @@ recipes: [
     {
         input: {
             fluids: water/0.1
-            power: 1
+            power: 6
         },
         output: {
             items: altanic-biomass/25
@@ -39,7 +39,7 @@ recipes: [
     {
         input: {
             fluids: water/0.3
-            power: 2
+            power: 10
         }
         output: {
             items: altanic-biomass/200
@@ -49,7 +49,7 @@ recipes: [
     {
         input: {
             fluids: water/0.3
-            power: 1
+            power: 10
         }
         output: {
             items: spore-pod/30
@@ -59,7 +59,7 @@ recipes: [
     {
         input: {
             fluids: water/0.3
-            power: 1
+            power: 10
         },
         output: {
             items: spore-pod/10
@@ -69,7 +69,7 @@ recipes: [
     {
         input: {
             fluids: water/0.6
-            power: 2
+            power: 15
         },
         output: {
             items: spore-pod/60

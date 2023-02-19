@@ -14,40 +14,7 @@ const thermalCentrifuge = multi.MultiCrafter("thermal-centrifuge");
 const solidMixer = multi.MultiCrafter("solid-mixer");
 
 const farmer = multi.MultiCrafter("farm");
-
 const fermenter = multi.MultiCrafter("fermenter");
-fermenter.recipes = [
-    {
-        input: {
-           items: ["altanic-biomass/10"],
-            power: 1.2
-        },
-        output: {
-            fluids: ["altanic-ethanol/0.2"]
-        },
-        craftTime: 60
-    },
-    {
-        input: {
-            items: ["spore-pod/6"],
-            power: 1.5
-        },
-        output: {
-            fluids: ["altanic-gas/0.2"]//will be changed if oil distillation will be added.
-        },
-        craftTime: 60
-    },
-    {
-        input: {
-            items: ["altanic-wood/12"],
-            power: 1.4
-        },
-        output: {
-            fluids: ["altanic-methanol/0.2"]
-        },
-        craftTime: 60
-    }
-]
 
 const chemicalComposer = multi.MultiCrafter("chemical-composer")
 chemicalComposer.recipes = [
