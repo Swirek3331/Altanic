@@ -1,19 +1,18 @@
-category: crafting
-requirements: [
-    graphite/300
-    thorium/445
-    silicon/375
-    plastanium/225
-    phase-fabric/125
-    surge-alloy/235
-]
-research: {
-    parent: induction-smelter
-}
-# TO DO: requirements
+#    category: crafting
+#    requirements: [
+#        graphite/300
+#        thorium/445
+#        silicon/375
+#        plastanium/225
+#        phase-fabric/125
+#        surge-alloy/235
+#    ]
+#    research: {
+#        parent: induction-smelter
+#    }
+# Is dis blok having ani sense _kłestrzyn-mark_
 drawer: {
     type: DrawMulti
-    # For not changing drawer just do it as normal DrawMulti
     drawers: [
         {
             type: DrawGlowRegion

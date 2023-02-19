@@ -1,15 +1,15 @@
-category: crafting
-requirements: [
-    graphite/50
-    titanium/115
-    thorium/75
-    silicon/95
-    plastanium/65
-]
-research: {
-    parent: electric-furnace
-}
-# I think that If we not want a difrent from one recipe, we just need to add DrawMulti instead of multicrafter drawer
+#    category: crafting
+#    requirements: [
+#        graphite/50
+#        titanium/115
+#        thorium/75
+#        silicon/95
+#        plastanium/65
+#    ]
+#    research: {
+#        parent: electric-furnace
+#    }
+# Is this block required?
 drawer: {
     type: DrawMulti
     drawers: [
