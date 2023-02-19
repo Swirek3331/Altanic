@@ -1,3 +1,60 @@
+recipes: [
+    {
+        input: {
+            fluids: [
+                oil/0.1
+            ]
+            power: 2
+        },
+        output: {
+            items: ["coal/6"
+            ]
+        }
+        craftTime: 30
+    }
+    {
+        input: {
+            fluids: [
+                oil/0.2
+            ]
+            power: 1.6
+        }
+        output: {
+            items: 
+                altanic-petroleum-coke/4
+            ]
+        }
+        craftTime: 60
+    }
+    {
+        input: {
+            fluids: [
+                altanic-heavy-oil/0.15
+            ]
+            power: 4
+        }
+        output: {
+            items: [
+                altanic-petroleum-coke/6
+            ]
+        }
+        craftTime: 60
+    }
+    {
+        input: {
+            items: sand/20
+            fluids: creosote/0.1
+            power: 1.5
+        }
+        output: {
+            items: [
+                pyratite/5
+                blast-compound/4
+        }
+        craftTime: 90
+    }
+]
+
 drawer: {
     type: multicraft.DrawRecipe
     drawers: [
@@ -108,6 +165,7 @@ drawer: {
         }
     ]
 }
+
 category: crafting
 requirements: [
     lead/300
@@ -119,5 +177,9 @@ requirements: [
 research: {
     parent: centrifuge
 }
+
 ambientSound: hum
 ambientSoundVolume: 0.1
+
+size: 3
+health: 500
