@@ -1,7 +1,5 @@
 category: crafting
-# cateogry
 requirements: [
-# requirements
     lead/50
     metaglass/25
     graphite/100
@@ -10,93 +8,137 @@ requirements: [
 ]
 research: {
     parent: pyrolyse-oven
-    # from where node will be going in tech tree
-    # you can also do here research requirements by writing requirements: [], but they are optional, game has multiplier for research cost based on build 
 }
-# Requiremnts are in TO DO
+
+recipes: [
+    {
+        input: {
+            items: [
+                coal/10
+                altanic-feco/5
+            ]
+            power: 6
+        }
+        output: {
+            items: [
+                altanic-wall-alloy/5
+            ]
+            fluids: [
+                slag/0.1
+            ]
+        }
+        craftTime: 180
+    }
+    {
+        input: {
+            items: [
+                coal/10
+                altanic-feco/5
+                altanic-flux/5
+            ]
+            power: 2
+        },
+        output: {
+            items: [
+                altanic-wall-alloy/5
+            ]
+            fluids: [
+                slag/0.1
+            ]
+        }
+        craftTime: 180
+    }
+    {
+        input: {
+            items: [
+                altanic-coal-coke/5
+                altanic-feco/5
+            ]
+            power: 6
+        }
+        output: {
+            items: [
+                altanic-wall-alloy/5
+            ]
+            fluids: [
+                slag/0.1
+            ]
+        }
+        craftTime: 180
+    }
+    {
+        input: {
+            items: [
+                altanic-coal-coke/5
+                altanic-feco/5
+                altanic-flux/5
+            ]
+            power: 2
+        }
+        output: {
+            items: [
+                altanic-wall-alloy/5
+            ]
+            fluids: [
+                slag/0.1
+            ]
+        }
+        craftTime: 180
+    }
+    {
+        input: {
+            items: [
+                altanic-petroleum-coke/5
+                altanic-feco/10
+            ]
+            power: 6
+        }
+        output: {
+            items: [
+                altanic-wall-alloy/10
+            ]
+            fluids: [
+                slag/0.2
+            ]
+        }
+        craftTime: 180
+    }
+    {
+        input: {
+            items: [
+                altanic-petroleum-coke/5
+                altanic-feco/10
+                altanic-flux/10
+            ]
+            power: 2
+        }
+        output: {
+            items: [
+                altanic-wall-alloy/10
+            ]
+            fluids: [
+                slag/0.2
+            ]
+        }
+        craftTime: 180
+    }
+]
+
 drawer: {
-# component where functions from DrawBlock family are located
-    type: multicraft.DrawRecipe
-    # defining the type of drawer as a imported from multicraft
+    type: DrawMulti
     drawers: [
-    # defining the drawers
-        {# recipe one
-            type: DrawMulti
-            drawers: [
-                {
-                    type: DrawDefault
-                    #drawing default layer
-                }
-                {
-                    type: DrawFlame
-                    color: ffef99
-                    #drawing flame
-                }
-            ]
-            # normal DrawMulti function, but in multicraft.DrawRecipe
+        {
+            type: DrawDefault
         }
-        {# recipe two
-            type: DrawMulti
-            drawers: [
-                {
-                    type: DrawDefault
-                }
-                {
-                    type: DrawFlame
-                    color: ffef99
-                }
-            ]
+        {
+            type: DrawFlame
+            color: ffef99
         }
-        {# recipe trzy
-            type: DrawMulti
-            drawers: [
-                {
-                    type: DrawDefault
-                }
-                {
-                    type: DrawFlame
-                    color: ffef99
-                }
-            ]
-        }
-        {# recipe sqrt(16)
-            type: DrawMulti
-            drawers: [
-                {
-                    type: DrawDefault
-                }
-                {
-                    type: DrawFlame
-                    color: ffef99
-                }
-            ]
-        }
-        {#recipe pięć
-            type: DrawMulti
-            drawers: [
-                {
-                    type: DrawDefault
-                }
-                {
-                    type: DrawFlame
-                    color: ffef99
-                }
-            ]
-        }
-        {#recipe VI
-            type: DrawMulti
-            drawers: [
-                {
-                    type: DrawDefault
-                }
-                {
-                    type: DrawFlame
-                    color: ffef99
-                }
-            ]
-        }
-        # each DrawMulti is for one recipe
     ]
 }
+
 ambientSound: smelter
 ambientSoundVolume: 0.04
+
+size: 3
+health: 500

@@ -1,24 +1,3 @@
-drawer: {
-    type: multicraft.DrawRecipe
-    drawers: [
-        {
-            type: DrawMulti
-            drawers: [
-                {
-                    type: DrawDefault
-                }
-            ]
-        }
-        {
-            type: DrawMulti
-            drawers: [
-                {
-                    type: DrawDefault
-                }
-            ]
-        }
-    ]
-}
 category: crafting
 requirements: [
     lead/50
@@ -30,5 +9,58 @@ requirements: [
 research: {
     parent: coal-centrifuge
 }
+
+recipes: [
+    {
+        input: {
+            fluids: [
+                oil/0.2
+            ]
+            power: 0.7
+        }
+        output: {
+            items: [
+                coal/2
+            ]
+        }
+        craftTime: 30
+    }
+    {
+        input: {
+            fluids: [
+                oil/0.1
+            ]
+            power: 1.45
+        }
+        output: {
+            items: [
+                altanic-petroleum-coke/1
+            ]
+        }
+        craftTime: 60
+    }
+    {
+        input: {
+            items: [
+                sand/14
+            ]
+            fluids: [
+                altanic-creosote/0.1
+            ]
+            power: 0.8
+        },
+        output: {
+            items: [
+                pyratite/5
+                blast-compound/2
+            ]
+        },
+        craftTime: 120
+    }
+]
+
 ambientSound: extractLoop
 ambientSoundVolume: 0.05
+
+size: 2
+health: 400

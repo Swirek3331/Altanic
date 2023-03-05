@@ -1,19 +1,148 @@
-category: crafting
-requirements: [
-    graphite/300
-    thorium/445
-    silicon/375
-    plastanium/225
-    phase-fabric/125
-    surge-alloy/235
+#    category: crafting
+#    requirements: [
+#        graphite/300
+#        thorium/445
+#        silicon/375
+#        plastanium/225
+#        phase-fabric/125
+#        surge-alloy/235
+#    ]
+#    research: {
+#        parent: induction-smelter
+#    }
+# Is dis blok having ani sense _kłestrzyn-mark_
+
+recipes: [
+    {
+        input: {
+            items: [
+                sand/2
+                coal/1
+            ]
+            power: 2
+        }
+        output: {
+            items: [
+                silicon/1
+            ]
+        }
+        craftTime: 7.5
+    }
+    {
+        input: {
+            items: [
+                sand/1
+                lead/1
+            ]
+            power: 2
+        }
+        output: {
+            items: [
+                metaglass/1
+            ]
+        }
+        craftTime: 7.5
+    }
+    {
+        input: {
+            items: [
+                copper/3
+                lead/4
+                titanium/2
+                silicon/3
+            ]
+            power: 8
+        }
+        output: {
+            items: [
+                surge-alloy/1
+            ]
+        }
+        craftTime: 37.5
+    }
+    {
+        input: {
+            items: [
+                coal/4
+                sand/6
+                pyratite/1
+            ]
+            power: 8
+        }
+        output: {
+            items: [
+                silicon/8
+            ]
+        }
+        craftTime: 45
+    }
+    {
+        input: {
+            items: [
+                sand/8
+                coal/4
+            ]
+            power: 2
+        },
+        output: {
+            items: [
+                silicon/4
+            ]
+        }
+        craftTime: 7.5
+    }
+    {
+        input: {
+            items: [
+                sand/4
+                lead/4
+            ]
+            power: 2
+        }
+        output: {
+            items: [
+                metaglass/4
+            ]
+        }
+        craftTime: 7.5
+    }
+    {
+        input: {
+            items: [
+                coal/8
+                sand/12
+                pyratite/2
+            ]
+            power: 8
+        }
+        output: {
+            items: [
+                silicon/12
+            ]
+        }
+        craftTime: 45
+    }
+    {
+        input: {
+            items: [
+                copper/6
+                lead/8
+                titanium/4
+                silicon/6
+            ]
+            power: 8
+        }
+        output: {
+            items: [
+                surge-alloy/2
+            ]
+        }
+        craftTime: 37.5
+    }
 ]
-research: {
-    parent: induction-smelter
-}
-# TO DO: requirements
+
 drawer: {
     type: DrawMulti
-    # For not changing drawer just do it as normal DrawMulti
     drawers: [
         {
             type: DrawGlowRegion
@@ -28,5 +157,9 @@ drawer: {
         }
     ]
 }
+
 ambientSound: smelter
 ambientSoundVolume: 0.1
+
+size: 5
+health: 1000

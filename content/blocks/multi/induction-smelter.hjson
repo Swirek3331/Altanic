@@ -1,15 +1,109 @@
-category: crafting
-requirements: [
-    graphite/50
-    titanium/115
-    thorium/75
-    silicon/95
-    plastanium/65
+#    category: crafting
+#    requirements: [
+#        graphite/50
+#        titanium/115
+#        thorium/75
+#        silicon/95
+#        plastanium/65
+#    ]
+#    research: {
+#        parent: electric-furnace
+#    }
+# Is this block required?
+
+recipes: [
+    {
+        input: {
+            items: [
+                sand/2
+                coal/1
+            ]
+            power: 1
+        }
+        output: {
+            items: [
+                silicon/1
+            ]
+        }
+        craftTime: 15
+    }
+    {
+        input: {
+            items: [
+                sand/1 
+                lead/1
+            ]
+            power: 1
+        }
+        output: {
+            items: [
+                metaglass/1
+            ]
+        }
+        craftTime: 15
+    }
+    {
+        input: {
+            items: [
+                sand/4 coal/2
+            ]
+            power: 1
+        }
+        output: {
+            items: [
+                silicon/2
+            ]
+        }
+        craftTime: 15
+    }
+    {
+        input: {
+            items: [
+                sand/2
+                lead/2
+            ]
+            power: 1
+        }
+        output: {
+            items: [
+                metaglass/2
+            ]
+        }
+        craftTime: 15
+    }
+    {
+        input: {
+            items: [
+                coal/4
+                sand/6
+                pyratite/1
+            ]
+            power: 4
+        }
+        output: {
+            items: silicon/8
+        }
+        craftTime: 90
+    }
+    {
+        input: {
+            items: [
+                copper/3
+                lead/4
+                titanium/2
+                silicon/3
+            ]
+            power: 4
+        }
+        output: {
+            items: [
+                surge-alloy/1
+            ]
+        }
+        craftTime: 75
+    }
 ]
-research: {
-    parent: electric-furnace
-}
-# I think that If we not want a difrent from one recipe, we just need to add DrawMulti instead of multicrafter drawer
+
 drawer: {
     type: DrawMulti
     drawers: [
@@ -22,5 +116,9 @@ drawer: {
         }
     ]
 }
+
 ambientSound: smelter
 ambientSoundVolume: 0.04
+
+size: 3
+health: 500

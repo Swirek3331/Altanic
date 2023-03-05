@@ -1,55 +1,63 @@
-# tutaj nastąpiło przedzielenie bloku, patrz w folder scripts po więcej
-category: crafting
-# kategoria
-requirements: [
-    # wymagania budowy
-    lead/75
-    graphite/40
-    titanium/65
-    silicon/20
+#    category: crafting
+#    requirements: [
+#        lead/75
+#        graphite/40
+#        titanium/65
+#        silicon/20
+#    ]
+#    research: {
+#        parent: kiln
+#    }
+# Ten bloka ma sens?
+
+recipes: [
+    {
+        input: {
+            items: [
+                sand/2
+                coal/1
+            ]
+            power: 0.5
+        }
+        output: {
+            items: [
+                silicon/1
+            ]
+        }
+        craftTime: 30
+    }
+    {
+        input: {
+            items: [
+                sand/1
+                lead/1
+            ]
+            power: 0.5
+        }
+        output: {
+            items: [
+                metaglass/1
+            ]
+        }
+        craftTime: 30
+    }
 ]
-research: {
-    # badania
-    parent: kiln
-    # od bloku nazwanego powyżej będzie się w drzewku nic ciągnąć
-    # można też dać wymagania badania, ale gra robi to samemu z jakimś tam mnożnikiem
-}
-# TO DO: requirements
+
 drawer: {
-# komponent, w którym można ulukować funkcje z rodziny DrawBlock
-    type: multicraft.DrawRecipe
-    # funckja importowana z multicrafter-lib
+    type: DrawMulti
     drawers: [
-    # Komponenty tej o to funkcji
-        {# receptura uno
-            type: DrawMulti
-            # funkcja DrawMulti pozwala na wsadzeniu wiele rysowników na raz
-            drawers: [
-                {
-                    type: DrawDefault
-                    # rysuję domyślną nazwę
-                }
-                {
-                    type: DrawFlame
-                    color: ffef99
-                    # rysuję łogień
-                }
-            ]
+        {
+            type: DrawDefault
         }
-        {# receptura duo
-            type: DrawMulti
-            drawers: [
-                {
-                    type: DrawDefault
-                }
-                {
-                    type: DrawFlame
-                    color: ffef99
-                }
-            ]
+        {
+            type: DrawFlame
+            color: ffef99
         }
-        # każdy drawer dla osobnej receptury
     ]
 }
+
 ambientSound: smelter
 ambientSoundVolume: 0.02
+
+size: 2
+health: 250
