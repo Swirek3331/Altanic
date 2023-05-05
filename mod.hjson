@@ -18,3 +18,4 @@ dependencies: [
     # Other mod that are necessary for this mod to work.
     multi-crafter
 ]
+hideBrowser: true
