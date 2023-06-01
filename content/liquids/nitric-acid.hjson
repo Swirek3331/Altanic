@@ -1,8 +1,0 @@
-name: Nitric Acid
-color: FFFF94
-research: {
-    parent: sulfuric-acid
-}
-viscosity: 0
-heatCapacity: 0
-temperature: 0

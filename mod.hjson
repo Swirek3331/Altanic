@@ -1,11 +1,8 @@
 name: Altanic
 author: Świrek
 version: 0.0.3.1
-# Version of the mod.
 repo: Swirek3331/Altanic
-# What repositroy, I gues.
-subtitle: Pacz
-# This shit that will be writne under mod's name.
+subtitle: RESTRUKTURYZACJA KURWA
 description:
 '''
 What have you expected by downloading this?
@@ -13,9 +10,6 @@ What have you expected by downloading this?
 No, seriously, what? I am curious.
 '''
 minGameVersion: 140
-# Minimum game version required to run moddification.
-dependencies: [
-    # Other mod that are necessary for this mod to work.
-    multi-crafter
-]
+java: true
+main: example.ExampleJavaMod
 hideBrowser: true

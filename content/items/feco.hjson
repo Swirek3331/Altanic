@@ -1,7 +1,0 @@
-name: Feco
-color: BFA58B
-buildable: false
-hardness: 5
-research: {
-    parent: slag
-}

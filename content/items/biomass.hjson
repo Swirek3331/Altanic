@@ -1,5 +1,0 @@
-name: Biomass
-flammability: 0.5
-research: {
-    parent: water
-}

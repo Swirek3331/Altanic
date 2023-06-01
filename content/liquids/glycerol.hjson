@@ -1,8 +1,0 @@
-name: Glycerol
-color: D4FFFF
-research: {
-    parent: plant-oil
-}
-viscosity: 0
-heatCapacity: 0
-temperature: 0

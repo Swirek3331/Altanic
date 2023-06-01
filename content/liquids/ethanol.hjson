@@ -1,8 +1,0 @@
-name: Ethanol
-color: EDFFFF
-research: {
-    parent: biomass
-}
-viscosity: 0
-heatCapacity: 0
-temperature: 0

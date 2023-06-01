@@ -1,9 +1,0 @@
-name: Gas
-gas: true
-color: 1D1D23
-research: {
-    parent: oil
-}
-viscosity: 0
-heatCapacity: 0
-temperature: 0

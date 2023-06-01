@@ -1,8 +1,0 @@
-name: Fatty Acid
-color: D1AE08
-research: {
-    parent: plant-oil
-}
-viscosity: 0
-heatCapacity: 0
-temperature: 0
