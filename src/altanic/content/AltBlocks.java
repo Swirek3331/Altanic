@@ -36,7 +36,7 @@ public class ALtBlocks
                     ),
                     180f
                 )
-            )
+            );
         }};
     }
 }
