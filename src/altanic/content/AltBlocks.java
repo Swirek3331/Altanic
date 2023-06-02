@@ -13,7 +13,7 @@ import static mindustry.content.Items.*;
 import static mindustry.content.Liquids.*;
 import static altanic.content.AltItems.*;
 
-public class ALtBlocks
+public class AltBlocks
 {
     public static Block blastFurnace, cokeOven;
 

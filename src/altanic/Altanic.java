@@ -20,7 +20,7 @@ public class Altanic extends Mod
     @Override
     public void loadContent()
     {
-        //ALtBlocks.load();
+        AltBlocks.load();
         AltItems.load();
     }
 }
