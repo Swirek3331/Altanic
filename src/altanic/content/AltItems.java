@@ -6,7 +6,7 @@ import arc.graphics.*;
 import mindustry.content.*;
 import mindustry.type.*;
 import mindustry.world.*;
-import mindustry.type.Items;
+import mindustry.type.Items.*;
 
 public class AltItems
 {
