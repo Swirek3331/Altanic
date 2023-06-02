@@ -12,12 +12,13 @@ public class Altanic extends Mod
 {
     public Altanic()
     {
-        Log.info("Trzyszcz");
+
     }
 
     @Override
     public void loadContent()
     {
-        Log.info("Trzyszcz");
+        //ALtBlocks.load();
+        AltItems.load();
     }
 }
