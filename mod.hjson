@@ -1,6 +1,6 @@
 name: Altanic
 author: Świrek
-version: 0.0.3.1
+version: 0.0.4
 repo: Swirek3331/Altanic
 subtitle: RESTRUKTURYZACJA KURWA
 description:
@@ -9,7 +9,7 @@ What have you expected by downloading this?
 
 No, seriously, what? I am curious.
 '''
-minGameVersion: 140
+minGameVersion: 143.1
 java: true
 main: example.ExampleJavaMod
 hideBrowser: true
