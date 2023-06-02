@@ -29,5 +29,10 @@ public class AltItems
         {{
             hardness = 2;
         }};
+
+        wallAloy = new Item("wall-aloy", Color.valueOf("8ca498"))
+        {{
+            
+        }};
     }
 }
