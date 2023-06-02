@@ -8,6 +8,8 @@ import mindustry.gen.*;
 import mindustry.mod.*;
 import mindustry.content.*;
 
+import altanic.content.*;
+
 public class Altanic extends Mod
 {
     public Altanic()
