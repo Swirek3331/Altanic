@@ -11,5 +11,5 @@ No, seriously, what? I am curious.
 '''
 minGameVersion: 143.1
 java: true
-main: example.ExampleJavaMod
+main: altanic.Altanic
 hideBrowser: true
