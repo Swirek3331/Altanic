@@ -1,14 +1,16 @@
 package altanic.content;
 
+import arc.graphics.*;
+
+
 import mindustry.content.*;
 import mindustry.type.*;
 import mindustry.world.*;
+import mindustry.type.Items;
 
-import multicraft.*;
-
-public class ALtBlocks
+public class AltItems
 {
-    public static Block blastFurnace, cokeOven;
+    public static Item feco, coalCoke, flux, wallAloy;
 
     public static void load()
     {
