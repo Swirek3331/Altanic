@@ -97,7 +97,7 @@ public class AltBlocks
                                     Seq.with(LiquidStack.with(slag, 0.2f))
                             ),
                             180
-                    )
+                    ),
 
                     new Recipe(
                             new IOEntry(
