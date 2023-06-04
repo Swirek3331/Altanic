@@ -5,7 +5,7 @@ import mindustry.type.Item;
 
 public class AltItems
 {
-    public static Item feco, coalCoke, flux, wallAloy;
+    public static Item feco, coalCoke, flux, wallAlloy;
 
     public static void load()
     {
@@ -25,6 +25,6 @@ public class AltItems
             hardness = 2;
         }};
 
-        wallAloy = new Item("wall-alloy", Color.valueOf("8ca498"));
+        wallAlloy = new Item("wall-alloy", Color.valueOf("8ca498"));
     }
 }

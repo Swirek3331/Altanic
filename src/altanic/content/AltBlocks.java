@@ -19,7 +19,7 @@ public class AltBlocks
 
     public static void load()
     {
-        blastFurnace = new MultiCrafter("blast-furnac")
+        blastFurnace = new MultiCrafter("blast-furnace")
         {{
             size = 3;
 
@@ -31,7 +31,7 @@ public class AltBlocks
                             ),
 
                             new IOEntry(
-                                    Seq.with(ItemStack.with(wallAloy, 5)),
+                                    Seq.with(ItemStack.with(wallAlloy, 5)),
                                     Seq.with(LiquidStack.with(slag, 0.1f))
                             ),
                             180f

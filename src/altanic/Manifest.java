@@ -15,6 +15,7 @@ public class Manifest extends Mod
     public  void loadContent()
     {
         AltItems.load();
+        AltLiquids.load();
         AltBlocks.load();
     }
 }
