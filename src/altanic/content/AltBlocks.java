@@ -122,7 +122,7 @@ public class AltBlocks
 
             requirements(Category.crafting, ItemStack.with(copper, 40, metaglass, 15, titanium, 25));
 
-            recipes = Seq.with(
+            resolvedRecipes = Seq.with(
                     new Recipe(
                             new IOEntry(
                                     Seq.with(ItemStack.with(wood, 5)),
