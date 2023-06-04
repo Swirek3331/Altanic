@@ -1,6 +1,7 @@
 package altanic.content;
 
 import arc.graphics.*;
+import arc.struct.Seq;
 import mindustry.content.Items;
 import mindustry.type.Item;
 
@@ -52,5 +53,7 @@ public class AltItems
             flammability = Items.blastCompound.flammability;
             explosiveness = Items.blastCompound.explosiveness * 0.8f;
         }};
+
+        Items.serpuloItems.add(Seq.with(feco, coalCoke, flux, wallAlloy, wood, petroleumCoke, biomass, sulfur));//Chyba powinno działać
     }
 }

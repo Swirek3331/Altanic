@@ -8,7 +8,7 @@ public class Manifest extends Mod
 {
     public Manifest()
     {
-
+        //To potrzebne?
     }
 
     @Override
@@ -17,5 +17,6 @@ public class Manifest extends Mod
         AltItems.load();
         AltLiquids.load();
         AltBlocks.load();
+        AltSerpuloTechTree.load();
     }
 }

@@ -2,10 +2,8 @@ package altanic.content;
 
 import  arc.struct.Seq;
 
-import mindustry.gen.Sounds;
-import mindustry.type.Category;
-import mindustry.type.ItemStack;
-import mindustry.type.LiquidStack;
+import mindustry.gen.*;
+import mindustry.type.*;
 import mindustry.world.*;
 import static mindustry.content.Items.*;
 import static mindustry.content.Liquids.*;
