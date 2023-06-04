@@ -14,10 +14,11 @@ import mindustry.world.draw.*;
 import multicraft.*;
 
 import static altanic.content.AltItems.*;
+import static altanic.content.AltLiquids.*;
 
 public class AltBlocks
 {
-    public static Block blastFurnace, cokeOven;
+    public static Block blastFurnace, pyrolyseOven;
 
     public static void load()
     {
@@ -114,6 +115,42 @@ public class AltBlocks
             );
 
             drawer = new DrawMulti(new DrawDefault(), new DrawFlame());
+        }};
+
+        pyrolyseOven = new MultiCrafter("pyrolyse-oven")
+        {{
+            size = 2;
+            health = 400;
+
+            requirements(Category.crafting, ItemStack.with(copper, 40, metaglass, 15, titanium, 25));
+
+            recipes = Seq.with(
+                    new Recipe(
+                            new IOEntry(
+                                    Seq.with(ItemStack.with(wood, 5)),
+                                    Seq.with(),
+                                    0.75f
+                            ),
+                            new IOEntry(
+                                    Seq.with(ItemStack.with(coal, 1)),
+                                    Seq.with(LiquidStack.with(creosote, 0.1f))
+                            ),
+                            120
+                    ),
+
+                    new Recipe(
+                            new IOEntry(
+                                    Seq.with(ItemStack.with(coal, 5)),
+                                    Seq.with(),
+                                    1
+                            ),
+                            new IOEntry(
+                                    Seq.with(ItemStack.with(coalCoke, 5)),
+                                    Seq.with(LiquidStack.with(creosote, 0.2f))
+                            ),
+                            180
+                    )
+            );
         }};
     }
 }
