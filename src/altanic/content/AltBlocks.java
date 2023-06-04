@@ -26,15 +26,28 @@ public class AltBlocks
             resolvedRecipes = Seq.with(
                     new Recipe(
                             new IOEntry(
-                                Seq.with(ItemStack.with(coalCoke, 5, feco, 5)),
-                                Seq.with()
+                                    Seq.with(ItemStack.with(feco, 5, coal, 10)),
+                                    Seq.with(),//Liquids?
+                                    6
+                            ),
+                            new IOEntry(
+                                    Seq.with(ItemStack.with(wallAlloy, 5)),
+                                    Seq.with(LiquidStack.with(slag, 0.1f))
+                            ),
+                            180
+                    ),
+                    new Recipe(
+                            new IOEntry(
+                                Seq.with(ItemStack.with(feco, 5, coalCoke, 5)),
+                                Seq.with(),
+                                6
                             ),
 
                             new IOEntry(
                                     Seq.with(ItemStack.with(wallAlloy, 5)),
                                     Seq.with(LiquidStack.with(slag, 0.1f))
                             ),
-                            180f
+                            180
                     )
             );
         }};
