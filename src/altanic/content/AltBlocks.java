@@ -247,6 +247,7 @@ public class AltBlocks
             powerProduction = 9f;
             liquidCapacity = 60f;
             hasItems = false;
+            hasLiquids = true;
 
             ambientSound = Sounds.smelter;
             ambientSoundVolume = 0.03f;
