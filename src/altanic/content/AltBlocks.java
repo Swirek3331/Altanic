@@ -238,7 +238,7 @@ public class AltBlocks
         {{
             requirements(Category.power, ItemStack.with(copper, 50, lead, 75, titanium, 40, metaglass, 35, silicon, 45));
 
-            size = 4;
+            size = 2;
             health = 500;
 
             consume(new ConsumeLiquidFlammable());
