@@ -16,7 +16,15 @@ import static altanic.content.AltLiquids.*;
 
 public class AltBlocks
 {
-    public static Block blastFurnace, pyrolyseOven;
+    public static Block
+
+            //crafting
+            blastFurnace, pyrolyseOven, solidMixer,
+
+            //defense
+
+                //walls
+                fecoWall, fecoWallLarge;
 
     public static void load()
     {
@@ -147,6 +155,71 @@ public class AltBlocks
                                     Seq.with(LiquidStack.with(creosote, 0.2f))
                             ),
                             180
+                    )
+            );
+        }};
+
+        solidMixer = new MultiCrafter("solid-mixer")
+        {{
+            size = 2;
+            health = 400;
+
+            ambientSound = Sounds.grinding;
+            ambientSoundVolume = 0.04f;
+
+            requirements(Category.crafting, ItemStack.with(lead, 50, graphite, 25, titanium, 45, metaglass, 10, silicon, 15));
+
+            resolvedRecipes = Seq.with(
+                    new Recipe(
+                            new IOEntry(
+                                    Seq.with(ItemStack.with(coal, 1, lead, 2, sand, 2)),
+                                    Seq.with(),
+                                    0.2f
+                            ),
+                            new IOEntry(
+                                    Seq.with(ItemStack.with(pyratite, 1)),
+                                    Seq.with()
+                            ),
+                            80
+                    ),
+
+                    new Recipe(
+                            new IOEntry(
+                                Seq.with(ItemStack.with(coalCoke, 2, sand, 4)),
+                                Seq.with(),
+                                0.3f
+                            ),
+                            new IOEntry(
+                                    Seq.with(ItemStack.with(pyratite, 2)),
+                                    Seq.with()
+                            ),
+                            80
+                    ),
+
+                    new Recipe(
+                        new IOEntry(
+                                Seq.with(ItemStack.with(pyratite, 1, sporePod, 1)),
+                                Seq.with(),
+                                0.8f
+                        ),
+                        new IOEntry(
+                                Seq.with(ItemStack.with(blastCompound, 1)),
+                                Seq.with()
+                        ),
+                        80
+                    ),
+
+                    new Recipe(
+                            new IOEntry(
+                                    Seq.with(ItemStack.with(sulfur, 2, sand, 4)),
+                                    Seq.with(),
+                                    0.8f
+                            ),
+                            new IOEntry(
+                                    Seq.with(ItemStack.with(blastCompound, 2)),
+                                    Seq.with()
+                            ),
+                            80
                     )
             );
         }};
