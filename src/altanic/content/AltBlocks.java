@@ -8,6 +8,7 @@ import mindustry.world.*;
 import static mindustry.content.Items.*;
 import static mindustry.content.Liquids.*;
 import mindustry.world.draw.*;
+import mindustry.world.blocks.defense.*;
 
 import multicraft.*;
 
@@ -222,6 +223,20 @@ public class AltBlocks
                             80
                     )
             );
+        }};
+
+        //walls
+
+        fecoWall = new Wall("feco-wall"){{
+            requirements(Category.defense, ItemStack.with(feco, 1));
+            health = 1080;
+            size = 1;
+        }};
+
+        fecoWallLarge = new Wall("feco-wall-large"){{
+            requirements(Category.defense, ItemStack.with(feco, 24));
+            health = 4320;
+            size = 2;
         }};
     }
 }

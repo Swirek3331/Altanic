@@ -58,6 +58,16 @@ public class AltSerpuloTechTree
                 node(blastFurnace);
             });
         });
+
+        extendNode(blastMixer, () -> {
+            node(solidMixer);
+        });
+
+        extendNode(thoriumWall, () -> {
+            node(fecoWall, () -> {
+                node(fecoWallLarge);
+            });
+        });
     }
 
     private static void extendNode(UnlockableContent parent, Runnable children)
