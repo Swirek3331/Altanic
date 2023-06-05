@@ -25,7 +25,8 @@ public class AltSerpuloTechTree
 
     public static void load()
     {
-        //This can be replaced with a lambda expression?
+        //This can be replaced with a lambda expression, mówi IntelliJ,
+        //Lecz to jest dla mnie bardziej czytelne.
 
         extendNode(Liquids.slag, () -> {//Ciecze mają takie same nazwy jak ich bloki
             node(feco, () -> {
@@ -37,9 +38,12 @@ public class AltSerpuloTechTree
 
         extendNode(coal, () -> {
             node(coalCoke, () -> {
-                node(sulfur);
                 node(petroleumCoke);
             });
+        });
+
+        extendNode(blastCompound, () -> {
+            node(sulfur);
         });
 
         extendNode(Liquids.water, () -> {
@@ -97,7 +101,9 @@ public class AltSerpuloTechTree
     private static void nodeProduce(UnlockableContent content, Seq <Objective> objectives, Runnable children)
     {
         node(content, content.researchRequirements(), objectives.add(new Produce(content)), children);
-        //and kiedyś tam było z tego, co pamiętam, było tam coś z add.
+        //and kiedyś tam było z tego, co pamiętam, a w samej metodzie było tam coś małego z add.
+        //TODO?
+        //Chociaż w sumie to używane nie jest.
     }
     private static void nodeProduce(UnlockableContent content, Seq <Objective> objectives)
     {
