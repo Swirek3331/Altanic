@@ -7,13 +7,17 @@ import mindustry.type.*;
 import mindustry.world.*;
 import static mindustry.content.Items.*;
 import static mindustry.content.Liquids.*;
+
+import mindustry.world.consumers.ConsumeLiquidFlammable;
 import mindustry.world.draw.*;
 import mindustry.world.blocks.defense.*;
+import mindustry.world.blocks.power.*;
 
 import multicraft.*;
 
 import static altanic.content.AltItems.*;
 import static altanic.content.AltLiquids.*;
+import altanic.world.consumers.*;
 
 public class AltBlocks
 {
@@ -21,6 +25,9 @@ public class AltBlocks
 
             //crafting
             blastFurnace, pyrolyseOven, solidMixer,
+
+            //power
+            oilBurner,
 
             //defense
 
@@ -225,15 +232,57 @@ public class AltBlocks
             );
         }};
 
+        //power
+
+        oilBurner = new ConsumeGenerator("oil-burner")
+        {{
+            requirements(Category.power, ItemStack.with(copper, 50, lead, 75, titanium, 40, metaglass, 35, silicon, 45));
+
+            size = 4;
+            health = 500;
+
+            consume(new ConsumeLiquidFlammable());
+            consume(new ConsumeLiquidExplosive());
+
+            powerProduction = 9f;
+            liquidCapacity = 60f;
+            hasItems = false;
+
+            ambientSound = Sounds.smelter;
+            ambientSoundVolume = 0.03f;
+
+            drawer = new DrawMulti(
+                    new DrawRegion("-bottom"),
+                    new DrawPistons()
+                    {{
+                        sinMag = 1f; //Ło boże
+                    }},
+                    new DrawRegion("-mid"),
+                    new DrawLiquidRegion()
+                    {{
+                        drawLiquid = creosote;
+                    }},
+                    new DrawGlowRegion()
+                    {{
+                        alpha = 1f;
+                        glowScale = 5f;
+                    }},
+                    new DrawDefault(),
+                    new DrawRegion("-top")
+            );
+        }};
+
         //walls
 
-        fecoWall = new Wall("feco-wall"){{
+        fecoWall = new Wall("feco-wall")
+        {{
             requirements(Category.defense, ItemStack.with(feco, 1));
             health = 1080;
             size = 1;
         }};
 
-        fecoWallLarge = new Wall("feco-wall-large"){{
+        fecoWallLarge = new Wall("feco-wall-large")
+        {{
             requirements(Category.defense, ItemStack.with(feco, 24));
             health = 4320;
             size = 2;
