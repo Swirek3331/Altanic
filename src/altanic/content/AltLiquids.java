@@ -2,7 +2,7 @@ package altanic.content;
 
 import arc.graphics.*;
 import mindustry.type.Liquid;
-import mindustry.content.Liquids;
+import mindustry.content.Liquids.*;
 
 public class AltLiquids
 {
