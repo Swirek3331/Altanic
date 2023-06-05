@@ -17,7 +17,6 @@ import multicraft.*;
 
 import static altanic.content.AltItems.*;
 import static altanic.content.AltLiquids.*;
-import altanic.world.consumers.*;
 
 public class AltBlocks
 {
@@ -242,7 +241,6 @@ public class AltBlocks
             health = 500;
 
             consume(new ConsumeLiquidFlammable());
-            consume(new ConsumeLiquidExplosive());
 
             powerProduction = 9f;
             liquidCapacity = 60f;
@@ -259,10 +257,8 @@ public class AltBlocks
                         sinMag = 1f; //Ło boże
                     }},
                     new DrawRegion("-mid"),
-                    new DrawLiquidRegion()
-                    {{
-                        drawLiquid = creosote;
-                    }},
+                    //new DrawLiquidRegion(creosote),
+                    //TODO: rysowanie obecnie znajdującej się cieczy.
                     new DrawGlowRegion()
                     {{
                         alpha = 1f;
