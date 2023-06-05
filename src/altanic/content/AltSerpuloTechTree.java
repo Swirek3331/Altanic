@@ -68,6 +68,10 @@ public class AltSerpuloTechTree
                 node(fecoWallLarge);
             });
         });
+
+        extendNode(differentialGenerator, () -> {
+            node(oilBurner);
+        });
     }
 
     private static void extendNode(UnlockableContent parent, Runnable children)
