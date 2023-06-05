@@ -257,8 +257,7 @@ public class AltBlocks
                         sinMag = 1f; //Ło boże
                     }},
                     new DrawRegion("-mid"),
-                    new DrawLiquidRegion(this.outputLiquid.liquid),
-                    //TODO: rysowanie obecnie znajdującej się cieczy.
+                    new DrawLiquidRegion(),
                     new DrawGlowRegion()
                     {{
                         alpha = 1f;
