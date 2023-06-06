@@ -67,6 +67,10 @@ public class AltSerpuloTechTree
             node(solidMixer);
         });
 
+        extendNode(cryofluidMixer, () -> {
+            node(oilFractioner);
+        });
+
         extendNode(thoriumWall, () -> {
             node(fecoWall, () -> {
                 node(fecoWallLarge);
