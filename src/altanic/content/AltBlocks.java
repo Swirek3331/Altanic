@@ -242,6 +242,8 @@ public class AltBlocks
             craftTime = 30f;
             rotate = true;
             invertFlip = true;
+            hasItems = false;
+            hasLiquids = true;
 
             consumeLiquid(oil, 0.2f);
             consumePower(2f);
