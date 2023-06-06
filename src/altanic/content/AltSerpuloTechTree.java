@@ -37,13 +37,17 @@ public class AltSerpuloTechTree
         });
 
         extendNode(coal, () -> {
-            node(coalCoke, () -> {
-                node(petroleumCoke);
-            });
+            node(coalCoke);
         });
 
-        extendNode(blastCompound, () -> {
-            node(sulfur);
+        extendNode(Liquids.oil, () -> {
+            node(lightOil);
+            node(gas, () -> {
+                node(sulfur);
+            });
+            node(heavyOil, () -> {
+               node(petroleumCoke);
+            });
         });
 
         extendNode(Liquids.water, () -> {

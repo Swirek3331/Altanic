@@ -30,7 +30,7 @@ public class AltLiquids
             boilPoint = Liquids.oil.boilPoint;
         }};
 
-        gas = new Liquid("gas", Color.valueOf("1D1D23"))
+        gas = new Liquid("gas", Color.valueOf("1d1d23"))
         {{
             gas = true;
             gasColor = color;

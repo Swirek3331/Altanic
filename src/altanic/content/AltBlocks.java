@@ -8,7 +8,8 @@ import mindustry.world.*;
 import static mindustry.content.Items.*;
 import static mindustry.content.Liquids.*;
 
-import mindustry.world.consumers.ConsumeLiquidFlammable;
+import mindustry.world.blocks.production.GenericCrafter;
+import mindustry.world.consumers.*;
 import mindustry.world.draw.*;
 import mindustry.world.blocks.defense.*;
 import mindustry.world.blocks.power.*;
@@ -23,7 +24,7 @@ public class AltBlocks
     public static Block
 
             //crafting
-            blastFurnace, pyrolyseOven, solidMixer,
+            blastFurnace, pyrolyseOven, solidMixer, oilFractioner,
 
             //power
             oilBurner,
@@ -228,6 +229,29 @@ public class AltBlocks
                             ),
                             80
                     )
+            );
+        }};
+
+        oilFractioner = new GenericCrafter("oil-fractioner")
+        {{
+            requirements(Category.crafting, ItemStack.with(metaglass, 45, graphite, 50, titanium, 75, silicon, 50));
+
+            size = 3;
+            health = 800;
+
+            craftTime = 30f;
+            rotate = true;
+            invertFlip = true;
+
+            consumeLiquid(oil, 0.2f);
+            consumePower(2f);
+
+            regionRotated1 = 3;
+            outputLiquids = LiquidStack.with(lightOil, 3f / 60, gas, 3f / 60, heavyOil, 2f / 60);
+            liquidOutputDirections = new int[]{1, 2, 3};
+
+            drawer = new DrawMulti(
+                    new DrawLiquidRegion()
             );
         }};
 
