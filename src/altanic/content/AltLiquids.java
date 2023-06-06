@@ -6,7 +6,7 @@ import mindustry.type.Liquid;
 
 public class AltLiquids
 {
-    public static Liquid creosote, lightOil, gas, heavyOil;
+    public static Liquid creosote, lightOil, gas, heavyOil, refinedFuel, ethanol, methanol, plantOil, biofuel;
 
     public static void load()
     {
@@ -46,6 +46,48 @@ public class AltLiquids
             explosiveness = Liquids.oil.explosiveness * 1.1f;
             heatCapacity = Liquids.oil.heatCapacity;
             boilPoint = Liquids.oil.boilPoint;
+        }};
+
+        refinedFuel = new Liquid("refined-fuel")
+        {{
+            gasColor = color;
+            viscosity = (float)(Liquids.oil.viscosity * 0.8);
+            flammability = Liquids.oil.flammability * 3;
+            explosiveness = Liquids.oil.explosiveness / 2;
+            heatCapacity = Liquids.oil.heatCapacity;
+            boilPoint = Liquids.oil.boilPoint;
+        }};
+
+        ethanol = new Liquid("ethanol", Color.valueOf("edffff"))
+        {{
+            gasColor = color;
+            flammability = Liquids.oil.flammability;
+            explosiveness = Liquids.oil.explosiveness / 3;
+            boilPoint = Liquids.water.boilPoint;
+        }};
+
+        methanol = new Liquid("methanol", Color.valueOf("e0e0e0"))
+        {{
+            gasColor = color;
+            flammability = Liquids.oil.flammability * 0.8f;
+            explosiveness = Liquids.oil.explosiveness / 3;
+            boilPoint = Liquids.water.boilPoint;
+        }};
+
+        plantOil = new Liquid("plant-oil", Color.valueOf("cefa32"))
+        {{
+            viscosity = (float)(Liquids.oil.viscosity * 0.8);
+            flammability = Liquids.oil.flammability * 0.8f;
+            explosiveness = Liquids.oil.explosiveness * 0.8f;
+            boilPoint = Liquids.oil.boilPoint;
+        }};
+
+        biofuel = new Liquid("biofuel", Color.valueOf("a2a00f"))
+        {{
+            viscosity = lightOil.viscosity;
+            flammability = lightOil.flammability;
+            explosiveness = lightOil.explosiveness;
+            boilPoint = lightOil.boilPoint;
         }};
     }
 }
