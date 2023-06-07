@@ -51,9 +51,16 @@ public class AltSerpuloTechTree
         });
 
         extendNode(Liquids.water, () -> {
-            node(biomass);
+            node(biomass, () -> {
+                node(plantOil, () -> {
+                    node(biofuel);
+                });
+            });
             node(wood, () -> {
                 node(creosote);
+                node(methanol, () -> {
+                    node(ethanol);
+                });
             });
         });
 
