@@ -7,6 +7,7 @@ import mindustry.type.Liquid;
 public class AltLiquids
 {
     public static Liquid creosote, lightOil, gas, heavyOil, refinedFuel, ethanol, methanol, plantOil, biofuel;
+    //TODO: Stats
 
     public static void load()
     {
@@ -77,7 +78,7 @@ public class AltLiquids
         plantOil = new Liquid("plant-oil", Color.valueOf("cefa32"))
         {{
             viscosity = (float)(Liquids.oil.viscosity * 0.8);
-            flammability = Liquids.oil.flammability * 0.8f;
+            flammability = Liquids.oil.flammability * 0.7f;
             explosiveness = Liquids.oil.explosiveness * 0.8f;
             boilPoint = Liquids.oil.boilPoint;
         }};

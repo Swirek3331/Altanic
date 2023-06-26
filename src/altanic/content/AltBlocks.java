@@ -249,7 +249,7 @@ public class AltBlocks
             consumePower(2f);
 
             regionRotated1 = 3;
-            outputLiquids = LiquidStack.with(lightOil, 3/8*0.2f, gas, 4/8*0.2f, heavyOil, 1/8*0.2f);
+            outputLiquids = LiquidStack.with(lightOil, 4, gas, 6, heavyOil, 2);
             liquidOutputDirections = new int[]{1, 2, 3};
 
             drawer = new DrawMulti(
