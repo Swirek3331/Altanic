@@ -75,7 +75,7 @@ public class AltSerpuloTechTree
         });
 
         extendNode(cryofluidMixer, () -> {
-            node(oilFractioner);
+            node(oilRafinery);
         });
 
         extendNode(thoriumWall, () -> {
