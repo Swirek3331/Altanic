@@ -25,7 +25,7 @@ public class AltBlocks
     public static Block
 
             //crafting
-            blastFurnace, pyrolyseOven, solidMixer, oilFractioner,
+            blastFurnace, pyrolyseOven, solidMixer, oilRafinery,
 
             //power
             oilBurner,
@@ -234,14 +234,14 @@ public class AltBlocks
         }};
 
         //TODO: Better name
-        oilFractioner = new GenericCrafter("oil-fractioner")
+        oilRafinery = new GenericCrafter("oil-rafinery")
         {{
             requirements(Category.crafting, ItemStack.with(metaglass, 45, graphite, 50, titanium, 75, silicon, 50));
 
             size = 3;
             health = 800;
 
-            craftTime = 30f;
+            craftTime = 30f;//Is it matters? Liquids always comes with per __one__ second.
             rotate = true;
             invertFlip = true;
             hasItems = false;
@@ -251,7 +251,7 @@ public class AltBlocks
             consumePower(2f);
 
             regionRotated1 = 3;
-            outputLiquids = LiquidStack.with(lightOil, 4, gas, 6, heavyOil, 2);
+            outputLiquids = LiquidStack.with(lightOil, 4/60, gas, 6/60, heavyOil, 2/60);//Real output will be a value multiplied by 60.
             liquidOutputDirections = new int[]{1, 2, 3};
 
             drawer = new DrawMulti(
