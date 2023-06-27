@@ -2,6 +2,7 @@ package altanic.content;
 
 import  arc.struct.Seq;
 
+import mindustry.content.Liquids;
 import mindustry.gen.*;
 import mindustry.type.*;
 import mindustry.world.*;
@@ -21,19 +22,17 @@ import static altanic.content.AltLiquids.*;
 
 public class AltBlocks
 {
-    //TODO: Correct health, requirements?.
+    //TODO: Correct health, requirements, item chronology in requirements?
     public static Block
 
             //crafting
-            blastFurnace, pyrolyseOven, solidMixer, oilRafinery,
+            blastFurnace, pyrolyseOven, solidMixer, centrifuge, oilRafinery,
 
             //power
             oilBurner,
 
-            //defense
-
-                //walls
-                fecoWall, fecoWallLarge;
+            //walls
+            fecoWall, fecoWallLarge;
 
     public static void load()
     {
@@ -233,7 +232,41 @@ public class AltBlocks
             );
         }};
 
-        //TODO: Better name
+        centrifuge = new MultiCrafter("centrifuge")
+        {{
+            requirements(Category.crafting, ItemStack.with(lead, 50, graphite, 25, metaglass, 30, silicon, 15, titanium, 20));
+
+            size = 2;
+            health = 400;
+
+            resolvedRecipes = Seq.with(
+                    new Recipe(
+                            new IOEntry(
+                                    Seq.with(ItemStack.with()),
+                                    Seq.with(LiquidStack.with(oil, 0.2f)),
+                                    0.7f
+                            ),
+                            new IOEntry(
+                                    Seq.with(ItemStack.with(coal, 2)),
+                                    Seq.with()
+                            ),
+                            30
+                    ),
+                    new Recipe(
+                            new IOEntry(
+                                    Seq.with(ItemStack.with(sand, 14)),
+                                    Seq.with(LiquidStack.with(creosote, 0.1f)),
+                                    0.8f
+                            ),
+                            new IOEntry(
+                                    Seq.with(ItemStack.with(pyratite, 5, blastCompound, 2)),
+                                    Seq.with()
+                            ),
+                            120
+                    )
+            );
+        }};
+
         oilRafinery = new GenericCrafter("oil-rafinery")
         {{
             requirements(Category.crafting, ItemStack.with(metaglass, 45, graphite, 50, titanium, 75, silicon, 50));
