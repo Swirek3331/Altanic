@@ -21,6 +21,7 @@ import static altanic.content.AltLiquids.*;
 
 public class AltBlocks
 {
+    //TODO: Correct health.
     public static Block
 
             //crafting
@@ -232,6 +233,7 @@ public class AltBlocks
             );
         }};
 
+        //TODO: Better name
         oilFractioner = new GenericCrafter("oil-fractioner")
         {{
             requirements(Category.crafting, ItemStack.with(metaglass, 45, graphite, 50, titanium, 75, silicon, 50));
@@ -263,8 +265,8 @@ public class AltBlocks
         {{
             requirements(Category.power, ItemStack.with(copper, 50, lead, 75, titanium, 40, metaglass, 35, silicon, 45));
 
-            size = 2;
-            health = 500;
+            size = 3;
+            health = 400;
 
             consume(new ConsumeLiquidFlammable());
 
@@ -275,23 +277,6 @@ public class AltBlocks
 
             ambientSound = Sounds.smelter;
             ambientSoundVolume = 0.03f;
-
-            drawer = new DrawMulti(
-                    new DrawRegion("-bottom"),
-                    new DrawPistons()
-                    {{
-                        sinMag = 1f; //Ło boże
-                    }},
-                    new DrawRegion("-mid"),
-                    new DrawLiquidRegion(),
-                    new DrawGlowRegion()
-                    {{
-                        alpha = 1f;
-                        glowScale = 5f;
-                    }},
-                    new DrawDefault(),
-                    new DrawRegion("-top")
-            );
         }};
 
         //walls
