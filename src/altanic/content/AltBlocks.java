@@ -21,7 +21,7 @@ import static altanic.content.AltLiquids.*;
 
 public class AltBlocks
 {
-    //TODO: Correct health.
+    //TODO: Correct health, requirements?.
     public static Block
 
             //crafting
