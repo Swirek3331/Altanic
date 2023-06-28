@@ -2,7 +2,6 @@ package altanic.content;
 
 import  arc.struct.Seq;
 
-import mindustry.content.Liquids;
 import mindustry.gen.*;
 import mindustry.type.*;
 import mindustry.world.*;
@@ -26,7 +25,7 @@ public class AltBlocks
     public static Block
 
             //crafting
-            blastFurnace, pyrolyseOven, solidMixer, centrifuge, oilRafinery,
+            pyrolyseOven, blastFurnace, solidMixer, centrifuge, oilRafinery,
 
             //power
             oilBurner,
@@ -36,6 +35,43 @@ public class AltBlocks
 
     public static void load()
     {
+
+        pyrolyseOven = new MultiCrafter("pyrolyse-oven")
+        {{
+            size = 2;
+            health = 400;
+
+            requirements(Category.crafting, ItemStack.with(copper, 40, metaglass, 15, titanium, 25));
+
+            resolvedRecipes = Seq.with(
+                    new Recipe(
+                            new IOEntry(
+                                    Seq.with(ItemStack.with(wood, 5)),
+                                    Seq.with(),
+                                    0.75f
+                            ),
+                            new IOEntry(
+                                    Seq.with(ItemStack.with(coal, 1)),
+                                    Seq.with(LiquidStack.with(creosote, 0.1f))
+                            ),
+                            120
+                    ),
+
+                    new Recipe(
+                            new IOEntry(
+                                    Seq.with(ItemStack.with(coal, 5)),
+                                    Seq.with(),
+                                    1
+                            ),
+                            new IOEntry(
+                                    Seq.with(ItemStack.with(coalCoke, 5)),
+                                    Seq.with(LiquidStack.with(creosote, 0.2f))
+                            ),
+                            180
+                    )
+            );
+        }};
+
         blastFurnace = new MultiCrafter("blast-furnace")
         {{
             size = 3;
@@ -75,9 +111,9 @@ public class AltBlocks
 
                     new Recipe(
                             new IOEntry(
-                                Seq.with(ItemStack.with(feco, 5, coalCoke, 5)),
-                                Seq.with(),
-                                6
+                                    Seq.with(ItemStack.with(feco, 5, coalCoke, 5)),
+                                    Seq.with(),
+                                    6
                             ),
 
                             new IOEntry(
@@ -129,42 +165,6 @@ public class AltBlocks
             );
 
             drawer = new DrawMulti(new DrawDefault(), new DrawFlame());
-        }};
-
-        pyrolyseOven = new MultiCrafter("pyrolyse-oven")
-        {{
-            size = 2;
-            health = 400;
-
-            requirements(Category.crafting, ItemStack.with(copper, 40, metaglass, 15, titanium, 25));
-
-            resolvedRecipes = Seq.with(
-                    new Recipe(
-                            new IOEntry(
-                                    Seq.with(ItemStack.with(wood, 5)),
-                                    Seq.with(),
-                                    0.75f
-                            ),
-                            new IOEntry(
-                                    Seq.with(ItemStack.with(coal, 1)),
-                                    Seq.with(LiquidStack.with(creosote, 0.1f))
-                            ),
-                            120
-                    ),
-
-                    new Recipe(
-                            new IOEntry(
-                                    Seq.with(ItemStack.with(coal, 5)),
-                                    Seq.with(),
-                                    1
-                            ),
-                            new IOEntry(
-                                    Seq.with(ItemStack.with(coalCoke, 5)),
-                                    Seq.with(LiquidStack.with(creosote, 0.2f))
-                            ),
-                            180
-                    )
-            );
         }};
 
         solidMixer = new MultiCrafter("solid-mixer")
@@ -284,7 +284,7 @@ public class AltBlocks
             consumePower(2f);
 
             regionRotated1 = 3;
-            outputLiquids = LiquidStack.with(lightOil, 4/60, gas, 6/60, heavyOil, 2/60);//Real output will be a value multiplied by 60.
+            outputLiquids = LiquidStack.with(lightOil, (float)(4/60), gas, 0.1, heavyOil, (float)(2/60));//Real output will be a value multiplied by 60.
             liquidOutputDirections = new int[]{1, 2, 3};
 
             drawer = new DrawMulti(

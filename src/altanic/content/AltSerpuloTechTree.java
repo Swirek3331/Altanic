@@ -41,7 +41,9 @@ public class AltSerpuloTechTree
         });
 
         extendNode(Liquids.oil, () -> {
-            node(lightOil);
+            node(lightOil, () -> {
+                node(refinedFuel);
+            });
             node(gas, () -> {
                 node(sulfur);
             });
@@ -132,7 +134,7 @@ public class AltSerpuloTechTree
     private static void nodeProduce(UnlockableContent content, Seq <Objective> objectives, Runnable children)
     {
         node(content, content.researchRequirements(), objectives.add(new Produce(content)), children);
-        //and kiedyś tam było z tego, co pamiętam, a w samej metodzie było tam coś małego z add.
+        //`and` kiedyś tam było z tego, co pamiętam, a w samej metodzie było tam coś małego z add.
         //TODO?
         //Chociaż w sumie to używane nie jest.
     }
