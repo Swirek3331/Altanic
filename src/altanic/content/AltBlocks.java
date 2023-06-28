@@ -21,11 +21,11 @@ import static altanic.content.AltLiquids.*;
 
 public class AltBlocks
 {
-    //TODO: Correct health, requirements, item chronology in requirements?
+    //TODO: Correct health, requirements, item chronology in requirements?, content chronology.
     public static Block
 
             //crafting
-            pyrolyseOven, blastFurnace, solidMixer, centrifuge, oilRafinery,
+            pyrolyseOven, blastFurnace, solidMixer, centrifuge, oilRafinery, fermentationChamber,
 
             //power
             oilBurner,
@@ -284,8 +284,8 @@ public class AltBlocks
             consumePower(2f);
 
             regionRotated1 = 3;
-            outputLiquids = LiquidStack.with(lightOil, (float)(4/60), gas, 0.1, heavyOil, (float)(2/60));//Real output will be a value multiplied by 60.
-            liquidOutputDirections = new int[]{1, 2, 3};
+            outputLiquids = LiquidStack.with(AltLiquids.fuel, 0.12/*0.15*/, heavyOil, 0.08/*0.05*/);
+            liquidOutputDirections = new int[]{1, 3};
 
             drawer = new DrawMulti(
                     new DrawLiquidRegion()

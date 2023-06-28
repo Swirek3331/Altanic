@@ -6,7 +6,7 @@ import mindustry.type.Liquid;
 
 public class AltLiquids
 {
-    public static Liquid creosote, lightOil, gas, heavyOil, refinedFuel, ethanol, methanol, plantOil, biofuel;
+    public static Liquid creosote, fuel, gas, heavyOil, ethanol, methanol, plantOil, biofuel;
     //TODO: Stats
 
     public static void load()
@@ -20,8 +20,8 @@ public class AltLiquids
             gasColor = color;
             boilPoint = 0.5f;
         }};
-        
-        lightOil = new Liquid("light-oil", Color.valueOf("ddc600"))
+
+        fuel = new Liquid("light-oil", Color.valueOf("ddc600"))
         {{
             gasColor = color;
             viscosity = (float)(Liquids.oil.viscosity * 0.8);
@@ -45,16 +45,6 @@ public class AltLiquids
             viscosity = Liquids.oil.viscosity * 2;
             flammability = Liquids.oil.flammability * 0.8f;
             explosiveness = Liquids.oil.explosiveness * 1.1f;
-            heatCapacity = Liquids.oil.heatCapacity;
-            boilPoint = Liquids.oil.boilPoint;
-        }};
-
-        refinedFuel = new Liquid("refined-fuel")
-        {{
-            gasColor = color;
-            viscosity = (float)(Liquids.oil.viscosity * 0.8);
-            flammability = Liquids.oil.flammability * 3;
-            explosiveness = Liquids.oil.explosiveness / 2;
             heatCapacity = Liquids.oil.heatCapacity;
             boilPoint = Liquids.oil.boilPoint;
         }};
@@ -85,10 +75,10 @@ public class AltLiquids
 
         biofuel = new Liquid("biofuel", Color.valueOf("a2a00f"))
         {{
-            viscosity = lightOil.viscosity;
-            flammability = lightOil.flammability;
-            explosiveness = lightOil.explosiveness;
-            boilPoint = lightOil.boilPoint;
+            viscosity = fuel.viscosity;
+            flammability = fuel.flammability;
+            explosiveness = fuel.explosiveness;
+            boilPoint = fuel.boilPoint;
         }};
     }
 }

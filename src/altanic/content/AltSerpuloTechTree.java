@@ -10,6 +10,7 @@ import mindustry.game.Objectives.*;
 
 import static mindustry.content.Blocks.*;
 import static mindustry.content.Items.*;
+
 import static altanic.content.AltItems.*;
 import static altanic.content.AltLiquids.*;
 import static altanic.content.AltBlocks.*;
@@ -41,9 +42,7 @@ public class AltSerpuloTechTree
         });
 
         extendNode(Liquids.oil, () -> {
-            node(lightOil, () -> {
-                node(refinedFuel);
-            });
+            node(AltLiquids.fuel);
             node(gas, () -> {
                 node(sulfur);
             });
@@ -103,51 +102,16 @@ public class AltSerpuloTechTree
         if (objectives != null) node.objectives = objectives;TechNode prev = context;context = node;children.run();
         context = prev;
     }
-    private static void node(UnlockableContent content, ItemStack[] requirements, Seq <Objective> objectives)
-    {
-        node(content, requirements, objectives, () -> {});
-    }
-    private static void node(UnlockableContent content, Seq <Objective> objectives)
-    {
-        node(content, content.researchRequirements(), objectives, () -> {});
-    }
-    private static void node(UnlockableContent content, ItemStack[] requirements)
-    {
-        node(content, requirements, Seq.with(), () -> {});
-    }
     private static void node(UnlockableContent content, ItemStack[] requirements, Runnable children)
     {
         node(content, requirements, null, children);
-    }
-    private static void node(UnlockableContent content, Seq <Objective> objectives, Runnable children)
-    {
-        node(content, content.researchRequirements(), objectives, children);
     }
     private static void node(UnlockableContent content, Runnable children)
     {
         node(content, content.researchRequirements(), children);
     }
-    private static void node(UnlockableContent block)
+    private static void node(UnlockableContent content)
     {
-        node(block, () -> {});
-    }
-    private static void nodeProduce(UnlockableContent content, Seq <Objective> objectives, Runnable children)
-    {
-        node(content, content.researchRequirements(), objectives.add(new Produce(content)), children);
-        //`and` kiedyś tam było z tego, co pamiętam, a w samej metodzie było tam coś małego z add.
-        //TODO?
-        //Chociaż w sumie to używane nie jest.
-    }
-    private static void nodeProduce(UnlockableContent content, Seq <Objective> objectives)
-    {
-        nodeProduce(content, objectives, () -> {});
-    }
-    private static void nodeProduce(UnlockableContent content, Runnable children)
-    {
-        nodeProduce(content, Seq.with(), children);
-    }
-    private static void nodeProduce(UnlockableContent content)
-    {
-        nodeProduce(content, Seq.with(), () -> {});
+        node(content, () -> {});
     }
 }
