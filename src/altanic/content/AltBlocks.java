@@ -1,12 +1,15 @@
 package altanic.content;
 
-import  arc.struct.Seq;
+import arc.graphics.Color;
+import arc.struct.Seq;
 
 import mindustry.gen.*;
 import mindustry.type.*;
 import mindustry.world.*;
 import static mindustry.content.Items.*;
 import static mindustry.content.Liquids.*;
+
+import mindustry.world.blocks.environment.OreBlock;
 import mindustry.world.blocks.production.GenericCrafter;
 import mindustry.world.consumers.*;
 import mindustry.world.draw.*;
@@ -23,6 +26,11 @@ public class AltBlocks
     //TODO: Correct health, requirements, item chronology in requirements?, content chronology.
     public static Block
 
+            //environment
+
+                //ores
+                fecoOre, calcite,
+
             //crafting
             pyrolyseOven, blastFurnace, solidMixer, centrifuge, oilRafinery, fermentationChamber,
 
@@ -34,6 +42,21 @@ public class AltBlocks
 
     public static void load()
     {
+        //environment
+
+        //ores
+
+        fecoOre = new OreBlock(feco)
+        {{
+            mapColor = feco.color;
+        }};
+
+        calcite = new OreBlock(flux)
+        {{
+            mapColor = Color.white;
+        }};
+
+        //crafting
 
         pyrolyseOven = new MultiCrafter("pyrolyse-oven")
         {{
@@ -266,7 +289,7 @@ public class AltBlocks
             );
         }};
 
-        //TODO: Change to Mulitcrafter, more recipes.
+        //TODO: Change to Mulitcrafter (more recipes)?
         oilRafinery = new GenericCrafter("oil-rafinery")
         {{
             requirements(Category.crafting, ItemStack.with(metaglass, 45, graphite, 50, titanium, 75, silicon, 50));
