@@ -21,7 +21,7 @@ public class AltLiquids
             boilPoint = 0.5f;
         }};
 
-        fuel = new Liquid("light-oil", Color.valueOf("ddc600"))
+        fuel = new Liquid("fuel", Color.valueOf("ff8000"))
         {{
             gasColor = color;
             viscosity = (float)(Liquids.oil.viscosity * 0.8);

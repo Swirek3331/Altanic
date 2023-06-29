@@ -6,15 +6,15 @@ import arc.struct.Seq;
 import mindustry.gen.*;
 import mindustry.type.*;
 import mindustry.world.*;
-import static mindustry.content.Items.*;
-import static mindustry.content.Liquids.*;
-
-import mindustry.world.blocks.environment.OreBlock;
-import mindustry.world.blocks.production.GenericCrafter;
 import mindustry.world.consumers.*;
 import mindustry.world.draw.*;
-import mindustry.world.blocks.defense.*;
-import mindustry.world.blocks.power.*;
+import mindustry.world.blocks.environment.OreBlock;
+import mindustry.world.blocks.production.GenericCrafter;
+import mindustry.world.blocks.defense.Wall;
+import mindustry.world.blocks.power.ConsumeGenerator;
+
+import static mindustry.content.Items.*;
+import static mindustry.content.Liquids.*;
 
 import multicraft.*;
 
@@ -35,7 +35,7 @@ public class AltBlocks
             pyrolyseOven, blastFurnace, solidMixer, centrifuge, oilRafinery, fermentationChamber,
 
             //power
-            oilBurner,
+            oilBurner, chargeGenerator,
 
             //walls
             fecoWall, fecoWallLarge;
@@ -333,6 +333,18 @@ public class AltBlocks
 
             ambientSound = Sounds.smelter;
             ambientSoundVolume = 0.03f;
+        }};
+
+        chargeGenerator = new ConsumeGenerator("charge-generator")
+        {{
+            requirements(Category.power, ItemStack.with(lead, 125, thorium, 50, silicon, 75, plastanium, 75, phaseFabric, 25));
+
+            size = 2;
+
+            powerProduction = 6f;
+            itemDuration = 60f * 15;
+
+            consume(new ConsumeItemCharged());
         }};
 
         //walls
