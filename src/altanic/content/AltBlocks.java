@@ -6,6 +6,7 @@ import arc.struct.Seq;
 import mindustry.gen.*;
 import mindustry.type.*;
 import mindustry.world.*;
+import mindustry.world.blocks.environment.Floor;
 import mindustry.world.consumers.*;
 import mindustry.world.draw.*;
 import mindustry.world.blocks.environment.OreBlock;
@@ -51,9 +52,10 @@ public class AltBlocks
             mapColor = feco.color;
         }};
 
-        calcite = new OreBlock(flux)
+        calcite = new Floor("calcite")
         {{
             mapColor = Color.white;
+            itemDrop = flux;    
         }};
 
         //crafting
@@ -309,10 +311,6 @@ public class AltBlocks
             regionRotated1 = 2;
             outputLiquids = LiquidStack.with(AltLiquids.fuel, 0.12/*0.15*/, heavyOil, 0.08/*0.05*/);
             liquidOutputDirections = new int[]{1, 3};
-
-            drawer = new DrawMulti(
-                    new DrawLiquidRegion()
-            );
         }};
 
         //power
@@ -337,12 +335,12 @@ public class AltBlocks
 
         chargeGenerator = new ConsumeGenerator("charge-generator")
         {{
-            requirements(Category.power, ItemStack.with(lead, 125, thorium, 50, silicon, 75, plastanium, 75, phaseFabric, 25));
+            requirements(Category.power, ItemStack.with(lead, 125, thorium, 50, silicon, 75, plastanium, 75, phaseFabric, 25));//TODO: it has to much RTG here
 
             size = 2;
 
-            powerProduction = 6f;
-            itemDuration = 60f * 15;
+            powerProduction = 7.5f;
+            itemDuration = 60f * 20;
 
             consume(new ConsumeItemCharged());
         }};
