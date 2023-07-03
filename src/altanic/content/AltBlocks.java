@@ -24,7 +24,7 @@ import static altanic.content.AltLiquids.*;
 
 public class AltBlocks
 {
-    //TODO: Correct health, requirements, item chronology in requirements?, content chronology.
+    //TODO: requirements, item chronology in it?, content chronology.
     public static Block
 
             //environment
@@ -62,10 +62,8 @@ public class AltBlocks
 
         pyrolyseOven = new MultiCrafter("pyrolyse-oven")
         {{
-            size = 2;
-            health = 400;
-
             requirements(Category.crafting, ItemStack.with(copper, 40, metaglass, 15, titanium, 25));
+            size = 2;
 
             resolvedRecipes = Seq.with(
                     new Recipe(
@@ -98,13 +96,11 @@ public class AltBlocks
 
         blastFurnace = new MultiCrafter("blast-furnace")
         {{
+            requirements(Category.crafting, ItemStack.with(lead, 50, metaglass, 25, graphite, 100, titanium, 45, thorium, 75));
             size = 3;
-            health = 500;
 
             ambientSound = Sounds.smelter;
             ambientSoundVolume = 0.04f;
-
-            requirements(Category.crafting, ItemStack.with(lead, 50, metaglass, 25, graphite, 100, titanium, 45, thorium, 75));
 
             resolvedRecipes = Seq.with(
                     new Recipe(
@@ -193,13 +189,11 @@ public class AltBlocks
 
         solidMixer = new MultiCrafter("solid-mixer")
         {{
+            requirements(Category.crafting, ItemStack.with(lead, 50, graphite, 25, titanium, 45, metaglass, 10, silicon, 15));
             size = 2;
-            health = 400;
 
             ambientSound = Sounds.grinding;
             ambientSoundVolume = 0.04f;
-
-            requirements(Category.crafting, ItemStack.with(lead, 50, graphite, 25, titanium, 45, metaglass, 10, silicon, 15));
 
             resolvedRecipes = Seq.with(
                     new Recipe(
@@ -259,9 +253,7 @@ public class AltBlocks
         centrifuge = new MultiCrafter("centrifuge")
         {{
             requirements(Category.crafting, ItemStack.with(lead, 50, graphite, 25, metaglass, 30, silicon, 15, titanium, 20));
-
             size = 2;
-            health = 400;
 
             resolvedRecipes = Seq.with(
                     new Recipe(
@@ -295,9 +287,7 @@ public class AltBlocks
         oilRafinery = new GenericCrafter("oil-rafinery")
         {{
             requirements(Category.crafting, ItemStack.with(metaglass, 45, graphite, 50, titanium, 75, silicon, 50));
-
             size = 3;
-            health = 800;
 
             craftTime = 30f;//Is it matters? Liquids always comes with per __one__ second.
             rotate = true;
@@ -318,9 +308,7 @@ public class AltBlocks
         oilBurner = new ConsumeGenerator("oil-burner")
         {{
             requirements(Category.power, ItemStack.with(copper, 50, lead, 75, titanium, 40, metaglass, 35, silicon, 45));
-
             size = 3;
-            health = 400;
 
             consume(new ConsumeLiquidFlammable());
 
@@ -336,7 +324,6 @@ public class AltBlocks
         chargeGenerator = new ConsumeGenerator("charge-generator")
         {{
             requirements(Category.power, ItemStack.with(lead, 125, thorium, 50, silicon, 75, plastanium, 75, phaseFabric, 25));//TODO: it has to much RTG here
-
             size = 2;
 
             powerProduction = 7.5f;
@@ -346,6 +333,7 @@ public class AltBlocks
         }};
 
         //walls
+        //TODO: Change to `scalledHealth`.
 
         fecoWall = new Wall("feco-wall")
         {{
