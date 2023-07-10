@@ -299,7 +299,7 @@ public class AltBlocks
             consumeLiquid(oil, 0.2f);
             consumePower(2f);
 
-            regionRotated1 = 2;
+            regionRotated1 = 3;
             outputLiquids = LiquidStack.with(AltLiquids.fuel, 0.12/*0.15*/, heavyOil, 0.08/*0.05*/);
             liquidOutputDirections = new int[]{1, 3};
 
