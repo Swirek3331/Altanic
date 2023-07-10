@@ -307,7 +307,7 @@ public class AltBlocks
                     new DrawRegion("-bottom"),
                     new DrawLiquidTile(oil),
                     new DrawDefault(),
-                    new DrawLiquidOutputs(),
+                    //new DrawLiquidOutputs(),
                     new DrawFlame(Color.valueOf("ffef99"))
             );
         }};
@@ -339,6 +339,11 @@ public class AltBlocks
             itemDuration = 60f * 20;
 
             consume(new ConsumeItemCharged());
+
+            drawer = new DrawMulti(
+                    new DrawDefault(),
+                    new DrawWarmupRegion()
+            );
         }};
 
         //walls
