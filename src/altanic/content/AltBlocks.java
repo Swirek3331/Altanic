@@ -306,7 +306,7 @@ public class AltBlocks
             drawer = new DrawMulti(
                     new DrawRegion("-bottom"),
                     new DrawLiquidTile(oil),
-                    new DrawDefault(),
+                    new DrawRegion(),
                     new DrawLiquidOutputs(),
                     new DrawFlame(Color.valueOf("ffef99"))
             );
