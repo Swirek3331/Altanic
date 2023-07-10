@@ -3,6 +3,7 @@ package altanic.content;
 import arc.graphics.Color;
 import arc.struct.Seq;
 
+import mindustry.content.Liquids;
 import mindustry.gen.*;
 import mindustry.type.*;
 import mindustry.world.*;
@@ -301,6 +302,14 @@ public class AltBlocks
             regionRotated1 = 2;
             outputLiquids = LiquidStack.with(AltLiquids.fuel, 0.12/*0.15*/, heavyOil, 0.08/*0.05*/);
             liquidOutputDirections = new int[]{1, 3};
+
+            drawer = new DrawMulti(
+                    new DrawRegion("-bottom"),
+                    new DrawLiquidTile(oil),
+                    new DrawDefault(),
+                    new DrawLiquidOutputs(),
+                    new DrawFlame(Color.valueOf("ffef99"))
+            );
         }};
 
         //power
