@@ -284,7 +284,7 @@ public class AltBlocks
             );
         }};
 
-        //TODO: Change to Mulitcrafter (more recipes)?
+        //TODO: Better name?
         oilRafinery = new GenericCrafter("oil-rafinery")
         {{
             requirements(Category.crafting, ItemStack.with(metaglass, 45, graphite, 50, titanium, 75, silicon, 50));
@@ -303,12 +303,62 @@ public class AltBlocks
             outputLiquids = LiquidStack.with(AltLiquids.fuel, 0.12/*0.15*/, heavyOil, 0.08/*0.05*/);
             liquidOutputDirections = new int[]{1, 3};
 
-            drawer = new DrawMulti(
+            drawer = new DrawMulti(//TODO: Make it work
                     new DrawRegion("-bottom"),
                     new DrawLiquidTile(oil),
                     new DrawDefault(),
                     //new DrawLiquidOutputs(),
                     new DrawFlame(Color.valueOf("ffef99"))
+            );
+        }};
+
+        //TODO: nerf
+        fermentationChamber = new MultiCrafter("fermentatio-chamber")
+        {{
+            requirements(Category.crafting, ItemStack.with(copper, 50, lead, 45, graphite, 25, metaglass, 15));
+            size = 2;
+
+            ambientSound = Sounds.steam;
+            ambientSoundVolume = 0.02f;
+
+            resolvedRecipes = Seq.with(
+                    new Recipe(
+                            new IOEntry(
+                                    Seq.with(ItemStack.with(biomass, 10)),
+                                    Seq.with(),
+                                    1.2f
+                            ),
+                            new IOEntry(
+                                    Seq.with(),
+                                    Seq.with(LiquidStack.with(ethanol, 0.2f))
+                            ),
+                            60
+                    ),
+                    new Recipe(
+                        new IOEntry(
+                                Seq.with(ItemStack.with(sporePod, 6)),
+                                Seq.with(),
+                                1.5f
+                        ),
+                        new IOEntry(
+                                Seq.with(),
+                                Seq.with(LiquidStack.with(gas, 0.2f))
+                        ),
+                        60
+                    ),
+                    new Recipe(
+                            new IOEntry(
+                                    Seq.with(ItemStack.with(wood, 12)),
+                                    Seq.with(),
+                                    1.4f
+                            ),
+                            new IOEntry(
+                                    Seq.with(),
+                                    Seq.with(LiquidStack.with(methanol, 0.2f))
+                            ),
+                            60
+                    )
+
             );
         }};
 
@@ -347,7 +397,7 @@ public class AltBlocks
         }};
 
         //walls
-        //TODO: Change to `scalledHealth`.
+        //TODO: Change to `scaledHealth`.
 
         fecoWall = new Wall("feco-wall")
         {{
