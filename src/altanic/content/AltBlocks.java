@@ -313,7 +313,7 @@ public class AltBlocks
         }};
 
         //TODO: nerf
-        fermentationChamber = new MultiCrafter("fermentatio-chamber")
+        fermentationChamber = new MultiCrafter("fermentation-chamber")
         {{
             requirements(Category.crafting, ItemStack.with(copper, 50, lead, 45, graphite, 25, metaglass, 15));
             size = 2;
