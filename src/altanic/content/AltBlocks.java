@@ -364,16 +364,21 @@ public class AltBlocks
             //TODO: find a better way; less code.
             drawer = new DrawRecipe(){{
                   drawers = new DrawBlock[]{
-                          new DrawRegion("-bottom"),
-                          new DrawCells(){{
-                              color = Color.valueOf("edffff");
-                              particleColorFrom = Color.white;
-                              particleColorTo = Color.valueOf("bbffff");
-                              particles = 25;
-                              range = 2f;
-                          }},
-                          new DrawDefault(),
-                          new DrawRegion("top"),
+                        new DrawMulti(
+                                new DrawRegion("-bottom"),
+                                new DrawCells(){{
+                                    color = Color.valueOf("edffff");
+                                    particleColorFrom = Color.white;
+                                    particleColorTo = Color.valueOf("bbffff");
+                                    particles = 25;
+                                    range = 2f;
+                                }},
+                                new DrawDefault(),
+                                new DrawRegion("top")
+                        ),
+                        new DrawMulti(
+
+                        )
                   };
             }};
         }};
