@@ -361,7 +361,7 @@ public class AltBlocks
 
             );
 
-            //TODO: find a better way; less code, nerf.
+            //TODO: find a better way; less code.
             drawer = new DrawRecipe(){{
                 drawers = new DrawBlock[]{
                         new DrawMulti(
