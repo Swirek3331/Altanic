@@ -3,7 +3,6 @@ package altanic.content;
 import arc.graphics.Color;
 import arc.struct.Seq;
 
-import mindustry.content.Liquids;
 import mindustry.gen.*;
 import mindustry.type.*;
 import mindustry.world.*;
@@ -34,7 +33,7 @@ public class AltBlocks
                 fecoOre, calcite,
 
             //crafting
-            pyrolyseOven, blastFurnace, solidMixer, centrifuge, oilRafinery, fermentationChamber,
+            pyrolyseOven, blastFurnace, solidMixer, centrifuge, oilRefinery, fermentationChamber,
 
             //power
             oilBurner, chargeGenerator,
@@ -284,8 +283,7 @@ public class AltBlocks
             );
         }};
 
-        //TODO: Better name?
-        oilRafinery = new GenericCrafter("oil-rafinery")
+        oilRefinery = new GenericCrafter("oil-refinery")
         {{
             requirements(Category.crafting, ItemStack.with(metaglass, 45, graphite, 50, titanium, 75, silicon, 50));
             size = 3;
@@ -361,7 +359,7 @@ public class AltBlocks
 
             );
 
-            //TODO: find a better way; less code.
+            //TODO: find a better way - less code.
             drawer = new DrawRecipe(){{
                 drawers = new DrawBlock[]{
                         new DrawMulti(

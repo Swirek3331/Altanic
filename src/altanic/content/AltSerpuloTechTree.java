@@ -77,7 +77,7 @@ public class AltSerpuloTechTree
 
         extendNode(coalCentrifuge, () -> {
             node(centrifuge, () -> {
-                node(oilRafinery);
+                node(oilRefinery);
             });
         });
 
