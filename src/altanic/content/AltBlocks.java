@@ -33,7 +33,7 @@ public class AltBlocks
                 fecoOre, calcite,
 
             //crafting
-            pyrolyseOven, blastFurnace, solidMixer, centrifuge, oilRefinery, fermentationChamber,
+            pyrolyseOven, blastFurnace, solidMixer, centrifuge, oilRefinery, fermentationChamber, biomassPress,
 
             //power
             oilBurner, chargeGenerator,
@@ -283,6 +283,7 @@ public class AltBlocks
             );
         }};
 
+        //TODO: Drawers has some problems
         oilRefinery = new GenericCrafter("oil-refinery")
         {{
             requirements(Category.crafting, ItemStack.with(metaglass, 45, graphite, 50, titanium, 75, silicon, 50));
@@ -301,7 +302,7 @@ public class AltBlocks
             outputLiquids = LiquidStack.with(AltLiquids.fuel, 0.12/*0.15*/, heavyOil, 0.08/*0.05*/);
             liquidOutputDirections = new int[]{1, 3};
 
-            drawer = new DrawMulti(//TODO: Make it work
+            drawer = new DrawMulti(
                     new DrawRegion("-bottom"),
                     new DrawLiquidTile(oil),
                     new DrawDefault(),
@@ -403,6 +404,31 @@ public class AltBlocks
                         )
                 };
             }};
+        }};
+
+        biomassPress = new GenericCrafter("biomass-press")
+        {{
+            requirements(Category.crafting, ItemStack.with(copper, 60, lead, 30, silicon, 10));
+            size = 2;
+
+            craftTime = 30f;
+            hasLiquids = true;
+            hasItems = false;
+
+            consumeLiquid(plantOil, 0.3f);
+            consumePower(0.4f);
+
+            drawer = new DrawMulti(
+                    new DrawRegion("-bottom"),
+                    new DrawRegion("-mid"),
+                    new DrawLiquidTile(plantOil),
+                    new DrawDefault(),
+                    new DrawPistons()
+                    {{
+                        sinMag = 1f;
+                    }},
+                    new DrawRegion("-top")
+            );
         }};
 
         //power
