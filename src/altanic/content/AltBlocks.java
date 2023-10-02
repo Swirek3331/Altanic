@@ -413,20 +413,22 @@ public class AltBlocks
 
             craftTime = 30f;
             hasLiquids = true;
-            hasItems = false;
+            hasItems = true;
 
-            consumeLiquid(plantOil, 0.3f);
+            consumeItem(biomass, 6);
             consumePower(0.4f);
+
+            outputLiquids = LiquidStack.with(plantOil, 0.3f);
 
             drawer = new DrawMulti(
                     new DrawRegion("-bottom"),
                     new DrawRegion("-mid"),
                     new DrawLiquidTile(plantOil),
-                    new DrawDefault(),
                     new DrawPistons()
                     {{
                         sinMag = 1f;
                     }},
+                    new DrawDefault(),
                     new DrawRegion("-top")
             );
         }};
