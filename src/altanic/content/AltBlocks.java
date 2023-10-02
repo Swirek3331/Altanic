@@ -306,7 +306,7 @@ public class AltBlocks
                     new DrawRegion("-bottom"),
                     new DrawLiquidTile(oil),
                     new DrawDefault(),
-                    //new DrawLiquidOutputs(),
+                    new DrawLiquidOutputs(),
                     new DrawFlame(Color.valueOf("ffef99"))
             );
         }};
